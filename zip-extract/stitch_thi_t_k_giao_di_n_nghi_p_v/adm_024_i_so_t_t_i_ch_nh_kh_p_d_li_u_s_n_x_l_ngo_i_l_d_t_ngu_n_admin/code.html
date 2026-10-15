@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,600;1,400&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary":"#aa361c","on-tertiary-container":"#b6cdbb","on-error":"#ffffff","surface-tint":"#296a4d","tertiary-fixed-dim":"#b5ccbb","on-primary":"#ffffff","surface-container":"#f5ede0","inverse-on-surface":"#f8f0e3","outline-variant":"#bfc9c1","tertiary":"#2c4134","on-surface":"#1e1b14","on-error-container":"#93000a","surface-bright":"#fff8f0","on-tertiary":"#ffffff","primary":"#00452d","error":"#ba1a1a","secondary-container":"#ff7353","on-primary-container":"#93d5b2","primary-fixed-dim":"#93d5b1","surface-sand":"#EDE0CC","secondary-fixed":"#ffdad2","on-tertiary-fixed":"#0b1f14","primary-container":"#1b5e42","on-secondary-container":"#6b1100","on-tertiary-fixed-variant":"#374b3e","terracotta-accent":"#C84B2F","on-secondary":"#ffffff","secondary-fixed-dim":"#ffb4a3","primary-fixed":"#aef1cc","on-primary-fixed-variant":"#075136","surface-dim":"#e1d9cc","surface-variant":"#e9e2d5","inverse-primary":"#93d5b1","on-background":"#1e1b14","tertiary-fixed":"#d0e8d6","text-heading":"#1A2E22","error-container":"#ffdad6","forest-accent":"#1B5E42","on-secondary-fixed-variant":"#891e05","tertiary-container":"#43584a","inverse-surface":"#343027","surface-container-highest":"#e9e2d5","surface-container-low":"#fbf3e6","background":"#fff8f0","on-secondary-fixed":"#3d0600","text-body":"#3D3028","surface-container-lowest":"#ffffff","surface":"#fff8f0","surface-container-high":"#efe7da","on-surface-variant":"#404943","outline":"#707972","on-primary-fixed":"#002113"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","gutter-mobile":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","space-2xl":"4rem","space-md":"1rem","space-xl":"2.5rem","margin-mobile":"1.25rem","space-xs":"0.25rem","margin":"2.5rem"},fontFamily:{"headline-xl-mobile":["Playfair Display"],"quote-lg":["Lora"],"body-md":["Inter"],"headline-xl":["Playfair Display"],"button-text":["Inter"],"headline-md":["Playfair Display"],"quote-sm":["Lora"],"label-caps":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Playfair Display"],"headline-lg":["Playfair Display"],"body-lg":["Inter"]},fontSize:{"headline-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"quote-lg":["20px",{"lineHeight":"32px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"button-text":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"quote-sm":["16px",{"lineHeight":"26px","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"0em","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body min-h-screen"><header class="fixed top-0 left-0 w-full h-16 bg-surface z-50 px-gutter flex items-center justify-between border-b border-surface-dim shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><img alt="Logo nguyên bản xanh.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UIBSPqIFfaCjmVN5aC2C2H2wMQtygQgmvc1QOX5FeoiYz5udkLVp433klefMsZk7YM62g990_LUPH4VxDP_RAWhO141hhf93-49YhjUFEjiDmuyCIYMoqmF6q9OHSUfAsP8bMKDFdYUB6d_NpZp4zEltPId8BzZMOMOM-Z-fK60G4pXb1iQDET75TZcs2UwdJfkqhzSL3YtlEtw2DPBOn27FYcPzT0kHNwajGOmb3UOn9wqWeLGvO26pXfh3Nlbvh09caa1U3D8Q"/><div class="flex flex-col"><span class="font-headline-md text-[17px] leading-tight font-semibold text-text-heading">Dệt Nguồn Cơ Tu</span><span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Đông Giang • Quảng Nam</span></div><span class="ml-space-xs inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 text-primary font-button-text text-body-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>CỔNG QUẢN TRỊ ADMIN</span></div><div class="flex-1 max-w-xl mx-gutter"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-1.5 bg-surface-container rounded-lg border border-surface-dim font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-primary transition-colors" placeholder="Tra cứu nhanh SKU / Mã Đơn OMS / Khách hàng / Hóa đơn điện tử..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-2.5 py-1 bg-surface-sand rounded font-label-caps text-label-caps text-tertiary border border-outline-variant/40"><span class="material-symbols-outlined text-[16px] text-primary">lock</span><span>TLS 1.3 SECURE</span></div><div class="hidden xl:flex items-center gap-space-xs px-2.5 py-1 bg-surface-sand rounded font-label-caps text-label-caps text-tertiary border border-outline-variant/40"><span class="material-symbols-outlined text-[16px] text-primary">verified_user</span><span>PDPD NĐ 13/2023</span></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-sm border-l border-surface-dim"><div class="text-right hidden md:block"><div class="font-button-text text-body-sm text-text-heading">Lê Quang Huy</div><div class="font-label-caps text-[10px] text-outline uppercase">Super Admin / Finance / Ops</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed top-16 left-0 bottom-0 w-[260px] bg-tertiary text-on-tertiary z-40 flex flex-col border-r border-tertiary-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="p-space-md border-b border-tertiary-container"><div class="font-label-caps text-label-caps text-tertiary-fixed uppercase font-semibold tracking-wider">BẢNG ĐIỀU KHIỂN HTX v2.4 PROD</div><div class="font-body-sm text-[11px] text-on-tertiary-container/80 mt-0.5">Hệ thống phân quyền RBAC</div></div><nav class="flex-1 overflow-y-auto px-space-xs py-space-sm space-y-0.5" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="tong-quan-dieu-hanh" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">dashboard</span><span>Tổng quan điều hành</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">ADM-001</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="nhan-su-phan-quyen" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">badge</span><span>Nhân sự &amp; Phân quyền</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">ADM-002</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="danh-muc-san-pham" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">category</span><span>Danh mục &amp; Sản phẩm</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">003-004</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="governance-phap-che" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">gavel</span><span>Governance &amp; Pháp chế</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">ADM-005</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="kenh-ban-bundle" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">storefront</span><span>Kênh bán &amp; Bundle</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">006-010</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="don-hang-da-kenh-oms" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">shopping_bag</span><span>Đơn hàng đa kênh OMS</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">008-009</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="kho-van-ton-kho" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">inventory_2</span><span>Kho vận &amp; Tồn kho</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">011-015</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="dong-goi-giao-nhan" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">local_shipping</span><span>Đóng gói &amp; Giao nhận</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">016-017</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="khach-hang-cskh" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">support_agent</span><span>Khách hàng &amp; CSKH</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">018-020</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="doi-tra-hoan-tien" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">assignment_return</span><span>Đổi trả &amp; Hoàn tiền</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">021-022</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="nguon-goc-cap-ma-qr" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">qr_code_scanner</span><span>Nguồn gốc &amp; Cấp mã QR</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">ADM-023</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="tai-chinh-doi-soat-pl" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">payments</span><span>Tài chính &amp; Đối soát P&amp;L</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">024-025</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="nhat-ky-audit-an-ninh" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">security</span><span>Nhật ký Audit &amp; An ninh</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">026-029</span></a></nav><div class="p-space-md border-t border-tertiary-container bg-tertiary"><div class="flex items-center gap-2 mb-space-sm text-on-tertiary-container"><span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span><span class="font-label-caps text-[10px] uppercase tracking-wider">Last-Admin Guard Active</span></div><a class="flex items-center gap-2 text-body-sm text-tertiary-fixed-dim hover:text-on-tertiary transition-colors" data-path="dang-xuat" href="#"><span class="material-symbols-outlined text-[18px]">logout</span><span>Đăng xuất / Khóa phiên</span></a></div></aside><div class="pl-[260px]"><main class="w-full min-h-[calc(100vh-64px)] pt-16 px-gutter py-gutter bg-surface"><div class="flex flex-col w-full">
+<!-- Breadcrumb & Status Pill -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm">
+<span>Cổng Quản Trị</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span>Tài Chính &amp; Đối Soát P&amp;L</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="font-button-text text-primary">Đối Soát &amp; Khớp Số Liệu (ADM-024)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary font-label-caps text-label-caps uppercase">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        EP-11 FINANCE WORKBENCH
+      </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-sand text-tertiary font-label-caps text-label-caps uppercase">
+<span class="material-symbols-outlined text-[15px] text-tertiary">history_toggle_off</span>
+        Kỳ 02/2026 (Live T+1)
+      </span>
+</div>
+</div>
+<!-- Header Info Bar -->
+<div class="bg-surface-container rounded-xl p-space-lg mb-space-lg shadow-sm relative overflow-hidden">
+<div class="relative z-10 flex flex-col xl:flex-row xl:items-center justify-between gap-space-lg">
+<div class="max-w-3xl">
+<div class="flex items-center gap-2 mb-1 text-terracotta-accent font-label-caps text-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+          Multi-Channel Reconciliation Engine • BR-11 Compliance
+        </div>
+<h1 class="font-headline-md text-headline-md text-text-heading mb-space-xs">
+          Đối Soát Dòng Tiền Đa Kênh, Khớp Dữ Liệu Thanh Toán &amp; Xử Lý Ngoại Lệ
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Tiếp nhận sao kê cổng thanh toán (VNPay, Momo), đối soát dòng tiền thu hộ COD từ đơn vị vận chuyển (Viettel Post, GHTK), đối chiếu quyết toán doanh thu sàn TMĐT (Shopee, TikTok Shop) và giải quyết các ca chênh lệch/ngoại lệ tài chính làng nghề Đông Giang.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm self-start xl:self-auto shrink-0">
+<button class="inline-flex items-center gap-2 px-space-lg py-space-sm rounded bg-surface-sand text-primary hover:bg-surface-dim font-button-text text-button-text transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+          + Nhập Sao Kê Mới (CSV/API)
+        </button>
+<button class="inline-flex items-center gap-2 px-space-lg py-space-sm rounded bg-primary text-on-primary hover:bg-primary-container font-button-text text-button-text transition-transform active:scale-95 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">sync_saved_locally</span>
+          Chạy Tự Động Khớp Batch
+        </button>
+</div>
+</div>
+</div>
+<!-- Sub-navigation Tabs -->
+<div class="flex items-center gap-space-xs mb-space-lg border-b border-surface-dim pb-0 overflow-x-auto">
+<button class="inline-flex items-center gap-2 px-space-md py-3 rounded-t-lg bg-surface-container text-primary font-button-text text-button-text border-b-2 border-primary">
+<span class="material-symbols-outlined text-[18px]">compare_arrows</span>
+<span>Hàng Đợi Đối Soát &amp; Khớp Tự Động (Matching Workbench)</span>
+<span class="px-2 py-0.5 rounded-full bg-primary/15 text-primary text-[12px] font-bold">421</span>
+</button>
+<button class="inline-flex items-center gap-2 px-space-md py-3 text-on-surface-variant hover:text-text-heading font-button-text text-button-text transition-colors">
+<span class="material-symbols-outlined text-[18px]">fact_check</span>
+<span>Hồ Sơ Sao Kê Nhập Liệu (Import Batches)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-sand text-tertiary text-[12px]">14</span>
+</button>
+<button class="inline-flex items-center gap-2 px-space-md py-3 text-on-surface-variant hover:text-text-heading font-button-text text-button-text transition-colors">
+<span class="material-symbols-outlined text-[18px] text-terracotta-accent">warning_amber</span>
+<span class="text-terracotta-accent font-semibold">Hàng Đợi Xử Lý Lệch Số Liệu (Exceptions Queue)</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-secondary text-[12px] font-bold">06</span>
+</button>
+</div>
+<!-- KPI Strip (4 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-xl">
+<!-- Card 1 -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Tổng giá trị đối soát kỳ này</span>
+<div class="w-8 h-8 rounded bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-text-heading tracking-tight">284.500.000đ</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">calendar_month</span>
+          Kỳ đối soát 11/02 • 18/02/2026
+        </div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Tỷ lệ khớp tự động (Exact Match)</span>
+<div class="w-8 h-8 rounded bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-primary tracking-tight">97.8%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(412/421 txns)</span>
+</div>
+<!-- Progress bar -->
+<div class="w-full bg-surface-sand h-1.5 rounded-full overflow-hidden mt-2">
+<div class="bg-primary h-full rounded-full" style="width: 97.8%"></div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-secondary-fixed/50 rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<span class="font-label-caps text-label-caps text-secondary uppercase font-semibold">Số ca phát sinh ngoại lệ lệch tiền</span>
+<div class="w-8 h-8 rounded bg-secondary-container/40 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">error_outline</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-secondary tracking-tight">06 Ca</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Lệch: 1.420.000đ</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Cần rà soát chứng từ &amp; cước bảo hiểm
+        </div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Tiền COD bưu cục chưa chuyển về</span>
+<div class="w-8 h-8 rounded bg-surface-sand text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-text-heading tracking-tight">32.600.000đ</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-terracotta-accent">schedule</span>
+          Viettel Post &amp; GHTK chu kỳ T+3 thứ Ba tới
+        </div>
+</div>
+</div>
+</div>
+<!-- Filter Toolbar -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row gap-space-md items-stretch lg:items-center justify-between">
+<!-- Search -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-space-md py-2 bg-surface rounded-lg font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary transition-all" placeholder="Tìm theo mã giao dịch sàn, mã đơn #DN-, mã sao kê, ref hash..." type="text"/>
+</div>
+<!-- Dropdown Filters -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<div class="relative">
+<select class="appearance-none bg-surface pl-3 pr-8 py-2 rounded-lg font-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer">
+<option>Nguồn: Tất cả kênh</option>
+<option>Viettel Post COD</option>
+<option>Shopee Payout</option>
+<option>TikTok Shop Settlement</option>
+<option>VNPay Gateway</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface pl-3 pr-8 py-2 rounded-lg font-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer">
+<option>Trạng thái: Tất cả</option>
+<option>Khớp hoàn toàn</option>
+<option>Lệch phí sàn</option>
+<option>Lệch tiền thu hộ COD</option>
+<option>Thiếu mã đơn hàng</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface pl-3 pr-8 py-2 rounded-lg font-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer">
+<option>Độ lệch: Mọi mức</option>
+<option>&gt; 500.000đ (Cần duyệt kép)</option>
+<option>100.000đ - 500.000đ</option>
+<option>&lt; 100.000đ</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface pl-3 pr-8 py-2 rounded-lg font-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer">
+<option>Kỳ 02/2026 (Hiện tại)</option>
+<option>Kỳ 01/2026</option>
+<option>Kỳ 12/2025</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<button class="p-2 rounded-lg bg-surface-sand text-tertiary hover:bg-surface-dim transition-colors" title="Làm mới bộ lọc" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Data Table (Matching Workbench) -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-sm mb-space-xl">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-sand/80 text-on-surface-variant font-label-caps text-label-caps uppercase border-b border-surface-dim">
+<th class="py-3 px-space-md">Mã Batch &amp; Ngày Nhận</th>
+<th class="py-3 px-space-md">Kênh / Đối Tác</th>
+<th class="py-3 px-space-md">Mã Đơn &amp; Khách Hàng</th>
+<th class="py-3 px-space-md text-right">Sổ Sách (Expected)</th>
+<th class="py-3 px-space-md text-right">Thực Nhận (Actual)</th>
+<th class="py-3 px-space-md text-right">Chênh Lệch</th>
+<th class="py-3 px-space-md">Nguyên Nhân &amp; Bằng Chứng</th>
+<th class="py-3 px-space-md text-center">Trạng Thái</th>
+<th class="py-3 px-space-md text-center">Thao Tác</th>
+</tr>
+</thead>
+<tbody class="font-body-sm divide-y divide-surface-dim">
+<!-- Row 1: Viettel Post Exception -->
+<tr class="hover:bg-surface/60 transition-colors bg-secondary-fixed/20">
+<td class="py-3.5 px-space-md">
+<div class="font-mono text-xs font-semibold text-text-heading">#ST-20260218-VTP</div>
+<div class="text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">event</span> 18/02/2026 09:14
+              </div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 font-medium text-text-heading">
+<span class="material-symbols-outlined text-[16px] text-terracotta-accent">local_post_office</span>
+                Viettel Post COD
+              </div>
+<div class="text-[11px] text-on-surface-variant">Hub Đông Giang #41</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-mono text-xs font-bold text-primary">#DN-20260215-084</div>
+<div class="text-[12px] text-on-surface-variant">Nguyễn T*** (Hà Nội)</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-medium text-text-heading">
+              1.450.000đ
+            </td>
+<td class="py-3.5 px-space-md text-right font-medium text-text-heading">
+              1.432.000đ
+            </td>
+<td class="py-3.5 px-space-md text-right font-bold text-secondary">
+              -18.000đ
+            </td>
+<td class="py-3.5 px-space-md max-w-xs">
+<div class="text-[12px] text-on-surface line-clamp-1">Lệch cước phụ phí bảo hiểm hàng dễ vỡ OCOP</div>
+<div class="text-[11px] text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">attach_file</span> VTP_Bill_84.pdf
+              </div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-secondary-container/30 text-secondary border border-secondary/20">
+                Chờ Tra Soát Bưu Cục
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="px-2 py-1 rounded bg-surface text-primary hover:bg-surface-sand text-[12px] font-button-text transition-colors" type="button">
+                  Khớp Thủ Công
+                </button>
+<button class="px-2 py-1 rounded bg-secondary text-on-secondary hover:bg-secondary/90 text-[12px] font-button-text transition-colors" type="button">
+                  Tạo Claim
+                </button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Shopee Accepted -->
+<tr class="hover:bg-surface/60 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="font-mono text-xs font-semibold text-text-heading">#ST-20260217-SHP</div>
+<div class="text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">event</span> 17/02/2026 15:40
+              </div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 font-medium text-text-heading">
+<span class="material-symbols-outlined text-[16px] text-terracotta-accent">storefront</span>
+                Shopee Mall Settlement
+              </div>
+<div class="text-[11px] text-on-surface-variant">Payout ID: SHP-98442</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-mono text-xs font-bold text-primary">#DN-20260214-042</div>
+<div class="text-[12px] text-on-surface-variant">Trần M*** (Đà Nẵng)</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-medium text-text-heading">
+              850.000đ
+            </td>
+<td class="py-3.5 px-space-md text-right font-medium text-text-heading">
+              795.000đ
+            </td>
+<td class="py-3.5 px-space-md text-right font-semibold text-terracotta-accent">
+              -55.000đ
+            </td>
+<td class="py-3.5 px-space-md max-w-xs">
+<div class="text-[12px] text-on-surface line-clamp-1">Khấu trừ voucher đồng tài trợ chiến dịch Lễ Hội Bản Sắc</div>
+<div class="text-[11px] text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Đã hạch toán chi phí MKT
+              </div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-tertiary-fixed text-on-tertiary-fixed">
+                Khớp Chấp Nhận (Có Chứng Từ)
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-2.5 py-1 rounded bg-surface-sand text-tertiary hover:bg-surface-dim text-[12px] font-button-text transition-colors" type="button">
+                Xem Chi Tiết
+              </button>
+</td>
+</tr>
+<!-- Row 3: VNPay 100% Match -->
+<tr class="hover:bg-surface/60 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="font-mono text-xs font-semibold text-text-heading">#ST-20260217-VNP</div>
+<div class="text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">event</span> 17/02/2026 11:22
+              </div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 font-medium text-text-heading">
+<span class="material-symbols-outlined text-[16px] text-primary">qr_code_2</span>
+                Cổng VNPay QR
+              </div>
+<div class="text-[11px] text-on-surface-variant">Trace: VNP-667104</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-mono text-xs font-bold text-primary">#DN-20260217-091</div>
+<div class="text-[12px] text-on-surface-variant">Lê Đ*** (TP.HCM)</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-medium text-text-heading">
+              1.950.000đ
+            </td>
+<td class="py-3.5 px-space-md text-right font-medium text-text-heading">
+              1.950.000đ
+            </td>
+<td class="py-3.5 px-space-md text-right font-bold text-primary">
+              0đ
+            </td>
+<td class="py-3.5 px-space-md max-w-xs">
+<div class="text-[12px] text-on-surface line-clamp-1">Khớp số liệu 100% (Phí cổng 1.1% tách dòng minh bạch)</div>
+<div class="text-[11px] text-outline">Ghi nhận tài khoản VCB HTX</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-medium bg-primary/10 text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Đã Khớp Hoàn Toàn (Matched)
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-2.5 py-1 rounded bg-surface-sand text-tertiary hover:bg-surface-dim text-[12px] font-button-text transition-colors" type="button">
+                Xem Bút Toán
+              </button>
+</td>
+</tr>
+<!-- Row 4: TikTok Shop -->
+<tr class="hover:bg-surface/60 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="font-mono text-xs font-semibold text-text-heading">#ST-20260216-TTS</div>
+<div class="text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">event</span> 16/02/2026 18:05
+              </div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 font-medium text-text-heading">
+<span class="material-symbols-outlined text-[16px] text-on-surface">smart_display</span>
+                TikTok Shop Payout
+              </div>
+<div class="text-[11px] text-on-surface-variant">Batch TT-4019</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-mono text-xs font-bold text-primary">#DN-20260213-030</div>
+<div class="text-[12px] text-on-surface-variant">Phạm Q*** (Quảng Nam)</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-medium text-text-heading">
+              620.000đ
+            </td>
+<td class="py-3.5 px-space-md text-right font-medium text-text-heading">
+              590.000đ
+            </td>
+<td class="py-3.5 px-space-md text-right font-semibold text-terracotta-accent">
+              -30.000đ
+            </td>
+<td class="py-3.5 px-space-md max-w-xs">
+<div class="text-[12px] text-on-surface line-clamp-1">Phí hoa hồng affiliate KOL video review khăn dệt</div>
+<div class="text-[11px] text-on-surface-variant">Hợp đồng truyền thông làng nghề</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-tertiary-fixed text-on-tertiary-fixed">
+                Đã Phân Bổ Chi Phí
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-2.5 py-1 rounded bg-surface-sand text-tertiary hover:bg-surface-dim text-[12px] font-button-text transition-colors" type="button">
+                Xem Chi Tiết
+              </button>
+</td>
+</tr>
+<!-- Row 5: GHTK Undelivered COD -->
+<tr class="hover:bg-surface/60 transition-colors bg-secondary-fixed/15">
+<td class="py-3.5 px-space-md">
+<div class="font-mono text-xs font-semibold text-text-heading">#ST-20260215-GHT</div>
+<div class="text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">event</span> 15/02/2026 14:10
+              </div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 font-medium text-text-heading">
+<span class="material-symbols-outlined text-[16px] text-terracotta-accent">local_shipping</span>
+                GHTK Express COD
+              </div>
+<div class="text-[11px] text-on-surface-variant">Vận đơn: GHTK-881290</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-mono text-xs font-bold text-primary">#DN-20260212-019</div>
+<div class="text-[12px] text-on-surface-variant">Bùi V*** (Hải Phòng)</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-medium text-text-heading">
+              480.000đ
+            </td>
+<td class="py-3.5 px-space-md text-right font-semibold text-secondary">
+              0đ
+            </td>
+<td class="py-3.5 px-space-md text-right font-bold text-secondary">
+              -480.000đ
+            </td>
+<td class="py-3.5 px-space-md max-w-xs">
+<div class="text-[12px] text-on-surface line-clamp-1">Kiện hàng dời lịch giao sang đợt 3 chưa nộp tiền về Hub</div>
+<div class="text-[11px] text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">schedule</span> Hạn giao lại: 19/02/2026
+              </div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-secondary-fixed text-secondary">
+                Treo Tiền COD (Chờ Giao Lại)
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-2 py-1 rounded bg-secondary text-on-secondary hover:bg-secondary/90 text-[12px] font-button-text transition-colors" type="button">
+                Đôn Đốc Bưu Cục
+              </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="p-space-md bg-surface-sand/40 flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm border-t border-surface-dim">
+<div class="flex items-center gap-2">
+<span>Hiển thị 5 trên 421 giao dịch đối soát</span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline"></span>
+<span class="text-primary font-medium">97.8% tỷ lệ tự động khớp hoàn hảo</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded bg-surface hover:bg-surface-dim disabled:opacity-50 text-on-surface" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="px-3 py-1 rounded bg-primary text-on-primary font-medium text-xs">1</button>
+<button class="px-3 py-1 rounded bg-surface hover:bg-surface-dim text-on-surface font-medium text-xs">2</button>
+<button class="px-3 py-1 rounded bg-surface hover:bg-surface-dim text-on-surface font-medium text-xs">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="px-3 py-1 rounded bg-surface hover:bg-surface-dim text-on-surface font-medium text-xs">43</button>
+<button class="p-1.5 rounded bg-surface hover:bg-surface-dim text-on-surface">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Formula & Balancing Equations Block -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Formula Section -->
+<div class="lg:col-span-2 bg-surface-container rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-2 mb-space-sm text-primary font-label-caps text-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">functions</span>
+        Công Thức Đối Soát &amp; Cân Bằng Dòng Tiền Minh Bạch
+      </div>
+<div class="bg-surface-sand/60 rounded-lg p-space-md mb-space-md">
+<div class="font-mono text-sm font-semibold text-text-heading flex flex-wrap items-center gap-2 leading-relaxed">
+<span class="px-2 py-1 bg-surface rounded text-primary">[Doanh Thu Sổ Sách OMS]</span>
+<span class="text-terracotta-accent font-bold">−</span>
+<span class="px-2 py-1 bg-surface rounded text-terracotta-accent">[Phí Cổng / Sàn Thực Tế]</span>
+<span class="text-terracotta-accent font-bold">−</span>
+<span class="px-2 py-1 bg-surface rounded text-terracotta-accent">[Chi Phí Vận Chuyển &amp; Bảo Hiểm OCOP]</span>
+<span class="text-primary font-bold">=</span>
+<span class="px-2.5 py-1 bg-primary text-on-primary rounded font-bold shadow-sm">[Dòng Tiền Thực Nhận Tài Khoản Kế Toán]</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Hệ thống tự động thực thi phân rã chi phí trên từng mã đơn hàng #DN- và liên kết khóa sổ đối soát với nhật ký kiểm toán bất biến. Bất kỳ chênh lệch nào chưa xác định nguyên nhân sẽ được tạm giữ tại tài khoản treo 1388 theo chuẩn mực kế toán HTX Việt Nam.
+      </p>
+</div>
+<!-- Legal & RBAC Governance Guard -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-space-sm text-terracotta-accent font-label-caps text-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">shield_person</span>
+          Quy Tắc An Toàn Tài Chính BR-11 &amp; BR-18
+        </div>
+<ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary mt-0.5 shrink-0">lock</span>
+<span><strong>Read-only Raw Statement:</strong> Tuyệt đối không chỉnh sửa dữ liệu gốc trên dòng sao kê ngân hàng/sàn.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-terracotta-accent mt-0.5 shrink-0">verified_user</span>
+<span><strong>Maker-Checker Approval:</strong> Mọi điều chỉnh hoặc xóa nợ (Write-off) chênh lệch &gt; 500.000đ phải có chữ ký số phê duyệt kép.</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-dim flex items-center justify-between text-[11px] font-label-caps text-outline uppercase">
+<span>PDPD NĐ 13/2023 Compliant</span>
+<span class="text-primary font-semibold">Audit Key: FIN-024-LIVE</span>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

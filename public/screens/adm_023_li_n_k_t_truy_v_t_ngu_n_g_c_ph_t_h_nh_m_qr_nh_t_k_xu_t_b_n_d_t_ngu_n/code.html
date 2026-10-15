@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,600;1,400&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary":"#aa361c","on-tertiary-container":"#b6cdbb","on-error":"#ffffff","surface-tint":"#296a4d","tertiary-fixed-dim":"#b5ccbb","on-primary":"#ffffff","surface-container":"#f5ede0","inverse-on-surface":"#f8f0e3","outline-variant":"#bfc9c1","tertiary":"#2c4134","on-surface":"#1e1b14","on-error-container":"#93000a","surface-bright":"#fff8f0","on-tertiary":"#ffffff","primary":"#00452d","error":"#ba1a1a","secondary-container":"#ff7353","on-primary-container":"#93d5b2","primary-fixed-dim":"#93d5b1","surface-sand":"#EDE0CC","secondary-fixed":"#ffdad2","on-tertiary-fixed":"#0b1f14","primary-container":"#1b5e42","on-secondary-container":"#6b1100","on-tertiary-fixed-variant":"#374b3e","terracotta-accent":"#C84B2F","on-secondary":"#ffffff","secondary-fixed-dim":"#ffb4a3","primary-fixed":"#aef1cc","on-primary-fixed-variant":"#075136","surface-dim":"#e1d9cc","surface-variant":"#e9e2d5","inverse-primary":"#93d5b1","on-background":"#1e1b14","tertiary-fixed":"#d0e8d6","text-heading":"#1A2E22","error-container":"#ffdad6","forest-accent":"#1B5E42","on-secondary-fixed-variant":"#891e05","tertiary-container":"#43584a","inverse-surface":"#343027","surface-container-highest":"#e9e2d5","surface-container-low":"#fbf3e6","background":"#fff8f0","on-secondary-fixed":"#3d0600","text-body":"#3D3028","surface-container-lowest":"#ffffff","surface":"#fff8f0","surface-container-high":"#efe7da","on-surface-variant":"#404943","outline":"#707972","on-primary-fixed":"#002113"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","gutter-mobile":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","space-2xl":"4rem","space-md":"1rem","space-xl":"2.5rem","margin-mobile":"1.25rem","space-xs":"0.25rem","margin":"2.5rem"},fontFamily:{"headline-xl-mobile":["Playfair Display"],"quote-lg":["Lora"],"body-md":["Inter"],"headline-xl":["Playfair Display"],"button-text":["Inter"],"headline-md":["Playfair Display"],"quote-sm":["Lora"],"label-caps":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Playfair Display"],"headline-lg":["Playfair Display"],"body-lg":["Inter"]},fontSize:{"headline-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"quote-lg":["20px",{"lineHeight":"32px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"button-text":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"quote-sm":["16px",{"lineHeight":"26px","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"0em","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body min-h-screen"><header class="fixed top-0 left-0 w-full h-16 bg-surface z-50 px-gutter flex items-center justify-between border-b border-surface-dim shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><img alt="Logo nguyên bản xanh.png" class="h-8 w-auto object-contain" src="/favicon.svg"/><div class="flex flex-col"><span class="font-headline-md text-[17px] leading-tight font-semibold text-text-heading">Dệt Nguồn Cơ Tu</span><span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Đông Giang • Quảng Nam</span></div><span class="ml-space-xs inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 text-primary font-button-text text-body-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>CỔNG QUẢN TRỊ ADMIN</span></div><div class="flex-1 max-w-xl mx-gutter"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-1.5 bg-surface-container rounded-lg border border-surface-dim font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-primary transition-colors" placeholder="Tra cứu nhanh SKU / Mã Đơn OMS / Khách hàng / Hóa đơn điện tử..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-2.5 py-1 bg-surface-sand rounded font-label-caps text-label-caps text-tertiary border border-outline-variant/40"><span class="material-symbols-outlined text-[16px] text-primary">lock</span><span>TLS 1.3 SECURE</span></div><div class="hidden xl:flex items-center gap-space-xs px-2.5 py-1 bg-surface-sand rounded font-label-caps text-label-caps text-tertiary border border-outline-variant/40"><span class="material-symbols-outlined text-[16px] text-primary">verified_user</span><span>PDPD NĐ 13/2023</span></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-sm border-l border-surface-dim"><div class="text-right hidden md:block"><div class="font-button-text text-body-sm text-text-heading">Lê Quang Huy</div><div class="font-label-caps text-[10px] text-outline uppercase">Super Admin / Finance / Ops</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed top-16 left-0 bottom-0 w-[260px] bg-tertiary text-on-tertiary z-40 flex flex-col border-r border-tertiary-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="p-space-md border-b border-tertiary-container"><div class="font-label-caps text-label-caps text-tertiary-fixed uppercase font-semibold tracking-wider">BẢNG ĐIỀU KHIỂN HTX v2.4 PROD</div><div class="font-body-sm text-[11px] text-on-tertiary-container/80 mt-0.5">Hệ thống phân quyền RBAC</div></div><nav class="flex-1 overflow-y-auto px-space-xs py-space-sm space-y-0.5" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="tong-quan-dieu-hanh" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">dashboard</span><span>Tổng quan điều hành</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">ADM-001</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="nhan-su-phan-quyen" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">badge</span><span>Nhân sự &amp; Phân quyền</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">ADM-002</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="danh-muc-san-pham" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">category</span><span>Danh mục &amp; Sản phẩm</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">003-004</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="governance-phap-che" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">gavel</span><span>Governance &amp; Pháp chế</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">ADM-005</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="kenh-ban-bundle" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">storefront</span><span>Kênh bán &amp; Bundle</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">006-010</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="don-hang-da-kenh-oms" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">shopping_bag</span><span>Đơn hàng đa kênh OMS</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">008-009</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="kho-van-ton-kho" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">inventory_2</span><span>Kho vận &amp; Tồn kho</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">011-015</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="dong-goi-giao-nhan" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">local_shipping</span><span>Đóng gói &amp; Giao nhận</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">016-017</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="khach-hang-cskh" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">support_agent</span><span>Khách hàng &amp; CSKH</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">018-020</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="doi-tra-hoan-tien" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">assignment_return</span><span>Đổi trả &amp; Hoàn tiền</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">021-022</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="nguon-goc-cap-ma-qr" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">qr_code_scanner</span><span>Nguồn gốc &amp; Cấp mã QR</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">ADM-023</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="tai-chinh-doi-soat-pl" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">payments</span><span>Tài chính &amp; Đối soát P&amp;L</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">024-025</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-body-sm text-tertiary-fixed-dim hover:bg-tertiary-container hover:text-on-tertiary transition-colors" data-path="nhat-ky-audit-an-ninh" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">security</span><span>Nhật ký Audit &amp; An ninh</span></div><span class="font-label-caps text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary-fixed">026-029</span></a></nav><div class="p-space-md border-t border-tertiary-container bg-tertiary"><div class="flex items-center gap-2 mb-space-sm text-on-tertiary-container"><span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span><span class="font-label-caps text-[10px] uppercase tracking-wider">Last-Admin Guard Active</span></div><a class="flex items-center gap-2 text-body-sm text-tertiary-fixed-dim hover:text-on-tertiary transition-colors" data-path="dang-xuat" href="#"><span class="material-symbols-outlined text-[18px]">logout</span><span>Đăng xuất / Khóa phiên</span></a></div></aside><div class="pl-[260px]"><main class="w-full min-h-[calc(100vh-64px)] pt-16 px-gutter py-gutter bg-surface"><div class="flex flex-col w-full space-y-space-lg">
+<!-- BREADCRUMB & METADATA -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm text-body-sm text-outline">
+<nav class="flex items-center gap-2">
+<span class="hover:text-primary cursor-pointer transition-colors">Cổng Quản Trị</span>
+<span class="text-[12px] opacity-60">/</span>
+<span class="hover:text-primary cursor-pointer transition-colors">Nguồn Gốc &amp; Cấp Mã QR</span>
+<span class="text-[12px] opacity-60">/</span>
+<span class="text-text-heading font-button-text">Liên Kết Truy Vết &amp; Phát Hành QR (ADM-023)</span>
+</nav>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-sand text-tertiary font-label-caps text-label-caps uppercase tracking-wider">EP-10 PROVENANCE</span>
+<span class="px-2 py-0.5 rounded bg-surface-sand text-tertiary font-label-caps text-label-caps uppercase tracking-wider">QR LIFECYCLE</span>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-label-caps text-label-caps uppercase tracking-wider">IMMUTABLE AUDIT</span>
+</div>
+</div>
+<!-- HEADER INFO BAR -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col xl:flex-row xl:items-center justify-between gap-space-lg relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/5 rounded-full pointer-events-none"></div>
+<div class="space-y-1.5 max-w-3xl relative z-10">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<h1 class="font-headline-md text-headline-md text-text-heading">
+          Liên Kết Chuỗi Truy Vết, Quản Trị Mã QR &amp; Nhật Ký Xuất Bản Di Sản
+        </h1>
+</div>
+<p class="font-body-md text-body-md text-text-body">
+        Xác thực tính nhất quán giữa Sản phẩm • Biến thể • Lô dệt • Chứng nhận OCOP • Nghệ nhân Cơ Tu, phát hành/thu hồi mã QR công khai bất biến và giám sát nhật ký truy cập quét chip NFC/QR từ khách hàng.
+      </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm relative z-10">
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded bg-surface-sand text-text-heading font-button-text text-button-text hover:bg-surface-dim transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-terracotta-accent">download</span>
+<span>Tải Vector QR In Tem OCOP</span>
+</button>
+<button class="inline-flex items-center gap-2 px-space-lg py-2.5 rounded bg-primary text-on-primary font-button-text text-button-text hover:bg-forest-accent transition-all shadow-md active:scale-95">
+<span class="material-symbols-outlined text-[18px]">add_link</span>
+<span>+ Khởi Tạo Mã QR Cho Lô Mới</span>
+</button>
+</div>
+</div>
+<!-- NAVIGATION TABS -->
+<div class="flex items-center gap-space-xs border-b border-surface-dim pb-1 overflow-x-auto">
+<button class="px-space-md py-2 text-body-sm font-button-text text-on-surface-variant hover:text-text-heading transition-colors inline-flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">account_tree</span>
+<span>Cây Liên Kết Truy Vết (Trace Chain Links)</span>
+</button>
+<button class="px-space-md py-2 text-body-sm font-button-text text-primary border-b-2 border-primary transition-colors inline-flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">qr_code_2</span>
+<span>Danh Sách Mã QR Đã Cấp &amp; Trạng Thái (Active QR)</span>
+<span class="px-1.5 py-0.2 rounded-full bg-primary/10 text-primary font-label-caps text-[10px]">1.385</span>
+</button>
+<button class="px-space-md py-2 text-body-sm font-button-text text-on-surface-variant hover:text-text-heading transition-colors inline-flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+<span>Nhật Ký Quét &amp; Thẩm Tra Xuất Bản (Publication Audit)</span>
+</button>
+</div>
+<!-- KPI STRIP -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider">Tổng mã QR định danh</span>
+<div class="w-8 h-8 rounded-lg bg-surface-sand flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">qr_code</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-lg text-headline-lg text-text-heading font-semibold">1.420 <span class="text-body-sm font-normal text-outline">Mã</span></div>
+<div class="mt-1 flex items-center gap-1.5 font-body-sm text-body-sm text-forest-accent">
+<span class="material-symbols-outlined text-[16px]">nfc</span>
+<span>100% gán chip NFC NTAG424</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider">Mã QR hoạt động công khai</span>
+<div class="w-8 h-8 rounded-lg bg-surface-sand flex items-center justify-center text-forest-accent">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-lg text-headline-lg text-primary font-semibold">1.385 <span class="text-body-sm font-normal text-outline">Mã</span></div>
+<div class="mt-1 flex items-center gap-1.5 font-body-sm text-body-sm text-outline">
+<span class="material-symbols-outlined text-[16px] text-terracotta-accent">change_circle</span>
+<span>35 mã thu hồi / hiệu chỉnh</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider">Lượt quét nguồn gốc tuần</span>
+<div class="w-8 h-8 rounded-lg bg-surface-sand flex items-center justify-center text-terracotta-accent">
+<span class="material-symbols-outlined text-[20px]">query_stats</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-lg text-headline-lg text-text-heading font-semibold">3.840 <span class="text-body-sm font-normal text-outline">Lượt</span></div>
+<div class="mt-1 flex items-center gap-1.5 font-body-sm text-body-sm text-forest-accent">
+<span class="material-symbols-outlined text-[16px]">devices</span>
+<span>89% từ thẻ sở hữu thực tế</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider">Xác thực OCOP 4 sao</span>
+<div class="w-8 h-8 rounded-lg bg-surface-sand flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">award_star</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-lg text-headline-lg text-text-heading font-semibold">100%</div>
+<div class="mt-1 flex items-center gap-1.5 font-body-sm text-body-sm text-outline">
+<span class="material-symbols-outlined text-[16px] text-primary">cloud_done</span>
+<span>CSDL Sở NN Quảng Nam</span>
+</div>
+</div>
+</div>
+</div>
+<!-- FILTER TOOLBAR -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm space-y-space-sm">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-sm items-center">
+<!-- Search -->
+<div class="lg:col-span-5 relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full pl-9 pr-3 py-2 bg-surface-container rounded-lg font-body-sm text-text-heading placeholder:text-outline focus:outline-none focus:bg-surface-bright transition-all" placeholder="Tìm theo mã QR ID, mã lô dệt #BATCH-, tên nghệ nhân, sản phẩm..." type="text"/>
+</div>
+<!-- Cấp độ gán -->
+<div class="lg:col-span-2">
+<select class="w-full px-3 py-2 bg-surface-container rounded-lg font-body-sm text-text-heading focus:outline-none focus:bg-surface-bright transition-all">
+<option>Cấp độ: Tất cả</option>
+<option>Master SKU (Sản phẩm)</option>
+<option>Cấp độ Lô (Batch)</option>
+<option>Từng chiếc Serial (Độc bản)</option>
+</select>
+</div>
+<!-- Nghệ nhân phụ trách -->
+<div class="lg:col-span-3">
+<select class="w-full px-3 py-2 bg-surface-container rounded-lg font-body-sm text-text-heading focus:outline-none focus:bg-surface-bright transition-all">
+<option>Nghệ nhân: Tất cả nghệ nhân</option>
+<option>Alăng Thị Điệp (Xã Ba)</option>
+<option>Briu Thị Hoa (Đhô-rôống)</option>
+<option>Bh'ling Nhàn (A-tiêng)</option>
+<option>HTX Dệt Bha-lê</option>
+</select>
+</div>
+<!-- Trạng thái -->
+<div class="lg:col-span-2">
+<select class="w-full px-3 py-2 bg-surface-container rounded-lg font-body-sm text-text-heading focus:outline-none focus:bg-surface-bright transition-all">
+<option>Trạng thái: Tất cả</option>
+<option>Đang hoạt động (Live)</option>
+<option>Bản nháp chưa duyệt</option>
+<option>Tạm khóa hiệu chỉnh</option>
+<option>Đã thu hồi (Revoked)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- DATA TABLE -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-text-body">
+<thead class="bg-surface-sand text-text-heading font-button-text text-[13px] tracking-wide">
+<tr>
+<th class="py-3 px-space-md">Mã QR &amp; Token Hash</th>
+<th class="py-3 px-space-md">Cấp Độ</th>
+<th class="py-3 px-space-md min-w-[200px]">Sản Phẩm &amp; Biến Thể</th>
+<th class="py-3 px-space-md min-w-[220px]">Lô Dệt &amp; Nghệ Nhân</th>
+<th class="py-3 px-space-md min-w-[200px]">Thẩm Định OCOP &amp; SHA-256</th>
+<th class="py-3 px-space-md">Kích Hoạt</th>
+<th class="py-3 px-space-md text-right">Lượt Quét</th>
+<th class="py-3 px-space-md text-center">Trạng Thái</th>
+<th class="py-3 px-space-md text-right">Hành Động</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-dim">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-surface-sand flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px] text-primary">qr_code</span>
+</div>
+<div class="flex flex-col">
+<span class="font-button-text text-text-heading">QR-KTU-2026-0218-01</span>
+<span class="font-label-caps text-[10px] text-outline">Token #7f8a9b</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-forest-accent font-label-caps text-[11px] font-semibold">Từng Chiếc (Serial)</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-text-heading">Túi Đeo Chéo Za Ră Xanh Chàm</span>
+<span class="text-outline text-body-sm">Vải bông rẫy, nhuộm lá chàm</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps text-[11px] text-primary font-semibold">BATCH-20260218-KTU01</span>
+<span class="text-text-heading">NN: Alăng Thị Điệp • Xã Ba</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col space-y-0.5">
+<span class="inline-flex items-center gap-1 text-terracotta-accent font-semibold text-body-sm">
+<span class="material-symbols-outlined text-[14px]">star</span> OCOP 4 Sao (#QC-98)
+                </span>
+<span class="font-label-caps text-[10px] text-outline truncate max-w-[140px]" title="SHA-256: 4fa906e8b4e723cc">4fa906e8...</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="text-text-heading">18/02/2026</span>
+<span class="font-label-caps text-[10px] text-outline">v2.1 live</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-button-text text-text-heading">
+              48
+            </td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/10 text-primary font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Live
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-1.5 rounded bg-surface-sand hover:bg-surface-dim text-text-heading transition-colors" title="Xem Trang Công Khai">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+<button class="p-1.5 rounded bg-surface-sand hover:bg-surface-dim text-text-heading transition-colors" title="In Tem QR">
+<span class="material-symbols-outlined text-[16px]">print</span>
+</button>
+<button class="p-1.5 rounded bg-surface-sand hover:bg-error-container text-secondary transition-colors" title="Thu Hồi Mã">
+<span class="material-symbols-outlined text-[16px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-surface-sand flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px] text-primary">qr_code</span>
+</div>
+<div class="flex flex-col">
+<span class="font-button-text text-text-heading">QR-KTU-2026-0215-04</span>
+<span class="font-label-caps text-[10px] text-outline">Token #3c2d1e</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-sand text-tertiary font-label-caps text-[11px] font-semibold">Cấp Lô (Batch)</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-text-heading">Khăn Choàng Hoa Văn Gươi</span>
+<span class="text-outline text-body-sm">Sợi xe tự nhiên, dệt cườm chì</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps text-[11px] text-primary font-semibold">BATCH-20260215-KTU04</span>
+<span class="text-text-heading">NN: Briu Thị Hoa • Đhô-rôống</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col space-y-0.5">
+<span class="inline-flex items-center gap-1 text-terracotta-accent font-semibold text-body-sm">
+<span class="material-symbols-outlined text-[14px]">star</span> OCOP 4 Sao (#QC-85)
+                </span>
+<span class="font-label-caps text-[10px] text-outline truncate max-w-[140px]" title="SHA-256: 8e9c381fbb4929a0">8e9c381f...</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="text-text-heading">15/02/2026</span>
+<span class="font-label-caps text-[10px] text-outline">v1.0 live</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-button-text text-text-heading">
+              126
+            </td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/10 text-primary font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Live
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-1.5 rounded bg-surface-sand hover:bg-surface-dim text-text-heading transition-colors" title="Xem Trang Công Khai">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+<button class="p-1.5 rounded bg-surface-sand hover:bg-surface-dim text-text-heading transition-colors" title="In Tem QR">
+<span class="material-symbols-outlined text-[16px]">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-surface-sand flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px] text-primary">qr_code</span>
+</div>
+<div class="flex flex-col">
+<span class="font-button-text text-text-heading">QR-KTU-2026-0210-09</span>
+<span class="font-label-caps text-[10px] text-outline">Token #5b6a7f</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-forest-accent font-label-caps text-[11px] font-semibold">Từng Chiếc (Serial)</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-text-heading">Set Quà Tấm Zèng &amp; Hộp Trà</span>
+<span class="text-outline text-body-sm">Phiên bản hộp quà nghi lễ</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps text-[11px] text-primary font-semibold">BATCH-20260210-ZNG02</span>
+<span class="text-text-heading">HTX Dệt Bha-lê • Đông Giang</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col space-y-0.5">
+<span class="inline-flex items-center gap-1 text-primary font-semibold text-body-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span> Làng Nghề Cơ Tu
+                </span>
+<span class="font-label-caps text-[10px] text-outline truncate max-w-[140px]">b721ea02...</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="text-text-heading">10/02/2026</span>
+<span class="font-label-caps text-[10px] text-outline">v2.0 live</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-button-text text-text-heading">
+              89
+            </td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/10 text-primary font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Live
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-1.5 rounded bg-surface-sand hover:bg-surface-dim text-text-heading transition-colors" title="Xem Trang Công Khai">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+<button class="p-1.5 rounded bg-surface-sand hover:bg-surface-dim text-text-heading transition-colors" title="In Tem QR">
+<span class="material-symbols-outlined text-[16px]">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-surface-sand flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px] text-terracotta-accent">lock</span>
+</div>
+<div class="flex flex-col">
+<span class="font-button-text text-text-heading">QR-KTU-2026-0128-02</span>
+<span class="font-label-caps text-[10px] text-outline">Token #9e8d7c</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-sand text-tertiary font-label-caps text-[11px] font-semibold">Cấp Lô (Batch)</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-text-heading">Túi Tote A-Riêng Quai Da</span>
+<span class="text-outline text-body-sm">Đang bổ sung chứng chỉ độ bền</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps text-[11px] text-primary font-semibold">BATCH-20260128-AR02</span>
+<span class="text-text-heading">NN: Alăng Thị Mơ</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col space-y-0.5">
+<span class="inline-flex items-center gap-1 text-outline font-semibold text-body-sm">
+<span class="material-symbols-outlined text-[14px]">star_half</span> OCOP 3 Sao Tỉnh
+                </span>
+<span class="font-label-caps text-[10px] text-outline truncate max-w-[140px]">c9811ab2...</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="text-text-heading">28/01/2026</span>
+<span class="font-label-caps text-[10px] text-outline">v1.1 draft</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-button-text text-text-heading">
+              312
+            </td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary/15 text-secondary font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Tạm Khóa
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="px-2 py-1 rounded bg-surface-sand hover:bg-surface-dim text-text-heading font-button-text text-[12px] transition-colors" title="Xem Lỗi Link">
+                  Xem Lỗi
+                </button>
+<button class="px-2 py-1 rounded bg-primary text-on-primary font-button-text text-[12px] hover:bg-forest-accent transition-colors" title="Mở Lại">
+                  Mở Lại
+                </button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors opacity-75">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px] text-error">cancel</span>
+</div>
+<div class="flex flex-col">
+<span class="font-button-text line-through text-outline">QR-KTU-2025-1215-88</span>
+<span class="font-label-caps text-[10px] text-error">Revoked #1a2b3c</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-outline font-label-caps text-[11px] font-semibold">Từng Chiếc (Serial)</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-text-heading">Túi Za Ră Thổ Cẩm Độc Bản</span>
+<span class="text-error text-body-sm">Đã thu hồi do lỗi chỉ dệt hạt cườm</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps text-[11px] text-outline font-semibold">BATCH-20251215-OLD</span>
+<span class="text-outline">Lô lưu kho phục chế</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col space-y-0.5">
+<span class="text-outline text-body-sm font-semibold">Lưu Kho Cổ</span>
+<span class="font-label-caps text-[10px] text-outline truncate max-w-[140px]">99d10eef...</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="text-outline">15/12/2025</span>
+<span class="font-label-caps text-[10px] text-error">Đã hủy bỏ</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-button-text text-outline">
+              14
+            </td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-error font-label-caps text-label-caps">
+                Đã Thu Hồi
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="px-2.5 py-1 rounded bg-surface-sand hover:bg-surface-dim text-secondary font-button-text text-[12px] transition-colors">
+                Xem Lý Do
+              </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Counter -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-outline border-t border-surface-dim">
+<div class="flex items-center gap-2">
+<span>Hiển thị <strong>5</strong> trong số <strong>1.420</strong> mã QR cấp quyền</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded hover:bg-surface-dim text-text-heading disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<span class="px-3 py-1 rounded bg-primary text-on-primary font-button-text text-body-sm">1</span>
+<button class="px-3 py-1 rounded hover:bg-surface-dim text-text-heading font-button-text text-body-sm">2</button>
+<button class="px-3 py-1 rounded hover:bg-surface-dim text-text-heading font-button-text text-body-sm">3</button>
+<span class="px-2">...</span>
+<button class="px-3 py-1 rounded hover:bg-surface-dim text-text-heading font-button-text text-body-sm">71</button>
+<button class="px-2 py-1 rounded hover:bg-surface-dim text-text-heading">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- GOVERNANCE SAFEGUARD BLOCK -->
+<div class="bg-surface-container p-space-lg rounded-xl shadow-sm space-y-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-forest-accent/15 flex items-center justify-center text-forest-accent">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<div>
+<h3 class="font-headline-md text-[18px] leading-tight text-text-heading font-semibold">
+          Tiêu Chuẩn Giám Sát Tuân Thủ &amp; Tính Bất Biến (BR-08 &amp; BR-12 Compliance)
+        </h3>
+<p class="font-label-caps text-[11px] text-outline uppercase tracking-wider">Hệ thống truy xuất nguồn gốc làng nghề Quảng Nam</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs text-body-sm text-text-body">
+<div class="bg-surface-bright p-space-md rounded-lg shadow-sm space-y-1">
+<div class="flex items-center gap-1.5 font-button-text text-text-heading">
+<span class="material-symbols-outlined text-[16px] text-terracotta-accent">key_off</span>
+<span>Bảo vệ danh tính &amp; Dữ liệu nhân quyền (BR-08)</span>
+</div>
+<p class="text-[13px] leading-relaxed text-outline">
+          Tuyệt đối không nhúng mã định danh cơ sở dữ liệu nội bộ (Raw DB ID) hoặc thông tin cá nhân nghệ nhân (PII) chưa có thỏa thuận vào payload mã QR công khai. Dữ liệu quét chỉ chứa Hash định danh bảo mật SHA-256 dẫn tới proxy công bố di sản.
+        </p>
+</div>
+<div class="bg-surface-bright p-space-md rounded-lg shadow-sm space-y-1">
+<div class="flex items-center gap-1.5 font-button-text text-text-heading">
+<span class="material-symbols-outlined text-[16px] text-primary">history_toggle_off</span>
+<span>Nhật ký truy vết bất biến &amp; Minh bạch lỗi (BR-12)</span>
+</div>
+<p class="text-[13px] leading-relaxed text-outline">
+          Mọi thao tác thu hồi, điều chỉnh thông tin lô dệt hoặc thay đổi nghệ nhân đều tự động ghi vết Audit Trail không thể xóa sửa. Trường hợp mã QR bị thu hồi, trang web công khai sẽ giải trình lý do lưu kho/bảo tồn để bảo vệ quyền lợi người mua.
+        </p>
+</div>
+</div>
+</div>
+</div></main></div><script>(function(){document.addEventListener('click',function(event){var link=event.target.closest('[data-path]');if(!link)return;event.preventDefault();window.parent.postMessage({type:'stitch-route',value:link.getAttribute('data-path')},'*');},true);})();</script><script>(function(){var map=[['trang chủ','trang-chu'],['bộ sưu tập','bo-suu-tap'],['bộ sưu tập tiêu biểu','bo-suu-tap'],['câu chuyện di sản','cau-chuyen-di-san'],['minh bạch nguồn gốc','minh-bach-nguon-goc'],['hỗ trợ','ho-tro'],['tất cả','danh-muc-san-pham'],['túi tote hằng ngày','danh-muc-san-pham'],['túi đeo chéo mini','danh-muc-san-pham'],['túi xách công sở','danh-muc-san-pham'],['bộ quà tặng','danh-muc-san-pham']];var normalize=function(value){return value.replace(/s+/g,' ').trim().toLowerCase()};document.querySelectorAll('a,button').forEach(function(element){var text=normalize(element.textContent||'');var found=map.find(function(item){return text===item[0]||text.startsWith(item[0]+' ')});if(found&&!element.dataset.path)element.dataset.path=found[1]});document.addEventListener('click',function(event){var link=event.target.closest('[data-path]');if(!link)return;event.preventDefault();window.parent.postMessage({type:'stitch-route',value:link.dataset.path},'*')},true)})();</script><script>(function(){var routes={"trang-chu":"trang_ch_d_t_ngu_n","bo-suu-tap":"danh_m_c_s_n_ph_m_d_t_ngu_n_1","danh-muc-san-pham":"danh_m_c_s_n_ph_m_d_t_ngu_n_1","cau-chuyen-di-san":"c_u_chuy_n_di_s_n_d_t_ngu_n_kh_p_h_nh_nh_banner_qr","minh-bach-nguon-goc":"h_s_ngu_n_g_c_c_ng_khai_public_provenance_d_t_ngu_n","ho-tro":"li_n_h_h_tr_ti_p_nh_n_di_s_n_support_request_d_t_ngu_n","gio-hang":"gi_h_ng_qu_t_ng_d_t_ngu_n","thong-tin-giao-hang":"th_ng_tin_giao_h_ng_d_t_ngu_n","xac-nhan-don":"x_c_nh_n_n_order_confirmation_d_t_ngu_n","lich-su-don-hang":"l_ch_s_n_order_history_d_t_ngu_n_1"};document.addEventListener('click',function(event){var link=event.target.closest('[data-path]');if(!link)return;var route=link.getAttribute('data-path');var target=routes[route];if(!target)return;event.preventDefault();if(window.parent!==window){window.parent.postMessage({type:'stitch-route',value:route},'*')}else{window.location.href='/public/screens/'+target+'/code.html'}},true)})();</script></body></html>

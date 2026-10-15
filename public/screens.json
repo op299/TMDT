@@ -1,0 +1,282 @@
+[
+  {
+    "id": "adm_002_qu_n_tr_nh_n_vi_n_phi_n_truy_c_p_d_t_ngu_n_admin",
+    "label": "adm 002 qu n tr nh n vi n phi n truy c p d t ngu n admin",
+    "path": "/public\\screens\\adm_002_qu_n_tr_nh_n_vi_n_phi_n_truy_c_p_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_003_qu_n_l_danh_m_c_tr_nh_so_n_bi_n_th_d_t_ngu_n_admin",
+    "label": "adm 003 qu n l danh m c tr nh so n bi n th d t ngu n admin",
+    "path": "/public\\screens\\adm_003_qu_n_l_danh_m_c_tr_nh_so_n_bi_n_th_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_004_gi_cost_media_spec_d_t_ngu_n_admin",
+    "label": "adm 004 gi cost media spec d t ngu n admin",
+    "path": "/public\\screens\\adm_004_gi_cost_media_spec_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_005_claim_ch_ng_nh_n_provenance_review_d_t_ngu_n_admin",
+    "label": "adm 005 claim ch ng nh n provenance review d t ngu n admin",
+    "path": "/public\\screens\\adm_005_claim_ch_ng_nh_n_provenance_review_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_006_bundle_phi_n_b_n_a_k_nh_d_t_ngu_n_admin",
+    "label": "adm 006 bundle phi n b n a k nh d t ngu n admin",
+    "path": "/public\\screens\\adm_006_bundle_phi_n_b_n_a_k_nh_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_007_qu_n_tr_ai_tri_th_c_guardrail_d_t_ngu_n_admin",
+    "label": "adm 007 qu n tr ai tri th c guardrail d t ngu n admin",
+    "path": "/public\\screens\\adm_007_qu_n_tr_ai_tri_th_c_guardrail_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_008_danh_s_ch_n_h_ng_a_k_nh_d_t_ngu_n_admin",
+    "label": "adm 008 danh s ch n h ng a k nh d t ngu n admin",
+    "path": "/public\\screens\\adm_008_danh_s_ch_n_h_ng_a_k_nh_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_009_chi_ti_t_h_nh_ng_n_h_ng_d_t_ngu_n_admin",
+    "label": "adm 009 chi ti t h nh ng n h ng d t ngu n admin",
+    "path": "/public\\screens\\adm_009_chi_ti_t_h_nh_ng_n_h_ng_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_010_li_n_k_t_sku_s_n_a_k_nh_ng_b_x_l_h_ng_i_l_i_dlq_d_t_ngu_n_admin",
+    "label": "adm 010 li n k t sku s n a k nh ng b x l h ng i l i dlq d t ngu n admin",
+    "path": "/public\\screens\\adm_010_li_n_k_t_sku_s_n_a_k_nh_ng_b_x_l_h_ng_i_l_i_dlq_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_011_ph_n_b_t_n_k_nh_sla_d_t_ngu_n_admin",
+    "label": "adm 011 ph n b t n k nh sla d t ngu n admin",
+    "path": "/public\\screens\\adm_011_ph_n_b_t_n_k_nh_sla_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_012_nh_p_h_ng_l_v_tr_atp_d_t_ngu_n_admin",
+    "label": "adm 012 nh p h ng l v tr atp d t ngu n admin",
+    "path": "/public\\screens\\adm_012_nh_p_h_ng_l_v_tr_atp_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_013_qc_evidence_ki_m_k_d_t_ngu_n_admin",
+    "label": "adm 013 qc evidence ki m k d t ngu n admin",
+    "path": "/public\\screens\\adm_013_qc_evidence_ki_m_k_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_014_truy_v_t_l_planning_d_t_ngu_n_admin",
+    "label": "adm 014 truy v t l planning d t ngu n admin",
+    "path": "/public\\screens\\adm_014_truy_v_t_l_planning_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_015_pick_wave_scan_d_t_ngu_n_admin",
+    "label": "adm 015 pick wave scan d t ngu n admin",
+    "path": "/public\\screens\\adm_015_pick_wave_scan_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_016_ng_g_i_in_nh_n_b_n_giao_d_t_ngu_n_admin",
+    "label": "adm 016 ng g i in nh n b n giao d t ngu n admin",
+    "path": "/public\\screens\\adm_016_ng_g_i_in_nh_n_b_n_giao_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_017_s_c_v_n_chuy_n_kpi_i_t_c_giao_h_ng_d_t_ngu_n_admin",
+    "label": "adm 017 s c v n chuy n kpi i t c giao h ng d t ngu n admin",
+    "path": "/public\\screens\\adm_017_s_c_v_n_chuy_n_kpi_i_t_c_giao_h_ng_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_018_customer_360_th_m_tra_h_p_nh_t_nh_danh_d_t_ngu_n_admin",
+    "label": "adm 018 customer 360 th m tra h p nh t nh danh d t ngu n admin",
+    "path": "/public\\screens\\adm_018_customer_360_th_m_tra_h_p_nh_t_nh_danh_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_019_h_p_th_a_k_nh_qu_n_l_ticket_tri_th_c_d_t_ngu_n_admin",
+    "label": "adm 019 h p th a k nh qu n l ticket tri th c d t ngu n admin",
+    "path": "/public\\screens\\adm_019_h_p_th_a_k_nh_qu_n_l_ticket_tri_th_c_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_020_x_l_quy_n_d_li_u_privacy_dashboard_cskh_d_t_ngu_n_admin",
+    "label": "adm 020 x l quy n d li u privacy dashboard cskh d t ngu n admin",
+    "path": "/public\\screens\\adm_020_x_l_quy_n_d_li_u_privacy_dashboard_cskh_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_021_h_s_i_tr_ph_duy_t_th_m_nh_d_t_ngu_n_admin",
+    "label": "adm 021 h s i tr ph duy t th m nh d t ngu n admin",
+    "path": "/public\\screens\\adm_021_h_s_i_tr_ph_duy_t_th_m_nh_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_022_nh_p_kho_h_ng_tr_x_l_ho_n_ti_n_ph_n_t_ch_nguy_n_nh_n_g_c_d_t_ngu_n_admin",
+    "label": "adm 022 nh p kho h ng tr x l ho n ti n ph n t ch nguy n nh n g c d t ngu n admin",
+    "path": "/public\\screens\\adm_022_nh_p_kho_h_ng_tr_x_l_ho_n_ti_n_ph_n_t_ch_nguy_n_nh_n_g_c_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_023_li_n_k_t_truy_v_t_ngu_n_g_c_ph_t_h_nh_m_qr_nh_t_k_xu_t_b_n_d_t_ngu_n",
+    "label": "adm 023 li n k t truy v t ngu n g c ph t h nh m qr nh t k xu t b n d t ngu n",
+    "path": "/public\\screens\\adm_023_li_n_k_t_truy_v_t_ngu_n_g_c_ph_t_h_nh_m_qr_nh_t_k_xu_t_b_n_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "adm_024_i_so_t_t_i_ch_nh_kh_p_d_li_u_s_n_x_l_ngo_i_l_d_t_ngu_n_admin",
+    "label": "adm 024 i so t t i ch nh kh p d li u s n x l ngo i l d t ngu n admin",
+    "path": "/public\\screens\\adm_024_i_so_t_t_i_ch_nh_kh_p_d_li_u_s_n_x_l_ngo_i_l_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_025_b_o_c_o_ng_g_p_p_l_a_k_nh_ch_t_k_k_to_n_xu_t_d_li_u_d_t_ngu_n_admin",
+    "label": "adm 025 b o c o ng g p p l a k nh ch t k k to n xu t d li u d t ngu n admin",
+    "path": "/public\\screens\\adm_025_b_o_c_o_ng_g_p_p_l_a_k_nh_ch_t_k_k_to_n_xu_t_d_li_u_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_026_ph_n_t_ch_funnel_rfm_churn_t_p_kh_ch_h_ng_d_t_ngu_n_admin",
+    "label": "adm 026 ph n t ch funnel rfm churn t p kh ch h ng d t ngu n admin",
+    "path": "/public\\screens\\adm_026_ph_n_t_ch_funnel_rfm_churn_t_p_kh_ch_h_ng_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_027_c_nh_b_o_ra_quy_t_nh_dss_d_t_ngu_n_admin",
+    "label": "adm 027 c nh b o ra quy t nh dss d t ngu n admin",
+    "path": "/public\\screens\\adm_027_c_nh_b_o_ra_quy_t_nh_dss_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_028_ch_t_l_ng_d_li_u_lineage_danh_m_c_ch_s_d_t_ngu_n_admin",
+    "label": "adm 028 ch t l ng d li u lineage danh m c ch s d t ngu n admin",
+    "path": "/public\\screens\\adm_028_ch_t_l_ng_d_li_u_lineage_danh_m_c_ch_s_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "adm_029_ki_m_duy_t_nh_gi_kh_ch_h_ng_d_t_ngu_n_admin",
+    "label": "adm 029 ki m duy t nh gi kh ch h ng d t ngu n admin",
+    "path": "/public\\screens\\adm_029_ki_m_duy_t_nh_gi_kh_ch_h_ng_d_t_ngu_n_admin\\code.html"
+  },
+  {
+    "id": "b_o_m_t_t_i_kho_n_account_security_d_t_ngu_n",
+    "label": "b o m t t i kho n account security d t ngu n",
+    "path": "/public\\screens\\b_o_m_t_t_i_kho_n_account_security_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "chi_ti_t_s_n_ph_m_za_r_d_t_ngu_n",
+    "label": "chi ti t s n ph m za r d t ngu n",
+    "path": "/public\\screens\\chi_ti_t_s_n_ph_m_za_r_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "chi_ti_t_tracking_n_order_detail_tracking_d_t_ngu_n_1",
+    "label": "chi ti t tracking n order detail tracking d t ngu n 1",
+    "path": "/public\\screens\\chi_ti_t_tracking_n_order_detail_tracking_d_t_ngu_n_1\\code.html"
+  },
+  {
+    "id": "chi_ti_t_tracking_n_order_detail_tracking_d_t_ngu_n_2",
+    "label": "chi ti t tracking n order detail tracking d t ngu n 2",
+    "path": "/public\\screens\\chi_ti_t_tracking_n_order_detail_tracking_d_t_ngu_n_2\\code.html"
+  },
+  {
+    "id": "chi_ti_t_y_u_c_u_i_tr_ti_n_tr_nh_th_m_nh_d_t_ngu_n",
+    "label": "chi ti t y u c u i tr ti n tr nh th m nh d t ngu n",
+    "path": "/public\\screens\\chi_ti_t_y_u_c_u_i_tr_ti_n_tr_nh_th_m_nh_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "consent_quy_n_d_li_u_privacy_center_d_t_ngu_n",
+    "label": "consent quy n d li u privacy center d t ngu n",
+    "path": "/public\\screens\\consent_quy_n_d_li_u_privacy_center_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "c_u_chuy_n_di_s_n_d_t_ngu_n_kh_p_h_nh_nh_banner_qr",
+    "label": "c u chuy n di s n d t ngu n kh p h nh nh banner qr",
+    "path": "/public\\screens\\c_u_chuy_n_di_s_n_d_t_ngu_n_kh_p_h_nh_nh_banner_qr\\code.html"
+  },
+  {
+    "id": "danh_m_c_s_n_ph_m_d_t_ngu_n_1",
+    "label": "danh m c s n ph m d t ngu n 1",
+    "path": "/public\\screens\\danh_m_c_s_n_ph_m_d_t_ngu_n_1\\code.html"
+  },
+  {
+    "id": "danh_m_c_s_n_ph_m_d_t_ngu_n_2",
+    "label": "danh m c s n ph m d t ngu n 2",
+    "path": "/public\\screens\\danh_m_c_s_n_ph_m_d_t_ngu_n_2\\code.html"
+  },
+  {
+    "id": "gi_h_ng_qu_t_ng_d_t_ngu_n",
+    "label": "gi h ng qu t ng d t ngu n",
+    "path": "/public\\screens\\gi_h_ng_qu_t_ng_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "h_s_c_nh_n_d_t_ngu_n",
+    "label": "h s c nh n d t ngu n",
+    "path": "/public\\screens\\h_s_c_nh_n_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "h_s_ngu_n_g_c_c_ng_khai_public_provenance_d_t_ngu_n",
+    "label": "h s ngu n g c c ng khai public provenance d t ngu n",
+    "path": "/public\\screens\\h_s_ngu_n_g_c_c_ng_khai_public_provenance_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "kh_i_ph_c_m_t_kh_u_d_t_ngu_n",
+    "label": "kh i ph c m t kh u d t ngu n",
+    "path": "/public\\screens\\kh_i_ph_c_m_t_kh_u_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "li_n_h_h_tr_ti_p_nh_n_di_s_n_support_request_d_t_ngu_n",
+    "label": "li n h h tr ti p nh n di s n support request d t ngu n",
+    "path": "/public\\screens\\li_n_h_h_tr_ti_p_nh_n_di_s_n_support_request_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "l_ch_s_n_order_history_d_t_ngu_n_1",
+    "label": "l ch s n order history d t ngu n 1",
+    "path": "/public\\screens\\l_ch_s_n_order_history_d_t_ngu_n_1\\code.html"
+  },
+  {
+    "id": "l_ch_s_n_order_history_d_t_ngu_n_2",
+    "label": "l ch s n order history d t ngu n 2",
+    "path": "/public\\screens\\l_ch_s_n_order_history_d_t_ngu_n_2\\code.html"
+  },
+  {
+    "id": "ng_k_x_c_minh_d_t_ngu_n",
+    "label": "ng k x c minh d t ngu n",
+    "path": "/public\\screens\\ng_k_x_c_minh_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "ng_nh_p_s_di_s_n_d_t_ngu_n",
+    "label": "ng nh p s di s n d t ngu n",
+    "path": "/public\\screens\\ng_nh_p_s_di_s_n_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "nh_gi_c_a_t_i_review_composer_my_reviews_d_t_ngu_n",
+    "label": "nh gi c a t i review composer my reviews d t ngu n",
+    "path": "/public\\screens\\nh_gi_c_a_t_i_review_composer_my_reviews_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "r_so_t_thanh_to_n_review_payment_d_t_ngu_n",
+    "label": "r so t thanh to n review payment d t ngu n",
+    "path": "/public\\screens\\r_so_t_thanh_to_n_review_payment_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "s_a_ch_d_t_ngu_n",
+    "label": "s a ch d t ngu n",
+    "path": "/public\\screens\\s_a_ch_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "th_ng_tin_giao_h_ng_d_t_ngu_n",
+    "label": "th ng tin giao h ng d t ngu n",
+    "path": "/public\\screens\\th_ng_tin_giao_h_ng_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "trang_ch_d_t_ngu_n",
+    "label": "trang ch d t ngu n",
+    "path": "/public\\screens\\trang_ch_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "tra_c_u_n_guest_d_t_ngu_n",
+    "label": "tra c u n guest d t ngu n",
+    "path": "/public\\screens\\tra_c_u_n_guest_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "tr_l_ch_n_s_n_ph_m_ai_assistant_d_t_ngu_n",
+    "label": "tr l ch n s n ph m ai assistant d t ngu n",
+    "path": "/public\\screens\\tr_l_ch_n_s_n_ph_m_ai_assistant_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "tr_ng_th_i_thanh_to_n_payment_status_d_t_ngu_n",
+    "label": "tr ng th i thanh to n payment status d t ngu n",
+    "path": "/public\\screens\\tr_ng_th_i_thanh_to_n_payment_status_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "t_o_y_u_c_u_i_tr_ph_c_ch_di_s_n_d_t_ngu_n",
+    "label": "t o y u c u i tr ph c ch di s n d t ngu n",
+    "path": "/public\\screens\\t_o_y_u_c_u_i_tr_ph_c_ch_di_s_n_d_t_ngu_n\\code.html"
+  },
+  {
+    "id": "x_c_nh_n_n_order_confirmation_d_t_ngu_n",
+    "label": "x c nh n n order confirmation d t ngu n",
+    "path": "/public\\screens\\x_c_nh_n_n_order_confirmation_d_t_ngu_n\\code.html"
+  }
+]

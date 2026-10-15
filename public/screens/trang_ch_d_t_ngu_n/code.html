@@ -1,0 +1,494 @@
+<!DOCTYPE html><html lang="vi" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;1,400;1,500&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed": "#d0e8d6", "background": "#fff8f0", "inverse-on-surface": "#f8f0e3", "on-error": "#ffffff", "primary-container": "#1b5e42", "surface-container-lowest": "#ffffff", "secondary": "#aa361c", "outline-variant": "#bfc9c1", "surface-tint": "#296a4d", "primary-fixed-dim": "#93d5b1", "surface-container-low": "#fbf3e6", "primary": "#00452d", "inverse-primary": "#93d5b1", "on-secondary-container": "#6b1100", "error-container": "#ffdad6", "on-primary-fixed-variant": "#075136", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#891e05", "secondary-fixed": "#ffdad2", "on-primary-container": "#93d5b2", "on-tertiary-fixed-variant": "#374b3e", "surface-bright": "#fff8f0", "error": "#ba1a1a", "on-error-container": "#93000a", "on-tertiary-container": "#b6cdbb", "tertiary": "#2c4134", "on-background": "#1e1b14", "surface-container": "#f5ede0", "on-secondary-fixed": "#3d0600", "tertiary-container": "#43584a", "secondary-container": "#ff7353", "surface-dim": "#e1d9cc", "surface-sand": "#EDE0CC", "outline": "#707972", "surface-container-highest": "#e9e2d5", "surface": "#fff8f0", "inverse-surface": "#343027", "terracotta-accent": "#C84B2F", "text-body": "#3D3028", "on-tertiary": "#ffffff", "on-surface": "#1e1b14", "secondary-fixed-dim": "#ffb4a3", "tertiary-fixed-dim": "#b5ccbb", "surface-variant": "#e9e2d5", "surface-container-high": "#efe7da", "on-surface-variant": "#404943", "primary-fixed": "#aef1cc", "on-primary-fixed": "#002113", "forest-accent": "#1B5E42", "on-tertiary-fixed": "#0b1f14", "text-heading": "#1A2E22" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1.5rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "margin": "2.5rem", "space-2xl": "4rem", "space-md": "1rem", "margin-mobile": "1.25rem" }, "fontFamily": { "headline-xl-mobile": ["Playfair Display"], "button-text": ["Inter"], "headline-md": ["Playfair Display"], "quote-sm": ["Lora"], "label-caps": ["Inter"], "body-lg": ["Inter"], "headline-xl": ["Playfair Display"], "body-md": ["Inter"], "body-sm": ["Inter"], "headline-lg-mobile": ["Playfair Display"], "quote-lg": ["Lora"], "headline-lg": ["Playfair Display"] }, "fontSize": { "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "button-text": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}], "quote-sm": ["16px", {"lineHeight": "26px", "fontWeight": "400"}], "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600"}], "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}], "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "600"}], "quote-lg": ["20px", {"lineHeight": "32px", "fontWeight": "400"}], "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600"}] } } } }</script></head><body class="bg-surface-container font-body-md text-text-body min-h-screen flex flex-col antialiased selection:bg-forest-accent selection:text-on-primary"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="Logo nguyên bản xanh.png" class="h-8 w-auto object-contain" src="/favicon.svg"><a class="flex flex-col" data-path="trang-chu" href="#"><span class="font-headline-md text-text-heading leading-tight tracking-tight">DỆT NGUỒN</span><span class="font-label-caps text-forest-accent tracking-widest text-[9px] uppercase">Thổ Cẩm Cơ Tu Đông Giang</span></a></div><nav class="hidden xl:flex items-center gap-space-sm bg-surface-container-low/70 p-1.5 rounded-xl" data-active-classes="bg-surface-sand text-forest-accent font-semibold rounded-lg shadow-inner"><a class="px-3.5 py-2 font-button-text text-button-text text-on-surface-variant hover:text-forest-accent hover:bg-surface-sand transition-all rounded-lg" data-path="trang-chu" href="#">Trang chủ</a><a class="px-3.5 py-2 font-button-text text-button-text text-on-surface-variant hover:text-forest-accent hover:bg-surface-sand transition-all rounded-lg" data-path="bo-suu-tap" href="#">Bộ sưu tập</a><a class="px-3.5 py-2 font-button-text text-button-text text-on-surface-variant hover:text-forest-accent hover:bg-surface-sand transition-all rounded-lg" data-path="cau-chuyen-di-san" href="#">Câu chuyện di sản</a><a class="px-3.5 py-2 font-button-text text-button-text text-on-surface-variant hover:text-forest-accent hover:bg-surface-sand transition-all rounded-lg" data-path="minh-bach-nguon-goc" href="#">Minh bạch nguồn gốc</a><a class="px-3.5 py-2 font-button-text text-button-text text-on-surface-variant hover:text-forest-accent hover:bg-surface-sand transition-all rounded-lg" data-path="ho-tro" href="#">Hỗ trợ</a></nav><div class="flex items-center gap-space-sm md:gap-space-md"><div class="relative hidden sm:flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-48 lg:w-60 pl-9 pr-3 py-1.5 bg-surface-container-low text-text-body font-body-sm text-body-sm rounded-lg focus:outline-none focus:bg-surface-container-lowest placeholder:text-outline/70 transition-all" placeholder="Tìm túi thổ cẩm, nghệ nhân..." type="text"></div><a aria-label="Giỏ hàng" class="relative p-2 rounded-lg text-forest-accent hover:bg-surface-sand transition-colors" data-path="gio-hang" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1 right-1 flex items-center justify-center w-4 h-4 bg-terracotta-accent text-on-primary text-[10px] font-bold rounded-full">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><a class="hidden lg:inline-flex items-center justify-center px-4 py-2 bg-forest-accent text-surface font-button-text text-button-text rounded-lg hover:bg-primary transition-colors shadow-sm" data-path="bo-suu-tap" href="#">Khám phá bộ sưu tập</a></div></div></header><main class="w-full pt-20 flex-1 bg-surface-container"><div class="flex flex-col w-full font-body-md text-text-body antialiased">
+<!-- 1. HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface-container py-space-xl lg:py-space-2xl">
+<div class="max-w-7xl mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-7 space-y-space-md z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-sand text-forest-accent font-label-caps text-label-caps">
+<span class="w-2 h-2 rounded-full bg-terracotta-accent"></span>
+          DI SẢN DỆT CƠ TU ĐÔNG GIANG • QUẢNG NAM
+        </div>
+<h1 class="font-headline-xl text-headline-xl text-text-heading leading-tight tracking-tight">
+          Một dấu dệt Cơ Tu, <br class="hidden sm:inline">
+<span class="italic font-quote-lg text-terracotta-accent font-normal">đồng hành</span> trong đời sống hôm nay
+        </h1>
+<p class="font-body-lg text-body-lg text-text-body/90 max-w-xl leading-relaxed">
+          Tôn vinh nét đẹp văn hóa thổ cẩm vùng cao Đông Giang qua những chiếc túi xách đương đại tinh xảo, giao hòa giữa kỹ nghệ dệt cửi lưng truyền đời và thẩm mỹ tối giản cho nhịp sống thường nhật.
+        </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center justify-center px-6 py-3 bg-forest-accent text-on-primary font-button-text text-button-text rounded shadow-sm hover:bg-primary transition-all" data-path="bo-suu-tap" href="#">
+            Khám phá bộ sưu tập
+            <span class="material-symbols-outlined ml-2 text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center px-6 py-3 bg-transparent text-forest-accent font-button-text text-button-text rounded hover:bg-surface-sand transition-all" data-path="cau-chuyen-di-san" href="#">
+            Xem câu chuyện chiếc túi
+            <span class="material-symbols-outlined ml-2 text-[18px]">history_edu</span>
+</a>
+</div>
+<div class="pt-space-md flex items-center gap-space-lg text-forest-accent">
+<div class="flex items-center gap-2 font-label-caps text-label-caps uppercase text-text-heading">
+<span class="material-symbols-outlined text-terracotta-accent text-[20px]">verified</span>
+            Chứng nhận OCOP 4 Sao
+          </div>
+<div class="h-4 w-px bg-forest-accent/20"></div>
+<div class="flex items-center gap-2 font-label-caps text-label-caps uppercase text-text-heading">
+<span class="material-symbols-outlined text-forest-accent text-[20px]">eco</span>
+            Sợi bông dệt tự nhiên
+          </div>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto max-w-md lg:max-w-none">
+<div class="absolute -inset-4 rounded-xl bg-surface-sand -rotate-2"></div>
+<div class="relative bg-surface rounded-xl overflow-hidden shadow-xl p-4">
+<img alt="Túi thổ cẩm Cơ Tu Đông Giang đương đại cao cấp" class="w-full h-auto object-cover rounded-lg aspect-[4/3] shadow-inner" src="/zip-assets/asset-01.jpg">
+<div class="mt-4 p-3 bg-surface-container-low rounded-lg flex items-center justify-between"><div>
+<p class="font-headline-md text-[16px] text-text-heading">Túi Thổ Cẩm Cơ Tu — Phiên Bản Tinh Hoa</p>
+<p class="font-body-sm text-body-sm text-text-body/70">Dệt cửi lưng truyền thống kết hợp quai da thủ công</p>
+</div>
+<span class="px-2.5 py-1 bg-forest-accent text-on-primary font-label-caps text-label-caps rounded">LIMITED</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. SECTION DIVIDER -->
+<div class="w-full overflow-hidden bg-surface-container py-space-sm sm:py-space-md" aria-hidden="true"><div class="w-full h-24 sm:h-[104px]" style="background-image: url('/zip-assets/asset-02.png'); background-repeat: repeat-x; background-size: auto 100%; background-position: center;"></div></div>
+<!-- 3. TRUST STRIP (EP-10) -->
+<section class="w-full bg-surface-sand py-space-lg">
+<div class="max-w-7xl mx-auto px-gutter">
+
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-space-md"><div class="bg-surface-container rounded-lg p-4 flex flex-col items-center text-center shadow-sm"><div class="w-16 h-16 rounded-full overflow-hidden mb-3 bg-transparent" style="background-image: url('/zip-assets/asset-03.png'); background-size: 500% 100%; background-position: 0% 0%; background-repeat: no-repeat;"></div><h3 class="font-headline-md text-[16px] text-text-heading mb-1">Thủ Công</h3><p class="font-body-sm text-body-sm text-text-body/80">Dệt tay truyền đời từ thợ Cơ Tu Đông Giang</p></div><div class="bg-surface-container rounded-lg p-4 flex flex-col items-center text-center shadow-sm"><div class="w-16 h-16 rounded-full overflow-hidden mb-3 bg-transparent" style="background-image: url('/zip-assets/asset-04.png'); background-size: 500% 100%; background-position: 25% 0%; background-repeat: no-repeat;"></div><h3 class="font-headline-md text-[16px] text-text-heading mb-1">Nguồn Gốc</h3><p class="font-body-sm text-body-sm text-text-body/80">Minh bạch nguyên liệu &amp; chuẩn chỉ OCOP</p></div><div class="bg-surface-container rounded-lg p-4 flex flex-col items-center text-center shadow-sm"><div class="w-16 h-16 rounded-full overflow-hidden mb-3 bg-transparent" style="background-image: url('/zip-assets/asset-05.png'); background-size: 500% 100%; background-position: 50% 0%; background-repeat: no-repeat;"></div><h3 class="font-headline-md text-[16px] text-text-heading mb-1">Vận Chuyển</h3><p class="font-body-sm text-body-sm text-text-body/80">Đóng hộp trang trọng, giao nhanh an tâm</p></div><div class="bg-surface-container rounded-lg p-4 flex flex-col items-center text-center shadow-sm"><div class="w-16 h-16 rounded-full overflow-hidden mb-3 bg-transparent" style="background-image: url('/zip-assets/asset-06.png'); background-size: 500% 100%; background-position: 75% 0%; background-repeat: no-repeat;"></div><h3 class="font-headline-md text-[16px] text-text-heading mb-1">Bảo Hành</h3><p class="font-body-sm text-body-sm text-text-body/80">Chăm sóc chỉ may &amp; làm mới sợi trọn đời</p></div><div class="col-span-2 sm:col-span-1 bg-surface-container rounded-lg p-4 flex flex-col items-center text-center shadow-sm"><div class="w-16 h-16 rounded-full overflow-hidden mb-3 bg-transparent" style="background-image: url('/zip-assets/asset-07.png'); background-size: 500% 100%; background-position: 100% 0%; background-repeat: no-repeat;"></div><h3 class="font-headline-md text-[16px] text-text-heading mb-1">Thanh Toán</h3><p class="font-body-sm text-body-sm text-text-body/80">Đa dạng, bảo mật và đồng hành hỗ trợ</p></div></div>
+</div>
+</section>
+<!-- 4. STORY SECTION (5 Layers of Cơ Tu Heritage) -->
+<section class="w-full bg-surface-sand/60 py-space-2xl">
+<div class="max-w-7xl mx-auto px-gutter space-y-space-xl">
+<div class="text-center max-w-2xl mx-auto space-y-3">
+<span class="font-label-caps text-label-caps text-forest-accent uppercase tracking-widest">Chiều Sâu Di Sản</span>
+<h2 class="font-headline-lg text-headline-lg text-text-heading">Hành Trình Chiếc Túi Dệt Nguồn</h2>
+<p class="font-quote-lg text-quote-lg italic text-text-body/80 font-quote-sm">
+          “Mỗi đường sợi không chỉ là họa tiết, đó là nhịp thở của núi rừng và đôi tay người thợ.”
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-space-md">
+<div class="bg-surface-container rounded-lg p-5 flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface transition-colors">
+<div class="space-y-3">
+<span class="font-headline-xl text-3xl font-bold text-forest-accent/30 group-hover:text-forest-accent transition-colors">01</span>
+<div class="w-8 h-1 bg-forest-accent rounded"></div>
+<h3 class="font-headline-md text-[18px] text-text-heading">Nơi Chốn</h3>
+<p class="font-body-sm text-body-sm text-text-body/80">
+              Vùng cao Đông Giang trù phú, nơi mây ngàn ôm trọn những nếp nhà Gươl và cánh rừng già lưu giữ trầm tích cội nguồn.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex items-center text-xs font-semibold text-forest-accent">
+<span class="">Đông Giang, Quảng Nam</span>
+</div>
+</div>
+<div class="bg-surface-container rounded-lg p-5 flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface transition-colors">
+<div class="space-y-3">
+<span class="font-headline-xl text-3xl font-bold text-forest-accent/30 group-hover:text-forest-accent transition-colors">02</span>
+<div class="w-8 h-1 bg-terracotta-accent rounded"></div>
+<h3 class="font-headline-md text-[18px] text-text-heading">Con Người</h3>
+<p class="font-body-sm text-body-sm text-text-body/80">
+              Đôi bàn tay thô ráp của các mế, các chị nghệ nhân Cơ Tu kiên trì ngồi bên khung cửi lưng từ thuở trăng tròn đến xế bóng.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex items-center text-xs font-semibold text-terracotta-accent">
+<span class="">Nghệ nhân bản địa</span>
+</div>
+</div>
+<div class="bg-surface-container rounded-lg p-5 flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface transition-colors">
+<div class="space-y-3">
+<span class="font-headline-xl text-3xl font-bold text-forest-accent/30 group-hover:text-forest-accent transition-colors">03</span>
+<div class="w-8 h-1 bg-forest-accent rounded"></div>
+<h3 class="font-headline-md text-[18px] text-text-heading">Quy Trình</h3>
+<p class="font-body-sm text-body-sm text-text-body/80">
+              Nhuộm vỏ cây rừng, dệt cườm chì thủ công, xử lý co giãn sợi tự nhiên và hoàn thiện bằng đường kim may túi chuẩn xác.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex items-center text-xs font-semibold text-forest-accent">
+<span class="">Thủ công &amp; Khắt khe</span>
+</div>
+</div>
+<div class="bg-surface-container rounded-lg p-5 flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface transition-colors">
+<div class="space-y-3">
+<span class="font-headline-xl text-3xl font-bold text-forest-accent/30 group-hover:text-forest-accent transition-colors">04</span>
+<div class="w-8 h-1 bg-terracotta-accent rounded"></div>
+<h3 class="font-headline-md text-[18px] text-text-heading">Vật Dụng</h3>
+<p class="font-body-sm text-body-sm text-text-body/80">
+              Chiếc túi xách thanh lịch, lòng túi rộng rãi, quai da êm ái, sẵn sàng hòa nhịp trong văn phòng lẫn những chuyến đi xa.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex items-center text-xs font-semibold text-terracotta-accent">
+<span class="">Ứng dụng đời sống</span>
+</div>
+</div>
+<div class="bg-surface-container rounded-lg p-5 flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface transition-colors">
+<div class="space-y-3">
+<span class="font-headline-xl text-3xl font-bold text-forest-accent/30 group-hover:text-forest-accent transition-colors">05</span>
+<div class="w-8 h-1 bg-forest-accent rounded"></div>
+<h3 class="font-headline-md text-[18px] text-text-heading">Dòng Giá Trị</h3>
+<p class="font-body-sm text-body-sm text-text-body/80">
+              Mỗi sản phẩm trao đi là nguồn sinh kế bền vững quay trở lại nuôi dưỡng cộng đồng bản địa gìn giữ văn hóa tổ tiên.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex items-center text-xs font-semibold text-forest-accent">
+<span class="">Bền vững &amp; Tương trợ</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. PRODUCTS CATALOG (Bộ sưu tập nổi bật) -->
+<section class="w-full bg-surface-container py-space-2xl">
+<div class="max-w-7xl mx-auto px-gutter space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-terracotta-accent uppercase tracking-widest">Tuyển Chọn Tinh Tế</span>
+<h2 class="font-headline-lg text-headline-lg text-text-heading">Bộ Sưu Tập Tiêu Biểu</h2>
+</div>
+<!-- Filter pills -->
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-1.5 rounded-full bg-forest-accent text-on-primary font-button-text text-button-text shadow-sm">Tất cả</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-sand text-text-body font-button-text text-button-text hover:bg-forest-accent hover:text-on-primary transition-all">Túi tote hằng ngày</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-sand text-text-body font-button-text text-button-text hover:bg-forest-accent hover:text-on-primary transition-all">Túi đeo chéo mini</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-sand text-text-body font-button-text text-button-text hover:bg-forest-accent hover:text-on-primary transition-all">Túi xách công sở</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-sand text-text-body font-button-text text-button-text hover:bg-forest-accent hover:text-on-primary transition-all">Bộ quà tặng</button>
+</div>
+</div>
+<!-- 4 Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Product 1 -->
+<div class="bg-surface rounded-lg shadow-md overflow-hidden flex flex-col group hover:-translate-y-1 transition-transform">
+<div class="h-1.5 w-full bg-terracotta-accent"></div>
+<div class="relative bg-surface-container-low aspect-square overflow-hidden flex items-center justify-center p-4">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500" data-alt="A luxurious artisan tote bag made of authentic Vietnamese Co Tu handwoven brocade featuring deep forest green, terracotta, and ivory geometric patterns, placed on a warm linen background with soft natural morning light." src="/zip-assets/asset-01.jpg">
+<div class="absolute top-3 left-3 bg-forest-accent text-on-primary font-label-caps text-label-caps px-2.5 py-1 rounded">
+              OCOP ĐÔNG GIANG
+            </div>
+</div>
+<div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+<div>
+<div class="flex items-center gap-1.5 mb-1.5">
+<span class="w-3 h-3 rounded-full bg-forest-accent"></span>
+<span class="w-3 h-3 rounded-full bg-terracotta-accent"></span>
+<span class="font-body-sm text-[12px] text-text-body/60 ml-1">Chỉ dệt mộc</span>
+</div>
+<h3 class="font-headline-md text-[18px] text-text-heading group-hover:text-forest-accent transition-colors">Túi Tote Hoa Văn A-Riêng</h3>
+<p class="font-body-sm text-body-sm text-text-body/70 line-clamp-2">Sợi bông tự nhiên, đệm quai êm ái, họa tiết sóng đại ngàn Đông Giang.</p>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-button-text text-[18px] font-bold text-terracotta-accent">1.250.000₫</span>
+<a class="px-3 py-1.5 bg-surface-sand text-forest-accent font-button-text text-[13px] rounded hover:bg-forest-accent hover:text-on-primary transition-colors" href="#">Chi tiết</a>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-surface rounded-lg shadow-md overflow-hidden flex flex-col group hover:-translate-y-1 transition-transform">
+<div class="h-1.5 w-full bg-terracotta-accent"></div>
+<div class="relative bg-surface-container-low aspect-square overflow-hidden flex items-center justify-center p-4">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500" data-alt="Compact crossbody messenger bag woven with ancient Co Tu diamond bead motifs in earth terracotta, jade green, and warm cream, accented with genuine vegetable-tanned leather straps on an earthy sand texture backdrop." src="/zip-assets/asset-08.jpg">
+<div class="absolute top-3 left-3 bg-forest-accent text-on-primary font-label-caps text-label-caps px-2.5 py-1 rounded">
+              OCOP ĐÔNG GIANG
+            </div>
+</div>
+<div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+<div>
+<div class="flex items-center gap-1.5 mb-1.5">
+<span class="w-3 h-3 rounded-full bg-terracotta-accent"></span>
+<span class="w-3 h-3 rounded-full bg-surface-sand"></span>
+<span class="font-body-sm text-[12px] text-text-body/60 ml-1">Đính cườm thủ công</span>
+</div>
+<h3 class="font-headline-md text-[18px] text-text-heading group-hover:text-forest-accent transition-colors">Túi Đeo Chéo An Điềm</h3>
+<p class="font-body-sm text-body-sm text-text-body/70 line-clamp-2">Kích thước gọn gàng, phối cườm chì thủ công tinh xảo, khóa đồng cổ điển.</p>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-button-text text-[18px] font-bold text-terracotta-accent">890.000₫</span>
+<a class="px-3 py-1.5 bg-surface-sand text-forest-accent font-button-text text-[13px] rounded hover:bg-forest-accent hover:text-on-primary transition-colors" href="#">Chi tiết</a>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-surface rounded-lg shadow-md overflow-hidden flex flex-col group hover:-translate-y-1 transition-transform">
+<div class="h-1.5 w-full bg-terracotta-accent"></div>
+<div class="relative bg-surface-container-low aspect-square overflow-hidden flex items-center justify-center p-4">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500" data-alt="Sophisticated office handbag crafted with traditional Co Tu striped woven panels in deep forest green and rich earthy terracotta with structured dark brown leather trimming, studio lighting on textured background." src="/zip-assets/asset-09.jpg">
+<div class="absolute top-3 left-3 bg-forest-accent text-on-primary font-label-caps text-label-caps px-2.5 py-1 rounded">
+              OCOP ĐÔNG GIANG
+            </div>
+</div>
+<div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+<div>
+<div class="flex items-center gap-1.5 mb-1.5">
+<span class="w-3 h-3 rounded-full bg-forest-accent"></span>
+<span class="w-3 h-3 rounded-full bg-terracotta-accent"></span>
+<span class="font-body-sm text-[12px] text-text-body/60 ml-1">Form cứng công sở</span>
+</div>
+<h3 class="font-headline-md text-[18px] text-text-heading group-hover:text-forest-accent transition-colors">Túi Xách Công Sở Pơ-Loong</h3>
+<p class="font-body-sm text-body-sm text-text-body/70 line-clamp-2">Ngăn chứa laptop 14 inch, đệm chống sốc, họa tiết cội nguồn trang nhã.</p>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-button-text text-[18px] font-bold text-terracotta-accent">1.680.000₫</span>
+<a class="px-3 py-1.5 bg-surface-sand text-forest-accent font-button-text text-[13px] rounded hover:bg-forest-accent hover:text-on-primary transition-colors" href="#">Chi tiết</a>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-surface rounded-lg shadow-md overflow-hidden flex flex-col group hover:-translate-y-1 transition-transform">
+<div class="h-1.5 w-full bg-terracotta-accent"></div>
+<div class="relative bg-surface-container-low aspect-square overflow-hidden flex items-center justify-center p-4">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500" data-alt="Elegant clutch envelope wallet made of Co Tu intricate geometric patterned brocade fabric in warm terracotta and forest green tones, resting next to an artisan carved wooden loom spool on raw silk." src="/zip-assets/asset-10.jpg">
+<div class="absolute top-3 left-3 bg-forest-accent text-on-primary font-label-caps text-label-caps px-2.5 py-1 rounded">
+              OCOP ĐÔNG GIANG
+            </div>
+</div>
+<div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+<div>
+<div class="flex items-center gap-1.5 mb-1.5">
+<span class="w-3 h-3 rounded-full bg-terracotta-accent"></span>
+<span class="w-3 h-3 rounded-full bg-forest-accent"></span>
+<span class="font-body-sm text-[12px] text-text-body/60 ml-1">Cầm tay dạ tiệc</span>
+</div>
+<h3 class="font-headline-md text-[18px] text-text-heading group-hover:text-forest-accent transition-colors">Ví Cầm Tay Za-Rá</h3>
+<p class="font-body-sm text-body-sm text-text-body/70 line-clamp-2">Nhỏ nhắn, chứa điện thoại và giấy tờ tùy thân, biểu tượng sum vầy ấm no.</p>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-button-text text-[18px] font-bold text-terracotta-accent">590.000₫</span>
+<a class="px-3 py-1.5 bg-surface-sand text-forest-accent font-button-text text-[13px] rounded hover:bg-forest-accent hover:text-on-primary transition-colors" href="#">Chi tiết</a>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center pt-space-md">
+<a class="inline-flex items-center font-button-text text-button-text text-forest-accent hover:text-primary font-semibold gap-2 group" data-path="bo-suu-tap" href="#">
+<span class="">Xem tất cả sản phẩm thổ cẩm Dệt Nguồn</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 6. PROVENANCE SECTION (Nguồn gốc minh bạch - Dark Section) -->
+<section class="w-full bg-forest-accent text-on-primary py-space-2xl relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
+<!-- Cột trái: Mockup thẻ tra cứu QR Code -->
+<div class="lg:col-span-5">
+<div class="bg-surface text-text-body p-6 rounded-xl shadow-2xl relative">
+<div class="flex items-center justify-between pb-4 border-b border-surface-sand">
+<div>
+<p class="font-label-caps text-label-caps text-forest-accent uppercase">Mã Định Danh Minh Bạch</p>
+<h4 class="font-headline-md text-[18px] text-text-heading">Thẻ Truy Xuất Gốc Tích</h4>
+</div>
+<span class="material-symbols-outlined text-terracotta-accent text-[28px]">qr_code_scanner</span>
+</div>
+<div class="py-5 flex flex-col sm:flex-row items-center gap-4">
+<div class="p-3 bg-surface-container rounded-lg shrink-0 flex items-center justify-center">
+<!-- Inline QR Visual -->
+<svg class="w-24 h-24 text-forest-accent" fill="currentColor" viewBox="0 0 100 100">
+<rect height="30" rx="4" width="30" x="0" y="0"></rect>
+<rect fill="#fff" height="20" width="20" x="5" y="5"></rect>
+<rect height="10" width="10" x="10" y="10"></rect>
+<rect height="30" rx="4" width="30" x="70" y="0"></rect>
+<rect fill="#fff" height="20" width="20" x="75" y="5"></rect>
+<rect height="10" width="10" x="80" y="10"></rect>
+<rect height="30" rx="4" width="30" x="0" y="70"></rect>
+<rect fill="#fff" height="20" width="20" x="5" y="75"></rect>
+<rect height="10" width="10" x="10" y="80"></rect>
+<rect height="20" width="10" x="40" y="10"></rect>
+<rect height="20" width="20" x="40" y="40"></rect>
+<rect height="10" width="20" x="10" y="40"></rect>
+<rect height="20" width="10" x="70" y="40"></rect>
+<rect height="10" width="20" x="70" y="70"></rect>
+<rect height="15" width="15" x="40" y="70"></rect>
+</svg>
+</div>
+<div class="space-y-1.5 text-center sm:text-left">
+<div class="text-xs text-text-body/60 font-mono">SERIES: DN-DG-2025-0891</div>
+<p class="font-body-sm text-[13px] font-semibold text-text-heading">Người dệt: Nghệ nhân Alăng Thị Nhàn</p>
+<p class="font-body-sm text-[13px] text-text-body/80">Làng nghề: Thôn Za-Rá, Xã Tà Lu, Đông Giang</p>
+<p class="font-body-sm text-[12px] text-forest-accent font-medium">Hoàn thiện: 14 ngày dệt khung cửi lưng</p>
+</div>
+</div>
+<div class="pt-3 border-t border-surface-sand flex items-center justify-between text-xs text-text-body/70">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-forest-accent">verified</span> OCOP Quảng Nam</span>
+<span class="font-mono">Chu kỳ kiểm định: 2025</span>
+</div>
+</div>
+</div>
+<!-- Cột phải: Cam kết kiểm chứng -->
+<div class="lg:col-span-7 space-y-space-md">
+<span class="font-label-caps text-label-caps text-surface-sand/80 uppercase tracking-widest">Niềm Tin Từ Cội Nguồn</span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary">Minh Bạch Nguồn Gốc &amp; Chứng Nhận</h2>
+<p class="font-body-lg text-body-lg text-on-primary/90 max-w-xl">
+          Chúng tôi coi sự chân thực là linh hồn của thương hiệu. Mỗi sản phẩm túi thổ cẩm rời làng đều mang theo hồ sơ số minh bạch về nghệ nhân, thời gian dệt và chứng nhận bảo tồn văn hóa.
+        </p>
+<div class="space-y-3 pt-2">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-terracotta-accent shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-md text-on-primary/90">Dữ liệu lô sản xuất và người hoàn thiện được lưu trữ minh bạch, không qua trung gian đánh tráo.</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-terracotta-accent shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-md text-on-primary/90">Tiêu chuẩn kiểm soát chất lượng QC nghiêm ngặt từng đường kim, múi chỉ và độ bền sợi bông.</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-terracotta-accent shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-md text-on-primary/90">Hỗ trợ tra cứu nhanh chóng và chính xác qua mã QR in chìm trên từng tem nhãn sản phẩm.</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-terracotta-accent shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-md text-on-primary/90">Tôn trọng bản quyền tri thức văn hóa dân gian và bảo đảm quyền lợi tài chính trực tiếp cho nghệ nhân.</span>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="inline-flex items-center justify-center px-6 py-3 bg-terracotta-accent text-on-primary font-button-text text-button-text rounded shadow-sm hover:brightness-110 transition-all" data-path="minh-bach-nguon-goc" href="#">
+            Tra cứu mã QR nguồn gốc
+            <span class="material-symbols-outlined ml-2 text-[18px]">travel_explore</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. TESTIMONIALS (Khách hàng nói gì) -->
+<section class="w-full bg-surface-container py-space-2xl">
+<div class="max-w-7xl mx-auto px-gutter space-y-space-xl">
+<div class="text-center max-w-xl mx-auto space-y-2">
+<div class="flex items-center justify-center gap-1 text-terracotta-accent">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-button-text text-text-heading ml-2 font-bold">4.9/5 (240+ Đánh giá)</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-heading">Người Bạn Đồng Hành Nói Gì?</h2>
+<p class="font-body-md text-body-md text-text-body/70">Những cảm nhận chân thật từ những người trân trọng giá trị thủ công Cơ Tu.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="bg-surface rounded-lg p-6 shadow-sm flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-sand text-forest-accent font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[14px]">check</span> VERIFIED PURCHASE
+            </span>
+<p class="font-quote-sm text-quote-sm italic text-text-heading leading-relaxed">
+              “Mùi sợi tự nhiên thơm nhẹ dễ chịu, đường dệt cườm chắc chắn đến ngạc nhiên. Mình mang đi làm ở Hà Nội ai cũng hỏi mua ở đâu vì hoa văn độc đáo và sang trọng khác hẳn đồ công nghiệp.”
+            </p>
+</div>
+<div>
+<p class="font-headline-md text-[16px] text-text-heading">Chị Hoàng Mai Anh</p>
+<p class="font-body-sm text-body-sm text-text-body/60">Kiến trúc sư • Hà Nội</p>
+</div>
+</div>
+<div class="bg-surface rounded-lg p-6 shadow-sm flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-sand text-forest-accent font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[14px]">check</span> VERIFIED PURCHASE
+            </span>
+<p class="font-quote-sm text-quote-sm italic text-text-heading leading-relaxed">
+              “Hộp quà được đóng gói chỉn chu, có cả tấm thiệp cảm ơn kể tên nghệ nhân dệt. Mình mua tặng đối tác người Nhật, họ cực kỳ xúc động trước tính nhân văn và chất lượng hoàn thiện của túi.”
+            </p>
+</div>
+<div>
+<p class="font-headline-md text-[16px] text-text-heading">Anh Trần Đình Khôi</p>
+<p class="font-body-sm text-body-sm text-text-body/60">Giám đốc Điều hành • TP. Hồ Chí Minh</p>
+</div>
+</div>
+<div class="bg-surface rounded-lg p-6 shadow-sm flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-sand text-forest-accent font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[14px]">check</span> VERIFIED PURCHASE
+            </span>
+<p class="font-quote-sm text-quote-sm italic text-text-heading leading-relaxed">
+              “Túi tote form đứng vừa vặn laptop, quai xách may đệm rất êm vai dù đựng nhiều tài liệu. Rất trân trọng nỗ lực gìn giữ di sản người Cơ Tu Đông Giang của các bạn.”
+            </p>
+</div>
+<div>
+<p class="font-headline-md text-[16px] text-text-heading">Chị Lê Bích Ngọc</p>
+<p class="font-body-sm text-body-sm text-text-body/60">Giảng viên Đại học • Đà Nẵng</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. GIFT SET SECTION (Tặng quà có điều để kể) -->
+<section id="gift" class="relative overflow-hidden bg-surface-sand border-t border-b border-outline-variant/30 pt-16 pb-20 md:pt-20 md:pb-24"><div class="max-w-7xl mx-auto px-gutter mb-10 text-center space-y-3"><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-terracotta-accent font-label-caps text-label-caps uppercase tracking-widest"><span class="w-1.5 h-1.5 rounded-full bg-terracotta-accent"></span>BỘ QUÀ TẶNG DI SẢN CƠ TU</div><h2 class="font-headline-lg text-headline-lg text-text-heading">Tặng quà có điều để kể</h2><p class="font-body-lg text-body-md sm:text-body-lg text-text-body/90 max-w-2xl mx-auto leading-relaxed">Mỗi món quà từ Dệt Nguồn không chỉ là một sản phẩm thủ công, mà gói trọn tinh hoa văn hóa Cơ Tu cùng tình cảm chân phương được chuẩn bị trang trọng, tinh tế gửi gắm đến người trân quý.</p></div><div class="max-w-7xl mx-auto px-gutter"><div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch"><div class="bg-surface rounded-xl overflow-hidden shadow-md p-6 flex flex-col justify-between border border-outline-variant/30 hover:-translate-y-1 transition-transform duration-300"><div class="space-y-4"><div class="relative aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-low flex items-center justify-center p-3"><img src="/zip-assets/asset-11.png" alt="Hộp giấy quà tặng Dệt Nguồn" class="w-full h-full object-contain hover:scale-105 transition-transform duration-500"><div class="absolute top-3 left-3 bg-forest-accent text-on-primary font-label-caps text-[10px] px-2.5 py-1 rounded shadow-sm">HỘP GIẤY CAO CẤP</div></div><div class="space-y-1.5"><h3 class="font-headline-md text-[18px] text-text-heading font-semibold">Hộp Quà Cao Cấp Dệt Nguồn</h3><p class="font-body-sm text-body-sm text-text-body/80 leading-relaxed">Hộp cứng dập chìm hoa văn Za-Rá truyền thống sắc nét, kết cấu nắp nam châm đóng mở tinh tế, lót rơm tự nhiên êm ái bảo bọc từng thớ vải thổ cẩm.</p></div></div><div class="mt-5 pt-3 border-t border-outline-variant/30 flex items-center justify-between text-xs text-forest-accent font-semibold"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">eco</span> Thân thiện môi trường</span><span class="text-terracotta-accent">Đóng nắp nam châm</span></div></div><div class="bg-surface rounded-xl overflow-hidden shadow-md p-6 flex flex-col justify-between border border-outline-variant/30 hover:-translate-y-1 transition-transform duration-300"><div class="space-y-4"><div class="relative aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-low flex items-center justify-center p-3"><img src="/zip-assets/asset-12.png" alt="Card cảm ơn nghệ nhân Dệt Nguồn" class="w-full h-full object-contain hover:scale-105 transition-transform duration-500"><div class="absolute top-3 left-3 bg-terracotta-accent text-on-primary font-label-caps text-[10px] px-2.5 py-1 rounded shadow-sm">THIỆP CẢM ƠN DI SẢN</div></div><div class="space-y-1.5"><h3 class="font-headline-md text-[18px] text-text-heading font-semibold">Thiệp Cảm Ơn &amp; Câu Chuyện</h3><p class="font-body-sm text-body-sm text-text-body/80 leading-relaxed">Gửi trao trọn vẹn câu chuyện đôi bàn tay thợ dệt vùng Đông Giang kiên nhẫn bên khung cửi, tôn vinh giá trị văn hóa bản địa qua từng dòng chữ chân phương.</p></div></div><div class="mt-5 pt-3 border-t border-outline-variant/30 flex items-center justify-between text-xs text-forest-accent font-semibold"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">history_edu</span> Kể chuyện di sản</span><span class="text-terracotta-accent">Ký ức vùng cao</span></div></div><div class="bg-surface rounded-xl shadow-md p-6 flex flex-col justify-between border border-outline-variant/30 hover:-translate-y-1 transition-transform duration-300"><div class="space-y-4"><div><p class="font-label-caps text-label-caps text-forest-accent uppercase tracking-wider font-semibold">Chi Tiết Đóng Gói Chỉn Chu</p><h3 class="font-headline-md text-[18px] text-text-heading mt-1 font-semibold">Trọn Vẹn Tâm Tình Quà Tặng</h3></div><div class="space-y-3 pt-1"><div class="flex items-start gap-3"><div class="w-8 h-8 rounded-lg bg-surface-sand flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-forest-accent text-[18px]">inventory_2</span></div><div><p class="font-headline-md text-[14px] font-semibold text-text-heading">Hộp giấy cao cấp</p><p class="font-body-sm text-[12px] text-text-body/75 leading-snug">Dập nổi hoa văn Cơ Tu, nắp nam châm đóng mở nhẹ nhàng.</p></div></div><div class="flex items-start gap-3"><div class="w-8 h-8 rounded-lg bg-surface-sand flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-forest-accent text-[18px]">favorite</span></div><div><p class="font-headline-md text-[14px] font-semibold text-text-heading">Card cảm ơn nghệ nhân</p><p class="font-body-sm text-[12px] text-text-body/75 leading-snug">Khắc họa chân dung thợ dệt và hành trình giữ nghề truyền thống.</p></div></div><div class="flex items-start gap-3"><div class="w-8 h-8 rounded-lg bg-surface-sand flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-forest-accent text-[18px]">edit_note</span></div><div><p class="font-headline-md text-[14px] font-semibold text-text-heading">Lời nhắn viết tay</p><p class="font-body-sm text-[12px] text-text-body/75 leading-snug">Hỗ trợ chép tay lời chúc cá nhân hóa theo yêu cầu riêng.</p></div></div><div class="flex items-start gap-3"><div class="w-8 h-8 rounded-lg bg-surface-sand flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-terracotta-accent text-[18px]">qr_code_2</span></div><div><p class="font-headline-md text-[14px] font-semibold text-text-heading">Mã QR OCOP 4 Sao</p><p class="font-body-sm text-[12px] text-text-body/75 leading-snug">Truy xuất nguồn gốc sợi, thợ dệt và chứng nhận chất lượng.</p></div></div></div></div><div class="pt-4 space-y-2.5 border-t border-outline-variant/30"><a href="#" data-path="bo-suu-tap" class="w-full inline-flex items-center justify-center px-5 py-2.5 bg-terracotta-accent text-on-primary font-button-text text-button-text font-medium rounded hover:brightness-110 shadow-sm transition-all">Chọn bộ quà →</a><a href="#" data-path="ho-tro" class="w-full inline-flex items-center justify-center px-5 py-2.5 border border-outline-variant/40 bg-transparent text-forest-accent font-button-text text-button-text font-medium rounded hover:bg-surface-sand transition-all text-center">Tư vấn quà doanh nghiệp</a></div></div></div></div></section>
+<!-- 9. FAQ ACCORDION (Giải đáp thắc mắc) -->
+<section class="w-full bg-surface-container py-space-2xl">
+<div class="max-w-4xl mx-auto px-gutter space-y-space-lg">
+<div class="text-center space-y-2">
+<span class="font-label-caps text-label-caps text-forest-accent uppercase tracking-widest">Hỏi Đáp Minh Bạch</span>
+<h2 class="font-headline-lg text-headline-lg text-text-heading">Những Điều Bạn Thường Băn Khoăn</h2>
+</div>
+<div class="space-y-3" id="faq-container">
+<!-- FAQ 1 -->
+<div class="bg-surface rounded-lg p-5 shadow-sm">
+<button class="w-full flex items-center justify-between text-left font-headline-md text-[18px] text-text-heading focus:outline-none" onclick="toggleFaq(this)">
+<span class="">Vải thổ cẩm Cơ Tu có bền và dễ phai màu khi giặt không?</span>
+<span class="material-symbols-outlined text-forest-accent transition-transform duration-300">expand_more</span>
+</button>
+<div class="hidden pt-3 font-body-md text-text-body/80 border-t border-surface-sand mt-3 leading-relaxed">
+            Sợi vải thổ cẩm của Dệt Nguồn được xử lý hãm màu thảo mộc tự nhiên theo bí quyết lâu đời của người Cơ Tu, kết hợp sợi bông dệt mật độ cao. Sản phẩm không bị phai loang khi giặt tay với dầu gội nhẹ hoặc xà phòng loãng, đảm bảo độ bền sắc đẹp trên 5 năm sử dụng.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface rounded-lg p-5 shadow-sm">
+<button class="w-full flex items-center justify-between text-left font-headline-md text-[18px] text-text-heading focus:outline-none" onclick="toggleFaq(this)">
+<span class="">Làm thế nào để kiểm chứng sản phẩm dệt thật từ Đông Giang?</span>
+<span class="material-symbols-outlined text-forest-accent transition-transform duration-300">expand_more</span>
+</button>
+<div class="hidden pt-3 font-body-md text-text-body/80 border-t border-surface-sand mt-3 leading-relaxed">
+            Mỗi chiếc túi đều được đính kèm thẻ vải dệt mã QR cá nhân hóa. Khi dùng camera điện thoại quét mã, bạn sẽ xem được tên nghệ nhân hoàn thiện, thôn bản nơi dệt cửi, ngày hoàn thành và mã số lưu trữ hồ sơ OCOP Quảng Nam chính thức.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface rounded-lg p-5 shadow-sm">
+<button class="w-full flex items-center justify-between text-left font-headline-md text-[18px] text-text-heading focus:outline-none" onclick="toggleFaq(this)">
+<span class="">Sản phẩm làm thủ công có sai lệch về kích thước hay hoa văn không?</span>
+<span class="material-symbols-outlined text-forest-accent transition-transform duration-300">expand_more</span>
+</button>
+<div class="hidden pt-3 font-body-md text-text-body/80 border-t border-surface-sand mt-3 leading-relaxed">
+            Do hoàn toàn dệt bằng khung cửi thắt lưng và bàn tay người thợ, mỗi tấm thổ cẩm có thể có độ chênh lệch rất nhỏ (dung sai khoảng 0.5 - 1cm) về khoảng cách hạt cườm hay khổ vải. Đây chính là dấu ấn cá nhân độc bản không máy móc nào sao chép được.
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface rounded-lg p-5 shadow-sm">
+<button class="w-full flex items-center justify-between text-left font-headline-md text-[18px] text-text-heading focus:outline-none" onclick="toggleFaq(this)">
+<span class="">Chính sách bảo hành và đổi trả của Dệt Nguồn như thế nào?</span>
+<span class="material-symbols-outlined text-forest-accent transition-transform duration-300">expand_more</span>
+</button>
+<div class="hidden pt-3 font-body-md text-text-body/80 border-t border-surface-sand mt-3 leading-relaxed">
+            Chúng tôi bảo hành 1 đổi 1 trong 30 ngày nếu phát hiện lỗi kỹ thuật từ nhà sản xuất. Đồng thời hỗ trợ sửa chữa miễn phí đường chỉ may, khóa kéo và vệ sinh dưỡng vải trọn đời cho mọi khách hàng Dệt Nguồn.
+          </div>
+</div>
+<!-- FAQ 5 -->
+<div class="bg-surface rounded-lg p-5 shadow-sm">
+<button class="w-full flex items-center justify-between text-left font-headline-md text-[18px] text-text-heading focus:outline-none" onclick="toggleFaq(this)">
+<span class="">Nếu đặt làm quà tặng gửi trực tiếp cho người nhận thì đóng gói thế nào?</span>
+<span class="material-symbols-outlined text-forest-accent transition-transform duration-300">expand_more</span>
+</button>
+<div class="hidden pt-3 font-body-md text-text-body/80 border-t border-surface-sand mt-3 leading-relaxed">
+            Tất cả đơn hàng quà tặng đều được bọc trong hộp cứng sang trọng dập nổi logo Dệt Nguồn, thắt nơ hoa văn và chèn giấy rơm bảo vệ. Chúng tôi sẽ không đính kèm hóa đơn giá tiền bên trong và hỗ trợ viết tay thiệp lời chúc của bạn một cách trang trọng nhất.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Accordion Script -->
+<script>
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.material-symbols-outlined');
+      const isHidden = content.classList.contains('hidden');
+      
+      document.querySelectorAll('#faq-container > div > div').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('#faq-container button span.material-symbols-outlined').forEach(el => el.classList.remove('rotate-180'));
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-text-heading text-surface-container-high relative overflow-hidden"><div class="h-2 w-full bg-gradient-to-r from-forest-accent via-terracotta-accent to-forest-accent opacity-85"></div><div class="max-w-7xl mx-auto px-gutter pt-space-2xl pb-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-md"><div class="p-2 bg-surface-container-lowest/10 rounded-lg"><img alt="Logo nguyên bản xanh.png" class="h-8 w-auto object-contain brightness-0 invert" src="/favicon.svg"></div><div><p class="font-headline-md text-surface-sand tracking-wide">DỆT NGUỒN</p><p class="font-label-caps text-surface-sand/70 tracking-widest text-[10px] uppercase">Brocade Đông Giang Heritage</p></div></div><p class="font-quote-lg text-quote-lg italic text-surface-sand/90 font-quote-sm">“Dệt bản sắc – Nối nguồn cội”</p><p class="font-body-sm text-body-sm text-surface-container-highest/80 max-w-md leading-relaxed">Dự án bảo tồn và số hóa chuỗi cung ứng thổ cẩm dệt khung cửi lưng của người Cơ Tu tại huyện Đông Giang, tỉnh Quảng Nam. Từng thớ vải mang trọn linh hồn đại ngàn Trường Sơn và chứng nhận OCOP 4 sao quốc gia.</p><div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="Bản đồ định vị" class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center text-surface-sand hover:bg-forest-accent hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">explore</span></a><a aria-label="Chứng nhận OCOP" class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center text-surface-sand hover:bg-forest-accent hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">verified</span></a><a aria-label="Chia sẻ câu chuyện" class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center text-surface-sand hover:bg-forest-accent hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">share</span></a></div></div><div class="space-y-space-md"><h3 class="font-headline-md text-[18px] text-surface-sand font-semibold">Sản phẩm &amp; Khám phá</h3><ul class="space-y-2.5 font-body-sm text-body-sm text-surface-container-highest/80"><li class="hover:text-surface-sand transition-colors"><a data-path="bo-suu-tap" href="#" class="">Túi Đeo Chéo An Điềm</a></li><li class="hover:text-surface-sand transition-colors"><a data-path="bo-suu-tap" href="#" class="">Túi Tote Hoa Văn A-Riêng</a></li><li class="hover:text-surface-sand transition-colors"><a data-path="bo-suu-tap" href="#" class="">Ví Cầm Tay Za-Rá</a></li><li class="hover:text-surface-sand transition-colors"><a data-path="bo-suu-tap" href="#" class="">Phiên Bản Giới Hạn Nghệ Nhân</a></li><li class="hover:text-surface-sand transition-colors"><a data-path="gio-hang" href="#" class="">Giỏ Hàng Của Bạn</a></li></ul></div><div class="space-y-space-md"><h3 class="font-headline-md text-[18px] text-surface-sand font-semibold">Câu chuyện &amp; Nguồn gốc</h3><ul class="space-y-2.5 font-body-sm text-body-sm text-surface-container-highest/80"><li class="hover:text-surface-sand transition-colors"><a data-path="cau-chuyen-di-san" href="#" class="">Di sản Dệt Cườm Cơ Tu</a></li><li class="hover:text-surface-sand transition-colors"><a data-path="cau-chuyen-di-san" href="#" class="">Cung Đường Đông Giang</a></li><li class="hover:text-surface-sand transition-colors"><a data-path="minh-bach-nguon-goc" href="#" class="">Tra Cứu Mã Định Danh QR</a></li><li class="hover:text-surface-sand transition-colors"><a data-path="minh-bach-nguon-goc" href="#" class="">Tiêu chuẩn OCOP 4 Sao</a></li><li class="hover:text-surface-sand transition-colors"><a data-path="minh-bach-nguon-goc" href="#" class="">Chân Dung Nghệ Nhân</a></li></ul></div><div class="space-y-space-md"><h3 class="font-headline-md text-[18px] text-surface-sand font-semibold">Chính sách &amp; Hỗ trợ</h3><ul class="space-y-2.5 font-body-sm text-body-sm text-surface-container-highest/80"><li class="hover:text-surface-sand transition-colors"><a data-path="ho-tro" href="#" class="">Chính Sách Bảo Hành Sợi Tự Nhiên</a></li><li class="hover:text-surface-sand transition-colors"><a data-path="ho-tro" href="#" class="">Vận Chuyển Toàn Quốc &amp; Quốc Tế</a></li><li class="hover:text-surface-sand transition-colors"><a data-path="ho-tro" href="#" class="">Bảo Tồn Bản Quyền Tri Thức Bản Địa</a></li><li class="hover:text-surface-sand transition-colors"><a data-path="ho-tro" href="#" class="">Câu Hỏi Thường Gặp (FAQ)</a></li><li class="hover:text-surface-sand transition-colors"><a data-path="ho-tro" href="#" class="">Liên Hệ Hợp Tác Văn Hóa</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-surface-container-highest/60"><p class="">© 2025 Dệt Nguồn Đông Giang. Bản quyền tri thức hoa văn được bảo tồn bởi Hợp tác xã Dệt thổ cẩm Cơ Tu Đông Giang, Quảng Nam.</p><div class="flex items-center gap-space-md font-label-caps text-surface-sand/70"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-terracotta-accent">verified_user</span> OCOP QUẢNG NAM CERTIFIED</span><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-forest-accent">eco</span> 100% SỢI BÔNG &amp; MÀU TỰ NHIÊN</span></div></div></div></footer>
+
+<script>(function(){document.addEventListener('click',function(event){var link=event.target.closest('[data-path]');if(!link)return;event.preventDefault();window.parent.postMessage({type:'stitch-route',value:link.getAttribute('data-path')},'*');},true);})();</script><script>(function(){var map=[['trang chủ','trang-chu'],['bộ sưu tập','bo-suu-tap'],['bộ sưu tập tiêu biểu','bo-suu-tap'],['câu chuyện di sản','cau-chuyen-di-san'],['minh bạch nguồn gốc','minh-bach-nguon-goc'],['hỗ trợ','ho-tro'],['tất cả','danh-muc-san-pham'],['túi tote hằng ngày','danh-muc-san-pham'],['túi đeo chéo mini','danh-muc-san-pham'],['túi xách công sở','danh-muc-san-pham'],['bộ quà tặng','danh-muc-san-pham']];var normalize=function(value){return value.replace(/s+/g,' ').trim().toLowerCase()};document.querySelectorAll('a,button').forEach(function(element){var text=normalize(element.textContent||'');var found=map.find(function(item){return text===item[0]||text.startsWith(item[0]+' ')});if(found&&!element.dataset.path)element.dataset.path=found[1]});document.addEventListener('click',function(event){var link=event.target.closest('[data-path]');if(!link)return;event.preventDefault();window.parent.postMessage({type:'stitch-route',value:link.dataset.path},'*')},true)})();</script><script>(function(){var routes={"trang-chu":"trang_ch_d_t_ngu_n","bo-suu-tap":"danh_m_c_s_n_ph_m_d_t_ngu_n_1","danh-muc-san-pham":"danh_m_c_s_n_ph_m_d_t_ngu_n_1","cau-chuyen-di-san":"c_u_chuy_n_di_s_n_d_t_ngu_n_kh_p_h_nh_nh_banner_qr","minh-bach-nguon-goc":"h_s_ngu_n_g_c_c_ng_khai_public_provenance_d_t_ngu_n","ho-tro":"li_n_h_h_tr_ti_p_nh_n_di_s_n_support_request_d_t_ngu_n","gio-hang":"gi_h_ng_qu_t_ng_d_t_ngu_n","thong-tin-giao-hang":"th_ng_tin_giao_h_ng_d_t_ngu_n","xac-nhan-don":"x_c_nh_n_n_order_confirmation_d_t_ngu_n","lich-su-don-hang":"l_ch_s_n_order_history_d_t_ngu_n_1"};document.addEventListener('click',function(event){var link=event.target.closest('[data-path]');if(!link)return;var route=link.getAttribute('data-path');var target=routes[route];if(!target)return;event.preventDefault();if(window.parent!==window){window.parent.postMessage({type:'stitch-route',value:route},'*')}else{window.location.href='/public/screens/'+target+'/code.html'}},true)})();</script></body></html>

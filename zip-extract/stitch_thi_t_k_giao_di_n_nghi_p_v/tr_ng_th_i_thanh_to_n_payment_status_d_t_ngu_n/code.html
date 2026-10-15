@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+
+<html lang="vi" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>Rà soát &amp; thanh toán / Review &amp; Payment — Dệt Nguồn</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;1,400;1,500&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-fixed": "#d0e8d6",
+            "background": "#fff8f0",
+            "inverse-on-surface": "#f8f0e3",
+            "on-error": "#ffffff",
+            "primary-container": "#1b5e42",
+            "surface-container-lowest": "#ffffff",
+            "secondary": "#aa361c",
+            "outline-variant": "#bfc9c1",
+            "surface-tint": "#296a4d",
+            "primary-fixed-dim": "#93d5b1",
+            "surface-container-low": "#fbf3e6",
+            "primary": "#00452d",
+            "inverse-primary": "#93d5b1",
+            "on-secondary-container": "#6b1100",
+            "error-container": "#ffdad6",
+            "on-primary-fixed-variant": "#075136",
+            "on-primary": "#ffffff",
+            "on-secondary": "#ffffff",
+            "on-secondary-fixed-variant": "#891e05",
+            "secondary-fixed": "#ffdad2",
+            "on-primary-container": "#93d5b2",
+            "on-tertiary-fixed-variant": "#374b3e",
+            "surface-bright": "#fff8f0",
+            "error": "#ba1a1a",
+            "on-error-container": "#93000a",
+            "on-tertiary-container": "#b6cdbb",
+            "tertiary": "#2c4134",
+            "on-background": "#1e1b14",
+            "surface-container": "#f5ede0",
+            "on-secondary-fixed": "#3d0600",
+            "tertiary-container": "#43584a",
+            "secondary-container": "#ff7353",
+            "surface-dim": "#e1d9cc",
+            "surface-sand": "#EDE0CC",
+            "outline": "#707972",
+            "surface-container-highest": "#e9e2d5",
+            "surface": "#fff8f0",
+            "inverse-surface": "#343027",
+            "terracotta-accent": "#C84B2F",
+            "text-body": "#3D3028",
+            "on-tertiary": "#ffffff",
+            "on-surface": "#1e1b14",
+            "secondary-fixed-dim": "#ffb4a3",
+            "tertiary-fixed-dim": "#b5ccbb",
+            "surface-variant": "#e9e2d5",
+            "surface-container-high": "#efe7da",
+            "on-surface-variant": "#404943",
+            "primary-fixed": "#aef1cc",
+            "on-primary-fixed": "#002113",
+            "forest-accent": "#1B5E42",
+            "on-tertiary-fixed": "#0b1f14",
+            "text-heading": "#1A2E22"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "gutter-mobile": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "margin": "2.5rem",
+            "space-2xl": "4rem",
+            "space-md": "1rem",
+            "margin-mobile": "1.25rem"
+          },
+          "fontFamily": {
+            "headline-xl-mobile": ["Playfair Display"],
+            "button-text": ["Inter"],
+            "headline-md": ["Playfair Display"],
+            "quote-sm": ["Lora"],
+            "label-caps": ["Inter"],
+            "body-lg": ["Inter"],
+            "headline-xl": ["Playfair Display"],
+            "body-md": ["Inter"],
+            "body-sm": ["Inter"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "quote-lg": ["Lora"],
+            "headline-lg": ["Playfair Display"]
+          },
+          "fontSize": {
+            "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+            "button-text": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+            "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+            "quote-sm": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+            "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600"}],
+            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+            "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+            "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+            "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "600"}],
+            "quote-lg": ["20px", {"lineHeight": "32px", "fontWeight": "400"}],
+            "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface-container font-body-md text-text-body min-h-screen flex flex-col antialiased selection:bg-forest-accent selection:text-on-primary">
+<!-- Top Announcement Ticker -->
+<aside aria-label="Thông báo di sản" class="bg-forest-accent text-surface-bright text-[12px] font-label-caps tracking-widest uppercase py-2 px-gutter">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[15px] text-primary-fixed">verified</span>
+<span>Sản phẩm OCOP 4 sao tỉnh Quảng Nam • Dệt cửi lưng Cơ Tu Đông Giang • 100% Sợi bông &amp; Màu rễ cây tự nhiên</span>
+</div>
+<div class="hidden md:flex items-center gap-4 text-surface-sand/90">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">lock</span> Bảo mật chuẩn SSL / AES-256 Bit</span>
+<span>•</span>
+<span>Hotline nghệ nhân: 0905.882.341</span>
+</div>
+</div>
+</aside>
+<!-- Global Header -->
+<header class="sticky top-0 inset-x-0 z-50 bg-surface-container/95 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
+<div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md">
+<!-- Logo + Brand -->
+<div class="flex items-center gap-space-md shrink-0">
+<a class="flex items-center gap-3" data-path="trang-chu" href="#">
+<img alt="Dệt Nguồn Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsTfma8y2XcRZksW4FB__zDAbzB0r9WogMNCy0bY1C8czc6QbWrXQpMwLFVGdZllRN3wTvFf6xV_USWYM4_2hsJHRbX262DnHzPP-WxylpowMsikTgSFCvbK0lMAz_3hi-PEzbyWiWwxmdHSDUnJPq-1LV87bPcmkf7x9TsFnrOz9VaYKnwLO3EXb0zoWk9ARXoJr5HRxafFX_zZ8k9PEaBNFVIZ3D2AnzEnC76F-oeySF5GJILgGMWg1xhFKcZJVM5w"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-text-heading leading-tight tracking-tight text-[20px]">DỆT NGUỒN</span>
+<span class="font-label-caps text-forest-accent tracking-widest text-[9px] uppercase font-semibold">Thổ Cẩm Cơ Tu Đông Giang</span>
+</div>
+</a>
+</div>
+<!-- Navigation -->
+<nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-low/80 p-1 rounded-xl border border-outline-variant/30">
+<a class="px-3.5 py-1.5 font-button-text text-button-text text-on-surface-variant hover:text-forest-accent hover:bg-surface-sand transition-all rounded" data-path="trang-chu" href="#">Trang chủ</a>
+<a class="px-3.5 py-1.5 font-button-text text-button-text text-on-surface-variant hover:text-forest-accent hover:bg-surface-sand transition-all rounded" data-path="bo-suu-tap" href="#">Bộ sưu tập</a>
+<a class="px-3.5 py-1.5 font-button-text text-button-text text-on-surface-variant hover:text-forest-accent hover:bg-surface-sand transition-all rounded" data-path="cau-chuyen-di-san" href="#">Câu chuyện di sản</a>
+<a class="px-3.5 py-1.5 font-button-text text-button-text text-on-surface-variant hover:text-forest-accent hover:bg-surface-sand transition-all rounded" data-path="minh-bach-nguon-goc" href="#">Minh bạch nguồn gốc</a>
+<a class="px-3.5 py-1.5 font-button-text text-button-text text-on-surface-variant hover:text-forest-accent hover:bg-surface-sand transition-all rounded" data-path="ho-tro" href="#">Hỗ trợ</a>
+</nav>
+<!-- Utilities & Security Badge -->
+<div class="flex items-center gap-space-sm md:gap-space-md">
+<div class="relative hidden sm:flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span>
+<input class="w-44 lg:w-56 pl-9 pr-3 py-1.5 bg-surface-container-low text-text-body font-body-sm text-body-sm rounded-lg border border-outline-variant/40 focus:outline-none focus:bg-surface-container-lowest placeholder:text-outline/70 transition-all" placeholder="Tìm túi, nghệ nhân..." type="text"/>
+</div>
+<div class="hidden lg:flex items-center gap-1.5 px-3 py-1.5 bg-surface-sand/80 rounded-lg text-forest-accent text-body-sm border border-forest-accent/20">
+<span class="material-symbols-outlined text-[16px] text-forest-accent">verified_user</span>
+<span class="font-label-caps text-[10px] uppercase font-bold tracking-wider">Thanh toán an toàn SSL</span>
+</div>
+<a aria-label="Giỏ hàng" class="relative p-2 rounded-lg text-forest-accent hover:bg-surface-sand transition-colors border border-outline-variant/30" data-path="gio-hang" href="#">
+<span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+<span class="absolute top-1 right-1 flex items-center justify-center w-4 h-4 bg-terracotta-accent text-on-primary text-[10px] font-bold rounded-full">1</span>
+</a>
+</div>
+</div>
+</header>
+<main class="w-full flex-1 bg-surface-container"><div class="flex flex-col w-full">
+<!-- Interactive State Engine Script -->
+<script>
+    window.setDemoState = function(state) {
+      const states = ['pending', 'success', 'failed', 'mismatch'];
+      states.forEach(s => {
+        const el = document.getElementById('state-panel-' + s);
+        const btn = document.getElementById('state-tab-' + s);
+        if (el) el.classList.add('hidden');
+        if (btn) {
+          btn.classList.remove('bg-forest-accent', 'text-on-primary', 'shadow-md');
+          btn.classList.add('bg-surface-sand', 'text-text-heading');
+        }
+      });
+      const activeEl = document.getElementById('state-panel-' + state);
+      const activeBtn = document.getElementById('state-tab-' + state);
+      if (activeEl) activeEl.classList.remove('hidden');
+      if (activeBtn) {
+        activeBtn.classList.add('bg-forest-accent', 'text-on-primary', 'shadow-md');
+        activeBtn.classList.remove('bg-surface-sand', 'text-text-heading');
+      }
+    };
+
+    window.copyOrderCode = function(code) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(code);
+        const toast = document.getElementById('copy-toast');
+        if (toast) {
+          toast.classList.remove('opacity-0', 'pointer-events-none');
+          toast.classList.add('opacity-100');
+          setTimeout(() => {
+            toast.classList.remove('opacity-100');
+            toast.classList.add('opacity-0', 'pointer-events-none');
+          }, 2400);
+        }
+      }
+    };
+
+    let countdown = 5;
+    setInterval(() => {
+      const timerSpan = document.getElementById('poll-timer-badge');
+      if (timerSpan) {
+        countdown = countdown <= 1 ? 5 : countdown - 1;
+        timerSpan.innerText = countdown + 's';
+      }
+    }, 1000);
+  </script>
+<!-- Content Container with Deliberate Pause and Editorial Polish -->
+<div class="w-full max-w-5xl mx-auto px-gutter py-space-xl lg:py-space-2xl">
+<!-- Top Step Breadcrumb & Screen Identifier Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-lg">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-sand text-forest-accent rounded font-label-caps text-label-caps uppercase tracking-wider font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-forest-accent animate-ping"></span>
+            MÃ MÀN HÌNH: D2C-008
+          </span>
+<span class="text-outline font-label-caps text-label-caps tracking-widest uppercase">| HỆ THỐNG ĐỐI SOÁT BACKEND TRỰC TIẾP</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-text-heading tracking-tight">Trạng thái thanh toán</h1>
+<p class="font-quote-sm text-quote-sm italic text-on-surface-variant">Xác thực chứng từ giao dịch số hóa với Hợp tác xã Dệt Đông Giang qua cổng Napas/VietQR Pro</p>
+</div>
+<!-- Linear Stepper Track -->
+<nav aria-label="Tiến trình mua hàng" class="bg-surface-sand/80 p-2.5 rounded-xl flex items-center gap-1 sm:gap-2 self-start md:self-auto overflow-x-auto max-w-full">
+<div class="flex items-center gap-1.5 text-forest-accent font-button-text text-[12px] whitespace-nowrap">
+<span class="w-5 h-5 rounded-full bg-forest-accent text-surface-container flex items-center justify-center font-bold text-[10px]">✓</span>
+<span>1. Giỏ hàng</span>
+</div>
+<span class="text-outline text-xs">―</span>
+<div class="flex items-center gap-1.5 text-forest-accent font-button-text text-[12px] whitespace-nowrap">
+<span class="w-5 h-5 rounded-full bg-forest-accent text-surface-container flex items-center justify-center font-bold text-[10px]">✓</span>
+<span>2. Giao hàng</span>
+</div>
+<span class="text-outline text-xs">―</span>
+<div class="flex items-center gap-1.5 text-forest-accent font-button-text text-[12px] whitespace-nowrap">
+<span class="w-5 h-5 rounded-full bg-forest-accent text-surface-container flex items-center justify-center font-bold text-[10px]">✓</span>
+<span>3. Rà soát &amp; Thanh toán</span>
+</div>
+<span class="text-outline text-xs">―</span>
+<div class="flex items-center gap-1.5 text-terracotta-accent font-button-text text-[12px] font-bold whitespace-nowrap bg-surface-container-lowest px-2 py-0.5 rounded shadow-sm">
+<span class="w-5 h-5 rounded-full bg-terracotta-accent text-on-secondary flex items-center justify-center font-bold text-[10px] animate-pulse">4</span>
+<span>Xác nhận giao dịch</span>
+</div>
+</nav>
+</div>
+<!-- QA / Demonstration State Inspector Ribbon -->
+<div class="mb-space-lg p-3 bg-surface-container-high rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+<div class="flex items-center gap-2 text-text-heading shrink-0">
+<span class="material-symbols-outlined text-forest-accent text-[20px]">tune</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-semibold">Chế độ giả lập phản hồi cổng ngân hàng (QA Inspector):</span>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-1.5 w-full sm:w-auto">
+<button class="px-3 py-1.5 rounded font-button-text text-[12px] bg-forest-accent text-on-primary shadow-md transition-all text-center" id="state-tab-pending" onclick="setDemoState('pending')">
+          1. Đang đối soát
+        </button>
+<button class="px-3 py-1.5 rounded font-button-text text-[12px] bg-surface-sand text-text-heading hover:bg-forest-accent/20 transition-all text-center" id="state-tab-success" onclick="setDemoState('success')">
+          2. Thành công ➔ D2C-009
+        </button>
+<button class="px-3 py-1.5 rounded font-button-text text-[12px] bg-surface-sand text-text-heading hover:bg-terracotta-accent/20 transition-all text-center" id="state-tab-failed" onclick="setDemoState('failed')">
+          3. Thất bại / Hết hạn
+        </button>
+<button class="px-3 py-1.5 rounded font-button-text text-[12px] bg-surface-sand text-text-heading hover:bg-surface-dim transition-all text-center" id="state-tab-mismatch" onclick="setDemoState('mismatch')">
+          4. Lệch số tiền
+        </button>
+</div>
+</div>
+<!-- Core Layout Grid: Central Status Chamber & Heritage Authentication Ledger -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Primary Status Column (8 Cols on Desktop) -->
+<div class="lg:col-span-8 flex flex-col space-y-space-md">
+<!-- STATE 1: PENDING RECONCILIATION (Default Server Truth) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all" id="state-panel-pending">
+<!-- Cultural Loom Pattern Accent Bar -->
+<div class="h-2.5 w-full bg-gradient-to-r from-forest-accent via-terracotta-accent to-forest-accent"></div>
+<div class="p-space-lg md:p-space-xl space-y-space-lg">
+<!-- Radar Visual + Status Heading -->
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-space-md text-center sm:text-left">
+<div class="relative flex items-center justify-center shrink-0 w-20 h-20 rounded-2xl bg-surface-sand">
+<span class="material-symbols-outlined text-forest-accent text-[40px] animate-spin">autorenew</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-terracotta-accent opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-terracotta-accent"></span>
+</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps uppercase text-terracotta-accent font-semibold tracking-widest flex items-center justify-center sm:justify-start gap-1">
+<span class="material-symbols-outlined text-[14px]">sync</span>
+                  Server Polling (Chu kỳ 5s)
+                </span>
+<h2 class="font-headline-md text-headline-md text-text-heading font-semibold">Đang xác thực giao dịch qua cổng thanh toán...</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl">
+                  Hệ thống bảo mật backend của Dệt Nguồn đang tiếp nhận webhook và đối soát dữ liệu sao kê thời gian thực từ Ngân hàng / Napas 24/7.
+                </p>
+</div>
+</div>
+<!-- Caution Security Banner -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex items-start gap-3">
+<span class="material-symbols-outlined text-forest-accent text-[22px] shrink-0">hourglass_top</span>
+<div class="font-body-sm text-body-sm text-text-body space-y-0.5">
+<p class="font-button-text text-text-heading">Vui lòng không tắt hoặc làm mới trang trình duyệt trong giây lát.</p>
+<p class="text-on-surface-variant">
+                  Giao dịch đang được mã hóa đầu cuối với khóa bảo mật đối tác HTX Xã Ba Đông Giang. Thời gian hoàn tất thông thường từ 5 đến 30 giây.
+                </p>
+</div>
+</div>
+<!-- Live Transaction Snapshot Ledger Table (Zero Fake Card Storage, Compliant) -->
+<div class="bg-surface-container rounded-xl p-space-md space-y-3">
+<div class="flex items-center justify-between pb-2">
+<span class="font-label-caps text-label-caps uppercase text-forest-accent font-bold tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+                  Bản kê đối soát giao dịch (Server Snapshot)
+                </span>
+<span class="text-on-surface-variant font-body-sm text-[12px]">Cập nhật: 14:32:05 (Vừa xong)</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+<div class="bg-surface-container-lowest p-3 rounded-lg flex flex-col justify-between">
+<span class="text-on-surface-variant font-label-caps text-[11px] uppercase tracking-wider">Mã đơn hàng nội bộ:</span>
+<div class="flex items-center justify-between pt-1">
+<span class="font-button-text text-[15px] text-text-heading tracking-wide">#DN-2026-058829</span>
+<button class="p-1 text-forest-accent hover:bg-surface-sand rounded transition-colors" onclick="copyOrderCode('DN-2026-058829')" title="Sao chép mã đơn hàng">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg flex flex-col justify-between">
+<span class="text-on-surface-variant font-label-caps text-[11px] uppercase tracking-wider">Mã tham chiếu ngân hàng:</span>
+<div class="flex items-center justify-between pt-1">
+<span class="font-button-text text-[15px] text-text-heading font-mono">VQR-****-9812</span>
+<span class="material-symbols-outlined text-forest-accent text-[18px]">shield</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg flex flex-col justify-between">
+<span class="text-on-surface-variant font-label-caps text-[11px] uppercase tracking-wider">Số tiền cần đối khớp:</span>
+<div class="pt-1">
+<span class="font-headline-md text-[20px] text-terracotta-accent font-bold">3.450.000 VNĐ</span>
+<span class="block text-on-surface-variant font-body-sm text-[11px]">(Đã gồm 8% VAT &amp; Phí bảo hiểm kiện hàng OCOP)</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg flex flex-col justify-between">
+<span class="text-on-surface-variant font-label-caps text-[11px] uppercase tracking-wider">Phương thức &amp; Tài khoản thụ hưởng:</span>
+<div class="pt-1">
+<span class="font-button-text text-[13px] text-text-heading block">Chuyển khoản VietQR Pro (Napas 247)</span>
+<span class="text-on-surface-variant font-body-sm text-[11px]">HTX Nông Nghiệp &amp; Dệt Thổ Cẩm Xã Ba</span>
+</div>
+</div>
+</div>
+<!-- Automated Polling Bar -->
+<div class="p-3 bg-surface-container-high rounded-lg flex items-center justify-between text-xs">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-forest-accent animate-pulse"></span>
+<span class="font-body-sm text-text-body font-medium">Trạng thái máy chủ: <strong>Đang chờ tín hiệu IPN (Pending Webhook)</strong></span>
+</div>
+<div class="flex items-center gap-1.5 font-label-caps text-forest-accent font-bold">
+<span>Tự động làm mới sau:</span>
+<span class="px-2 py-0.5 bg-forest-accent text-on-primary rounded font-mono text-[11px]" id="poll-timer-badge">5s</span>
+</div>
+</div>
+</div>
+<!-- Primary CTAs & Safety Links -->
+<div class="pt-space-xs flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<button class="w-full sm:w-auto px-6 py-3 bg-forest-accent text-on-primary font-button-text text-button-text rounded shadow-sm hover:bg-forest-accent/90 flex items-center justify-center gap-2 transition-transform active:scale-[0.98]" onclick="setDemoState('success')">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+<span>Kiểm tra lại trạng thái ngay</span>
+</button>
+<div class="flex items-center gap-4 text-center sm:text-right">
+<a class="font-button-text text-[13px] text-forest-accent hover:underline flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+                  Đổi phương thức thanh toán khác
+                </a>
+</div>
+</div>
+</div>
+</div>
+<!-- STATE 2: SUCCESS CONFIRMED (Ready to Transition to D2C-009) -->
+<div class="hidden bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all" id="state-panel-success">
+<div class="h-2.5 w-full bg-forest-accent"></div>
+<div class="p-space-lg md:p-space-xl space-y-space-lg">
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-space-md text-center sm:text-left">
+<div class="w-20 h-20 rounded-2xl bg-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-forest-accent text-[44px]">verified</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps uppercase text-forest-accent font-bold tracking-widest flex items-center justify-center sm:justify-start gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                  Xác nhận thành công từ hệ thống máy chủ
+                </span>
+<h2 class="font-headline-md text-headline-md text-text-heading font-semibold">Giao dịch đã được ghi nhận &amp; Khóa đơn hàng!</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl">
+                  Số tiền <strong>3.450.000 VNĐ</strong> đã khớp hoàn toàn với sao kê Techcombank của Hợp tác xã Đông Giang. Nghệ nhân phụ trách đã nhận thông báo dệt.
+                </p>
+</div>
+</div>
+<!-- Receipt Detail Snapshot -->
+<div class="bg-surface-container rounded-xl p-space-md space-y-2">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Mã giao dịch chính thức (TxID):</span>
+<span class="font-button-text text-text-heading font-mono">TXN-8829-052026-TCB</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Thời gian khóa sổ ngân hàng:</span>
+<span class="font-button-text text-text-heading">14:32:18 • 16/05/2026</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Mã truy xuất nguồn gốc OCOP:</span>
+<span class="font-button-text text-forest-accent font-mono flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">qr_code_2</span>
+                  QR-DNG-OCO-2026
+                </span>
+</div>
+</div>
+<!-- Success Actions -->
+<div class="flex flex-col sm:flex-row items-center gap-space-sm pt-space-xs">
+<a class="w-full sm:w-auto px-6 py-3 bg-forest-accent text-on-primary font-button-text text-button-text rounded shadow-sm hover:bg-forest-accent/90 flex items-center justify-center gap-2 text-center" href="#">
+<span>Xem chi tiết đơn hàng &amp; Lộ trình dệt</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto px-5 py-3 bg-surface-sand text-text-heading font-button-text text-button-text rounded hover:bg-surface-dim flex items-center justify-center gap-2 text-center" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Tải biên lai số (.PDF)</span>
+</a>
+</div>
+</div>
+</div>
+<!-- STATE 3: TIMEOUT / FAILED STATE -->
+<div class="hidden bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all" id="state-panel-failed">
+<div class="h-2.5 w-full bg-secondary"></div>
+<div class="p-space-lg md:p-space-xl space-y-space-lg">
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-space-md text-center sm:text-left">
+<div class="w-20 h-20 rounded-2xl bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[44px]">timer_off</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest flex items-center justify-center sm:justify-start gap-1">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+                  Hết hạn phiên giao dịch (Session Timeout)
+                </span>
+<h2 class="font-headline-md text-headline-md text-text-heading font-semibold">Chưa nhận được xác nhận thanh toán</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl">
+                  Phiên thanh toán mã QR của đơn hàng #DN-2026-058829 đã quá 15 phút mà chưa ghi nhận chuyển khoản thành công từ phía ngân hàng của bạn.
+                </p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl space-y-2">
+<p class="font-button-text text-text-heading text-body-sm">Bạn đã thực hiện chuyển khoản từ ứng dụng ngân hàng chưa?</p>
+<ul class="text-body-sm text-on-surface-variant space-y-1 list-disc list-inside">
+<li>Nếu <strong>chưa chuyển khoản</strong>: Bạn có thể tạo lại mã VietQR mới hoặc đổi phương thức thanh toán an toàn.</li>
+<li>Nếu <strong>đã bị trừ tiền trong tài khoản</strong>: Hãy lưu lại ảnh chụp màn hình trừ tiền và liên hệ ngay Hotline HTX 0905.882.341 để đối soát thủ công mã tham chiếu.</li>
+</ul>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm pt-space-xs">
+<button class="w-full sm:w-auto px-6 py-3 bg-terracotta-accent text-on-primary font-button-text text-button-text rounded shadow-sm hover:opacity-90 flex items-center justify-center gap-2" onclick="setDemoState('pending')">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>Tạo lại mã VietQR / Thử lại</span>
+</button>
+<a class="w-full sm:w-auto px-5 py-3 bg-surface-sand text-text-heading font-button-text text-button-text rounded hover:bg-surface-dim flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Báo đã trừ tiền (Hotline 24/7)</span>
+</a>
+</div>
+</div>
+</div>
+<!-- STATE 4: MISMATCH AMOUNT / FRAUD REVIEW (Critical Edge-case) -->
+<div class="hidden bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all" id="state-panel-mismatch">
+<div class="h-2.5 w-full bg-secondary-container"></div>
+<div class="p-space-lg md:p-space-xl space-y-space-lg">
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-space-md text-center sm:text-left">
+<div class="w-20 h-20 rounded-2xl bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container text-[44px]">warning</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest flex items-center justify-center sm:justify-start gap-1">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+                  Phát hiện sai lệch số tiền (Amount Mismatch)
+                </span>
+<h2 class="font-headline-md text-headline-md text-text-heading font-semibold">Tạm giữ đơn hàng để đối soát số dư</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl">
+                  Hệ thống nhận thấy tài khoản HTX đã nhận tiền, tuy nhiên số tiền giao dịch thực tế không trùng khớp với giá trị đơn hàng được niêm yết.
+                </p>
+</div>
+</div>
+<!-- Discrepancy Comparison Block -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 bg-surface-container p-space-md rounded-xl">
+<div class="bg-surface-container-lowest p-3 rounded-lg">
+<span class="text-on-surface-variant font-label-caps text-[11px] uppercase">Số tiền đơn hàng yêu cầu:</span>
+<p class="font-headline-md text-[18px] text-text-heading font-bold mt-1">3.450.000 VNĐ</p>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg">
+<span class="text-on-surface-variant font-label-caps text-[11px] uppercase">Số tiền hệ thống nhận được:</span>
+<p class="font-headline-md text-[18px] text-secondary font-bold mt-1">3.000.000 VNĐ</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Để bảo vệ quyền lợi và không làm gián đoạn kế hoạch đan dệt của nghệ nhân, vui lòng liên hệ trực tiếp trưởng bộ phận tài chính HTX kèm mã giao dịch để hoàn trả hoặc chuyển tiếp phần chênh lệch.
+            </p>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm pt-space-xs">
+<a class="w-full sm:w-auto px-6 py-3 bg-forest-accent text-on-primary font-button-text text-button-text rounded shadow-sm hover:bg-forest-accent/90 flex items-center justify-center gap-2" href="tel:0905882341">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+<span>Kết nối chuyên viên đối soát ngay</span>
+</a>
+<a class="w-full sm:w-auto px-5 py-3 bg-surface-sand text-text-heading font-button-text text-button-text rounded hover:bg-surface-dim flex items-center justify-center gap-2" href="#">
+<span>Gửi khiếu nại trực tuyến</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Security Transparency Banner -->
+<div class="bg-surface-sand/60 rounded-xl p-space-md flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-forest-accent text-[24px]">lock_clock</span>
+<div class="font-body-sm text-body-sm">
+<span class="font-semibold text-text-heading">Bảo chứng dữ liệu giao dịch:</span>
+<span class="text-on-surface-variant">Dệt Nguồn không lưu trữ thông tin thẻ, CVV hay mật khẩu e-banking của khách hàng. Tất cả dữ liệu đối soát được xử lý theo chuẩn ISO/IEC 27001.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Artisan Order Summary & Provenance Trust Stamp (4 Cols on Desktop) -->
+<div class="lg:col-span-4 flex flex-col space-y-space-md">
+<!-- Ordered Item Heritage Summary Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md space-y-space-md">
+<div class="flex items-center justify-between pb-2">
+<span class="font-label-caps text-label-caps uppercase text-forest-accent font-bold tracking-wider">
+              Kiện hàng thổ cẩm bảo hộ
+            </span>
+<span class="px-2 py-0.5 bg-surface-sand text-forest-accent font-label-caps text-[10px] rounded uppercase font-semibold">1 Sản phẩm</span>
+</div>
+<!-- Product Snapshot Mosaic -->
+<div class="flex items-start gap-3">
+<img class="w-20 h-20 rounded-lg object-cover bg-surface-container shrink-0" data-alt="Túi thổ cẩm dệt cườm Cơ Tu truyền thống màu xanh rừng chàm kết hợp dệt chỉ đất nung tự nhiên Đông Giang Quảng Nam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGeMqH3FJKg5joJjSXssb9bcKY5tIO9THKiuQsbwmna2n5UOXCK1013q6UNkDyc8IGgsPR3NdZOA40DzQUtl-So9OE-NqP6gkXCs0mr8kR-MBgBobN2bfTuU7S83BaV622U6tQ7M9J8IIutHKf2_E2d7_Y6AmLWrAW2BvXYGD0Dyb4ntBL_6MY90aMZkQxyQGrKIbq8iVBwcU9V1rkh44a00hwkDC_x3eQo5FbVOaxmQhACW9YXVqo"/>
+<div class="space-y-1">
+<h3 class="font-headline-md text-[16px] text-text-heading font-semibold leading-snug">Túi Đeo Chéo An Điềm (Khắc Cườm Chì)</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Nghệ nhân: Y Kông &amp; Bh'ling Thị Nhĩ</p>
+<p class="font-button-text text-forest-accent text-[14px] font-bold">3.450.000 VNĐ</p>
+</div>
+</div>
+<!-- Provenance Micro Badge Container -->
+<div class="bg-surface-container rounded-lg p-3 space-y-2 text-xs">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-terracotta-accent">workspace_premium</span>
+                Tiêu chuẩn OCOP:
+              </span>
+<span class="font-semibold text-text-heading">Hạng 4 Sao Quảng Nam</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-forest-accent">nature</span>
+                Chất liệu:
+              </span>
+<span class="font-semibold text-text-heading">100% Sợi bông rừng &amp; Nhuộm chàm</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-forest-accent">pin_drop</span>
+                Địa lý dệt:
+              </span>
+<span class="font-semibold text-text-heading">Thôn Za-ra, Xã Ba, Đông Giang</span>
+</div>
+</div>
+<!-- Dispatch Timeline Note -->
+<div class="pt-1 text-xs text-on-surface-variant space-y-1">
+<div class="flex items-center gap-1.5 text-forest-accent font-semibold">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+<span>Giao hàng bảo hiểm chuyên biệt</span>
+</div>
+<p>Hộp gỗ sơn mài đính kèm mã QR định danh thổ cẩm riêng biệt cho người sở hữu.</p>
+</div>
+</div>
+<!-- Artisan Guarantee & Helpdesk Card -->
+<div class="bg-surface-sand/80 rounded-xl p-space-md space-y-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-forest-accent text-[20px]">headset_mic</span>
+<h4 class="font-headline-md text-[16px] text-text-heading font-semibold">Trợ giúp giao dịch khẩn cấp</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Nếu giao dịch ngân hàng của bạn gặp trục trặc, hệ thống tự động lưu giữ giỏ hàng trong 48 giờ để nghệ nhân giữ khung dệt cho bạn.
+          </p>
+<div class="bg-surface-container-lowest p-3 rounded-lg space-y-1">
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Hotline Kỹ thuật &amp; Đối soát HTX:</p>
+<a class="font-headline-md text-[18px] text-terracotta-accent font-bold tracking-wide flex items-center gap-1.5 hover:underline" href="tel:0905882341">
+<span class="material-symbols-outlined text-[18px]">call</span>
+              0905.882.341
+            </a>
+<p class="text-[11px] text-on-surface-variant">Trực tuyến 24/7 (Cả ngày Lễ và Thứ 7, Chủ Nhật)</p>
+</div>
+</div>
+<!-- Heritage Trust Ribbon Stamp -->
+<div class="bg-forest-accent text-surface-container rounded-xl p-space-md space-y-2">
+<div class="flex items-center gap-2 text-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-semibold">Cam kết giá trị nguồn cội</span>
+</div>
+<p class="font-quote-sm text-quote-sm italic text-surface-container-high/90">
+            “Mỗi tấm thổ cẩm trao tay là một phần thu nhập trực tiếp gửi về phụ nữ Cơ Tu vùng cao Đông Giang.”
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Clipboard Toast Notification -->
+<div class="fixed bottom-6 right-6 z-50 bg-forest-accent text-on-primary px-4 py-2.5 rounded-lg shadow-xl flex items-center gap-2 font-button-text text-button-text opacity-0 pointer-events-none transition-opacity duration-300" id="copy-toast">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">content_copy</span>
+<span>Đã sao chép mã đơn hàng #DN-2026-058829 vào bộ nhớ tạm!</span>
+</div>
+</div></main>
+<!-- Global Footer -->
+<footer class="w-full bg-text-heading text-surface-container-high relative overflow-hidden">
+<div class="h-2 w-full bg-gradient-to-r from-forest-accent via-terracotta-accent to-forest-accent opacity-85"></div>
+<div class="max-w-7xl mx-auto px-gutter pt-space-2xl pb-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl">
+<div class="lg:col-span-2 space-y-space-md">
+<div class="flex items-center gap-space-md">
+<div class="p-2 bg-surface-container-lowest/10 rounded-lg">
+<img alt="Dệt Nguồn Logo" class="h-8 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByOG-sRAfxP04DvOOn1wA9joUca4Rj2aSS5Bh9voxox5LouErodrzQKpHCWCS-6vKVeawGBo41WtbFWjQ5BAJxBBJ4RGii6JIaZIeKInVUDWj1YDB6ry_jAgj21wrpqSDNGQRVFRJ4g4JyABoSYKNnzgpJTiAT8jSwqwisEa4OhSWJ4TQTZp88fwIR454u1suiImHZN8MvnkwdVxhuQ1NTdxpOBHopY63VBgep4VV_5x0Raq41V4-rD3veSWhB10TEHg"/>
+</div>
+<div>
+<p class="font-headline-md text-surface-sand tracking-wide">DỆT NGUỒN</p>
+<p class="font-label-caps text-surface-sand/70 tracking-widest text-[10px] uppercase">Brocade Đông Giang Heritage</p>
+</div>
+</div>
+<p class="font-quote-lg text-quote-lg italic text-surface-sand/90 font-quote-sm">“Dệt bản sắc – Nối nguồn cội”</p>
+<p class="font-body-sm text-body-sm text-surface-container-highest/80 max-w-md leading-relaxed">
+            Dự án bảo tồn và số hóa chuỗi cung ứng thổ cẩm dệt khung cửi lưng của người Cơ Tu tại huyện Đông Giang, tỉnh Quảng Nam. Từng thớ vải mang trọn linh hồn đại ngàn Trường Sơn và chứng nhận OCOP 4 sao quốc gia.
+          </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<a aria-label="Bản đồ định vị" class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center text-surface-sand hover:bg-forest-accent hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">explore</span></a>
+<a aria-label="Chứng nhận OCOP" class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center text-surface-sand hover:bg-forest-accent hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">verified</span></a>
+<a aria-label="Chia sẻ câu chuyện" class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center text-surface-sand hover:bg-forest-accent hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">share</span></a>
+</div>
+</div>
+<div class="space-y-space-md">
+<h3 class="font-headline-md text-[18px] text-surface-sand font-semibold">Sản phẩm &amp; Khám phá</h3>
+<ul class="space-y-2.5 font-body-sm text-body-sm text-surface-container-highest/80">
+<li class="hover:text-surface-sand transition-colors"><a data-path="bo-suu-tap" href="#">Túi Đeo Chéo An Điềm</a></li>
+<li class="hover:text-surface-sand transition-colors"><a data-path="bo-suu-tap" href="#">Túi Tote Hoa Văn A-Riêng</a></li>
+<li class="hover:text-surface-sand transition-colors"><a data-path="bo-suu-tap" href="#">Ví Cầm Tay Za-Rá</a></li>
+<li class="hover:text-surface-sand transition-colors"><a data-path="bo-suu-tap" href="#">Phiên Bản Giới Hạn Nghệ Nhân</a></li>
+<li class="hover:text-surface-sand transition-colors"><a data-path="gio-hang" href="#">Giỏ Hàng Của Bạn</a></li>
+</ul>
+</div>
+<div class="space-y-space-md">
+<h3 class="font-headline-md text-[18px] text-surface-sand font-semibold">Câu chuyện &amp; Nguồn gốc</h3>
+<ul class="space-y-2.5 font-body-sm text-body-sm text-surface-container-highest/80">
+<li class="hover:text-surface-sand transition-colors"><a data-path="cau-chuyen-di-san" href="#">Di sản Dệt Cườm Cơ Tu</a></li>
+<li class="hover:text-surface-sand transition-colors"><a data-path="cau-chuyen-di-san" href="#">Cung Đường Đông Giang</a></li>
+<li class="hover:text-surface-sand transition-colors"><a data-path="minh-bach-nguon-goc" href="#">Tra Cứu Mã Định Danh QR</a></li>
+<li class="hover:text-surface-sand transition-colors"><a data-path="minh-bach-nguon-goc" href="#">Tiêu chuẩn OCOP 4 Sao</a></li>
+<li class="hover:text-surface-sand transition-colors"><a data-path="minh-bach-nguon-goc" href="#">Chân Dung Nghệ Nhân</a></li>
+</ul>
+</div>
+<div class="space-y-space-md">
+<h3 class="font-headline-md text-[18px] text-surface-sand font-semibold">Chính sách &amp; Hỗ trợ</h3>
+<ul class="space-y-2.5 font-body-sm text-body-sm text-surface-container-highest/80">
+<li class="hover:text-surface-sand transition-colors"><a data-path="ho-tro" href="#">Chính Sách Bảo Hành Sợi Tự Nhiên</a></li>
+<li class="hover:text-surface-sand transition-colors"><a data-path="ho-tro" href="#">Vận Chuyển Toàn Quốc &amp; Quốc Tế</a></li>
+<li class="hover:text-surface-sand transition-colors"><a data-path="ho-tro" href="#">Bảo Tồn Bản Quyền Tri Thức Bản Địa</a></li>
+<li class="hover:text-surface-sand transition-colors"><a data-path="ho-tro" href="#">Câu Hỏi Thường Gặp (FAQ)</a></li>
+<li class="hover:text-surface-sand transition-colors"><a data-path="ho-tro" href="#">Liên Hệ Hợp Tác Văn Hóa</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-surface-container-highest/60 border-t border-surface-container-highest/10">
+<p>© 2025 Dệt Nguồn Đông Giang. Bản quyền tri thức hoa văn được bảo tồn bởi Hợp tác xã Dệt thổ cẩm Cơ Tu Đông Giang, Quảng Nam.</p>
+<div class="flex items-center gap-space-md font-label-caps text-surface-sand/70">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-terracotta-accent">verified_user</span> OCOP QUẢNG NAM CERTIFIED</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-forest-accent">eco</span> 100% SỢI BÔNG &amp; MÀU TỰ NHIÊN</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Simple Checkout Script Interaction -->
+<script>
+    (function() {
+      const applyBtn = document.getElementById('apply-promo-btn');
+      const promoInput = document.getElementById('promo-input');
+      const promoStatus = document.getElementById('promo-status');
+      const termsCheckbox = document.getElementById('terms-agree');
+      const submitBtn = document.getElementById('submit-order-btn');
+
+      if (applyBtn && promoInput && promoStatus) {
+        applyBtn.addEventListener('click', function() {
+          const code = promoInput.value.trim().toUpperCase();
+          if (code === 'DONGGIANG2026' || code === 'HOIVIEN-XA-BA') {
+            promoStatus.innerHTML = '<span class="material-symbols-outlined text-[14px]">check_circle</span> <span>Mã hợp lệ <strong>' + code + '</strong>: Miễn phí gói quà tặng & tài trợ 100% cước chuyển phát.</span>';
+            promoStatus.className = 'text-[12px] text-forest-accent font-medium flex items-center gap-1';
+          } else if (code === '') {
+            promoStatus.innerHTML = '<span class="material-symbols-outlined text-[14px]">info</span> <span>Vui lòng nhập mã ưu đãi để áp dụng.</span>';
+            promoStatus.className = 'text-[12px] text-on-surface-variant font-medium flex items-center gap-1';
+          } else {
+            promoStatus.innerHTML = '<span class="material-symbols-outlined text-[14px]">error</span> <span>Mã ưu đãi không khả dụng hoặc đã hết lượt dùng.</span>';
+            promoStatus.className = 'text-[12px] text-terracotta-accent font-medium flex items-center gap-1';
+          }
+        });
+      }
+
+      if (submitBtn && termsCheckbox) {
+        submitBtn.addEventListener('click', function() {
+          if (!termsCheckbox.checked) {
+            alert('Vui lòng kiểm tra và tích chọn đồng ý với Điều khoản mua hàng & dung sai thủ công v2.4 trước khi xác nhận đơn hàng.');
+            termsCheckbox.focus();
+            return;
+          }
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">sync</span> <span>ĐANG KHỞI TẠO GIAO DỊCH AN TOÀN...</span>';
+          setTimeout(function() {
+            submitBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check</span> <span>ĐÃ TẠO ĐƠN HÀNG THÀNH CÔNG!</span>';
+            submitBtn.classList.remove('bg-forest-accent');
+            submitBtn.classList.add('bg-primary-container');
+            alert('Đơn hàng DNDG-8892 của bạn đã được ghi nhận vào hệ thống hợp tác xã Đông Giang. Quý khách vui lòng quét mã VietQR để hoàn tất chuyển khoản trong 15 phút.');
+          }, 1200);
+        });
+      }
+    })();
+  </script>
+</body></html>

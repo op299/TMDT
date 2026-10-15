@@ -1,0 +1,656 @@
+<!DOCTYPE html><html lang="vi" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Câu chuyện di sản - Đông Giang · Dệt Nguồn</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Playfair Display, Cinzel, Dancing Script & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&amp;family=Cinzel:wght@500;600;700;800&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Custom Tailwind Configuration -->
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            heritage: {
+              cream: '#F7F3E9',
+              parchment: '#F0E8D8',
+              card: '#FBF8F1',
+              terracotta: '#BC4A2B',
+              'terracotta-dark': '#9A361B',
+              forest: '#183827',
+              'forest-dark': '#0E2419',
+              gold: '#C59A4E',
+              border: '#E3D7C1',
+              charcoal: '#2D332F',
+              muted: '#636F68'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            display: ['"Cinzel"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            script: ['"Alex Brush"', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="page-textures">
+    /* Subtle heritage diamond pattern repeated background */
+    .bg-pattern-woven {
+      background-color: #F7F3E9;
+      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC16LfC24ihkwJ3_NnQALAZlGmvH5sOHSSb8jQmjF759axFzUR-LPxmoI_DZKeGsH0l6GHTth71X7xZXzyYKNTUDviAWIhvnoPKlMb5sfZDUkxS3ViFPuQ5CDiFAm7_qVjr2BFIZAKHnJeK4atIUaUxe2uNdmKuhz6YU3OcjOASbofFy5HHDIGTPHfXyjK4XQHjoPjWYuO0VKjM6Vt9eI7amLGfrqsuT04-ZlpA4SvErot888Qg3G1QvJ7usZ_h4B4ANg');
+      background-repeat: repeat;
+      background-size: 180px 180px;
+    }
+    .bg-pattern-woven-light {
+      background-color: #FAF6EF;
+      background-image: radial-gradient(#d5c3aa 0.75px, transparent 0.75px);
+      background-size: 16px 16px;
+    }
+    .heritage-border-bottom {
+      border-bottom: 2px solid #C84B2F;
+    }
+  </style>
+<style data-purpose="ethnic-ribbon">
+    .ethnic-ribbon-divider {
+      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxMQABCM1G4HfNxPWroxbHsjeNw6LHNiFx_DTTUFRw7d76aydagSn_jrG8gSg8qduEYobQtZJBviW7U-ST8FkRzWf_qwr10FDIfmIqJG6w-yMflCNCHymk9rMIz5-d3PHSmUJg6KmlXBYpBcmGawm5sRA_DsQHhlRLXmdp1LLd_YubXi0DL_OpAfOssqEKriBvClQjrYgi3mHD8jpEIAlgAtWZ7b6XU_5PFyxg3ofFfF8xDcjnIbthbj2RTvO0eKmU5g');
+      background-repeat: repeat-x;
+      background-position: center;
+      background-size: contain;
+      height: 22px;
+      width: 100%;
+      opacity: 0.9;
+    }
+  </style>
+<!-- END: Custom Styles -->
+</head>
+<body class="bg-pattern-woven text-heritage-charcoal font-sans antialiased selection:bg-heritage-terracotta selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-[#F7F3E9]/95 backdrop-blur-md border-b border-heritage-border/70 transition-all">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<!-- Logo Brand -->
+<a class="flex items-center gap-3.5 group" href="#">
+<div class="w-10 h-10 rounded-full border border-heritage-terracotta/40 flex items-center justify-center p-1 bg-white/70 shadow-sm group-hover:scale-105 transition-transform">
+<svg class="w-full h-full text-heritage-forest fill-current" viewBox="0 0 40 40">
+<path d="M20 3L35 34H5L20 3Z" fill="none" stroke="#BC4A2B" stroke-width="2"></path>
+<path d="M20 9L30 30H10L20 9Z" fill="#183827"></path>
+<circle cx="20" cy="22" fill="#C59A4E" r="3"></circle>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-serif font-bold text-xl sm:text-2xl tracking-wider text-heritage-forest uppercase leading-tight">ĐÔNG GIANG</span>
+<span class="text-[10px] tracking-[0.2em] font-medium text-heritage-terracotta uppercase">SẢN PHẨM OCOP · TINH HOA CƠ TU</span>
+</div>
+</a>
+<!-- Navigation Menu -->
+<nav class="hidden md:flex items-center space-x-7 text-[14.5px] font-medium">
+<a class="text-heritage-charcoal/80 hover:text-heritage-terracotta transition-colors" href="#">Trang chủ</a>
+<a class="text-heritage-charcoal/80 hover:text-heritage-terracotta transition-colors" href="#">Sản phẩm</a>
+<!-- Active Menu Item with Terracotta indicator -->
+<a class="text-heritage-terracotta font-semibold relative py-1 border-b-2 border-heritage-terracotta" href="#">
+            Câu chuyện di sản
+          </a>
+<a class="text-heritage-charcoal/80 hover:text-heritage-terracotta transition-colors" href="#">Về chúng tôi</a>
+<a class="text-heritage-charcoal/80 hover:text-heritage-terracotta transition-colors" href="#">Tin tức</a>
+<a class="text-heritage-charcoal/80 hover:text-heritage-terracotta transition-colors" href="#">Liên hệ</a>
+</nav>
+<!-- Header Actions: Search, Account, Cart with Counter -->
+<div class="flex items-center gap-4 text-heritage-forest">
+<button aria-label="Tìm kiếm" class="p-2 hover:text-heritage-terracotta transition-colors">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+<path d="M21 21l-4.35-4.35m1.85-5.65a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+<button aria-label="Tài khoản cá nhân" class="p-2 hover:text-heritage-terracotta transition-colors">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+<path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+<button aria-label="Giỏ hàng" class="relative p-2 hover:text-heritage-terracotta transition-colors">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+<path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="absolute -top-0.5 -right-0.5 w-4 h-4 bg-heritage-terracotta text-white rounded-full text-[10px] font-bold flex items-center justify-center shadow">0</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="w-full bg-[#FAF3E7]" data-purpose="hero-editorial">
+  <div class="w-full max-w-full mx-auto">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMkW7gVJasyzlK1b89ToS6ba4HkOq4cU5eDfcZglipFtEy7jlJxWaIsALPk3lHkaDAaQzC5-RqtDMGjYWdSwTihvMtNYMM33pYq2JZb7ENGoBjRW8LHlCklGyBMvaPBX8Rm-wDDGdUPb1Tz1ol8IbDFk09bbKskvOun2Uv5YAA38zQFMgFn86-oYg1Akg0RGepZdyCZqLMipoPEhbwVf9C6E39sG8lPQd2wJjOD3Hwl4VNSWajamCu6ugg-IoDON2ZLA" alt="Câu chuyện di sản - Dệt Nguồn" class="w-full h-auto block shadow-sm">
+  </div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: HeritageRibbonDivider -->
+<div class="ethnic-ribbon-divider my-2"></div>
+<!-- END: HeritageRibbonDivider -->
+<!-- BEGIN: BannerNotice -->
+<section class="py-6 bg-[#F3ECE0]/90 border-y border-heritage-border" data-purpose="editorial-notice">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+<div class="md:col-span-7 flex flex-col sm:flex-row sm:items-center gap-4">
+<div class="border-l-4 border-heritage-forest pl-4">
+<h2 class="font-serif font-bold text-lg sm:text-xl text-heritage-forest uppercase tracking-wider">
+                MỘT CHIẾC TÚI, NHIỀU CÂU CHUYỆN
+              </h2>
+<p class="text-xs sm:text-sm text-heritage-muted mt-1 leading-relaxed">
+                Mỗi sản phẩm là kết quả của sự đồng hành giữa thiên nhiên Đông Giang, bàn tay người Cơ Tu và những giá trị văn hóa được gìn giữ qua nhiều thế hệ. Trang này kể lại hành trình ấy — từ chất liệu, hoa văn, quy trình cho đến tác động tích cực lên đời sống, để bạn hiểu rõ hơn.
+              </p>
+</div>
+</div>
+<div class="md:col-span-5">
+<div class="bg-[#FBE9E3] border border-[#F2C5B8] rounded-xl p-3.5 flex items-center gap-3.5 shadow-sm">
+<div class="w-8 h-8 rounded-full bg-heritage-terracotta text-white flex-shrink-0 flex items-center justify-center font-bold text-base shadow">
+                !
+              </div>
+<div class="text-xs sm:text-[13px] text-heritage-terracotta leading-snug">
+<span class="font-bold">Không phải bản copy cuối.</span>
+<span class="block text-heritage-terracotta-dark font-medium">Các chữ (TBD) phải do chủ thể tự nhận xác nhận.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: BannerNotice -->
+<!-- BEGIN: FivePillarsSection -->
+<section class="py-14" data-purpose="five-layers-story" id="kham-pha">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-12">
+<div class="flex items-center justify-center gap-2 text-heritage-terracotta mb-2 text-sm">
+<span class="">❖</span>
+<h2 class="text-2xl sm:text-3xl font-serif font-bold text-heritage-forest tracking-tight">
+              Cấu trúc câu chuyện 5 lớp
+            </h2>
+<span class="">❖</span>
+</div>
+<p class="text-sm text-heritage-muted">Hành trình trọn vẹn từ nguồn cội đại ngàn đến tác phẩm ứng dụng văn hóa đương đại.</p>
+</div>
+<!-- 5 Cards Horizontal Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+<!-- Card 1: Nơi chốn -->
+<div class="bg-heritage-card rounded-2xl overflow-hidden border border-heritage-border shadow-sm hover:shadow-md transition flex flex-col">
+<div class="relative h-44 overflow-hidden">
+<img alt="Nơi chốn Đông Giang" class="w-full h-full object-cover object-left hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGZ_RAmLlK64yWnuX0sZbINP0CgWWQUUZoBN5v-pvwi1MLOf2tNFXho5fS9M-83CecouAdornq0kDtwhZF1ofFtV3QrMe1QBSekdQEIEizN2fC2584mZKde98od6ivTOpME0lGpkpD368l5MjXcWjrRyLRqoo6SQEOR-beetNxU1r7QdN7NjuyPqUKjzP7THZpq7ZtG5_JMUMTrO8IobSTWWmhpFpiThOwGTCO-34">
+<div class="absolute bottom-2 left-2 bg-heritage-terracotta text-white w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shadow">
+                1
+              </div>
+</div>
+<div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+<div>
+<h3 class="font-serif font-bold text-base text-heritage-forest">1. Nơi chốn</h3>
+<h4 class="text-xs font-semibold text-heritage-forest/90 mt-0.5">Đông Giang và cộng đồng Cơ Tu</h4>
+<p class="text-[12px] text-heritage-muted mt-2 leading-relaxed">
+                  Nơi tài nguyên, bản sắc và văn hóa hòa quyện, tạo nên những chất liệu đặc biệt cho từng sản phẩm.
+                </p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[11.5px] font-bold text-heritage-terracotta hover:underline uppercase tracking-wider pt-2" href="#">
+                TÌM HIỂU VÙNG ĐẤT <span class="">→</span>
+</a>
+</div>
+</div>
+<!-- Card 2: Con người -->
+<div class="bg-heritage-card rounded-2xl overflow-hidden border border-heritage-border shadow-sm hover:shadow-md transition flex flex-col">
+<div class="relative h-44 overflow-hidden">
+<img alt="Con người nghệ nhân dệt vải" class="w-full h-full object-cover object-center hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-sL53y_ZdIQx5sUdMcqiJZFNTBbMcCIfQ4PpV9jg9JK-UhFWEoGBnVtzXOW9OjTVc3OMh3WWRar_GFOuwlNdOwiG-km3ZwXJmt6NwJR5N8q_82XBAq-zXFa3vdO7b0BrdcY-_KyOMeYC2HFcD_W8YvgLuZiOwLIMayDE84bC9LctRqpostV3-zybzTECG18fEw_T3XbWuiU00EQMIFwgn46ioa-EEDHhAcFhXarU">
+<div class="absolute bottom-2 left-2 bg-heritage-terracotta text-white w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shadow">
+                2
+              </div>
+</div>
+<div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+<div>
+<h3 class="font-serif font-bold text-base text-heritage-forest">2. Con người</h3>
+<h4 class="text-xs font-semibold text-heritage-forest/90 mt-0.5">Người dệt truyền nhiều kiến thức</h4>
+<p class="text-[12px] text-heritage-muted mt-2 leading-relaxed">
+                  Nghệ nhân truyền hoàn thiện bí quyết nhiều năm thành từng qua đôi bàn tay khéo léo và niềm tự hào dân tộc.
+                </p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[11.5px] font-bold text-heritage-terracotta hover:underline uppercase tracking-wider pt-2" href="#">
+                GẶP GỠ NGHỆ NHÂN <span class="">→</span>
+</a>
+</div>
+</div>
+<!-- Card 3: Quy trình -->
+<div class="bg-heritage-card rounded-2xl overflow-hidden border border-heritage-border shadow-sm hover:shadow-md transition flex flex-col">
+<div class="relative h-44 overflow-hidden">
+<img alt="Quy trình dệt thủ công" class="w-full h-full object-cover object-right hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSJZlfZBOAIRYSLDb9-8o8_vLARHU5qNQ6a87o-Sxvh4A9ldsQZREPt-AF2mR2UcUk3rhTGQr64AYMHKA_5ZymLYJyxMHY9BSH20Q_SQ_oLxzJ_OvoXQoFTHlys66zSmd0gjU3CHuhb7OYlOTDkPEzaHAsH250RRQdtUzmP1-jwF12-Ah6AzmqI6dxF2ZLv3sOtkfEoCvkewfT0uxsD5ryvkXwyxqE_3RC7IPBV-8">
+<div class="absolute bottom-2 left-2 bg-heritage-terracotta text-white w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shadow">
+                3
+              </div>
+</div>
+<div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+<div>
+<h3 class="font-serif font-bold text-base text-heritage-forest">3. Quy trình</h3>
+<h4 class="text-xs font-semibold text-heritage-forest/90 mt-0.5">Từ sợi lanh đến sản phẩm</h4>
+<p class="text-[12px] text-heritage-muted mt-2 leading-relaxed">
+                  Từng công đoạn được dệt, nhuộm, hoa văn, đan, may đều tỉ mỉ, kế thừa truyền thống, đảm bảo chất lượng và tính bền vững.
+                </p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[11.5px] font-bold text-heritage-terracotta hover:underline uppercase tracking-wider pt-2" href="#">
+                XEM QUY TRÌNH <span class="">→</span>
+</a>
+</div>
+</div>
+<!-- Card 4: Vật dụng đương đại -->
+<div class="bg-heritage-card rounded-2xl overflow-hidden border border-heritage-border shadow-sm hover:shadow-md transition flex flex-col">
+<div class="relative h-44 overflow-hidden bg-stone-100">
+<img alt="Hộp bao bì quà tặng Dệt Nguồn" class="w-full h-full object-cover hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9d2ASz8ePqlmQd2gKuiM6tOgjy8YpQzM1Tjg9qvRp2YWj6jz-iUfh2k-HFgapI_n0bF9vG5523yrgudNgObWRcoB3aA9EmUgsc8duQ6qQpnymiMj7AiCIXq_VOqRT3i1gFm_mPWh5yrjlkcCu3Vo4-PeTUdBCdVC0E9XJDXFEJYnucIZptc8WiVup8A4M-BU-Z7zosWgFIqUkJqJJOx24rPRa2vQXqA0jI28Yq6UaBdILPzowvN1_">
+<div class="absolute bottom-2 left-2 bg-heritage-terracotta text-white w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shadow">
+                4
+              </div>
+</div>
+<div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+<div>
+<h3 class="font-serif font-bold text-base text-heritage-forest">4. Vật dụng đương đại</h3>
+<h4 class="text-xs font-semibold text-heritage-forest/90 mt-0.5">Túi đựng trong đời sống</h4>
+<p class="text-[12px] text-heritage-muted mt-2 leading-relaxed">
+                  Chiếc túi dệt cũng giá trị văn hóa nhưng vẫn phù hợp với cuộc sống hiện đại: tiện dụng, bền bỉ, thẩm mỹ.
+                </p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[11.5px] font-bold text-heritage-terracotta hover:underline uppercase tracking-wider pt-2" href="#">
+                XEM SẢN PHẨM <span class="">→</span>
+</a>
+</div>
+</div>
+<!-- Card 5: Đóng giá trị -->
+<div class="bg-heritage-card rounded-2xl overflow-hidden border border-heritage-border shadow-sm hover:shadow-md transition flex flex-col">
+<div class="relative h-44 overflow-hidden">
+<img alt="Đóng góp cộng đồng kinh tế văn hóa" class="w-full h-full object-cover object-center hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWKu1HwhtLNgtO-0iXn1Cey2SVTFPkep68vew63miVEHXkMUixX4MCDBVAALRDRC11dt1AINIoBjVr6a_-W1SmZt6NVui0QUl_hv9Mpc_oJik9zG0OM6aDwmvpAxgrCgsFsWRO9m3XGrteeaJOryfOGeEiF6bYQJE94iagaJw5Z1VZVm6tSYsx9Zp4yek8dat1sdkFM_-oABpE67Mb8ltTY5v-_5-GEghy68Qb21M">
+<div class="absolute bottom-2 left-2 bg-heritage-terracotta text-white w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shadow">
+                5
+              </div>
+</div>
+<div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+<div>
+<h3 class="font-serif font-bold text-base text-heritage-forest">5. Đóng giá trị</h3>
+<h4 class="text-xs font-semibold text-heritage-forest/90 mt-0.5">Giá trị cho kinh tế, xã hội và cộng đồng</h4>
+<p class="text-[12px] text-heritage-muted mt-2 leading-relaxed">
+                  Mỗi sản phẩm góp phần nâng cao thu nhập, gìn giữ văn hóa và lan tỏa hình ảnh Đông Giang.
+                </p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[11.5px] font-bold text-heritage-terracotta hover:underline uppercase tracking-wider pt-2" href="#">
+                XEM TÁC ĐỘNG <span class="">→</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FivePillarsSection -->
+<!-- BEGIN: TestimonialAndStoryCardSection -->
+<section class="py-12 bg-[#F3ECE0]/60 border-t border-heritage-border" data-purpose="packaging-and-testimonial">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Bản nhận ngắn cho trang sản phẩm -->
+<div class="lg:col-span-6 space-y-5">
+<div class="flex items-center gap-2 text-heritage-forest text-lg font-serif font-bold">
+<span class="text-heritage-terracotta">❖</span>
+<h3 class="">Bản nhận ngắn cho trang sản phẩm</h3>
+</div>
+<!-- Quote Block with large quotation icon -->
+<div class="bg-heritage-card p-6 sm:p-7 rounded-2xl border border-heritage-border shadow-sm relative">
+<div class="text-heritage-terracotta font-serif text-6xl leading-none absolute top-4 left-5 opacity-40 select-none">“</div>
+<div class="relative z-10 pt-4 pl-3">
+<p class="italic text-sm sm:text-base leading-relaxed text-heritage-charcoal">
+                  Từ khi nhận chiếc túi từ Đông Giang, chiếc túi này không chỉ là một phụ kiện mà còn là một câu chuyện về bàn tay người Cơ Tu, về núi rừng và về giá trị bền vững. Sản phẩm mang đến cho tôi cảm giác gần gũi với thiên nhiên, tự hào về văn hóa Việt và tin tưởng vào những giá trị thật.
+                </p>
+<div class="mt-4 pt-3 border-t border-heritage-border/60 text-right">
+<span class="text-xs font-bold text-heritage-forest tracking-wider uppercase">— KHÁCH HÀNG TRẢI NGHIỆM</span>
+</div>
+</div>
+</div>
+<!-- Caution note -->
+<div class="bg-[#FBE9E3] border border-[#F2C5B8] rounded-xl px-4 py-3 flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-heritage-terracotta text-white flex-shrink-0 flex items-center justify-center font-bold text-xs">!</span>
+<p class="text-xs font-semibold text-heritage-terracotta leading-tight">
+                Không dùng bản nhận này trước khi xác minh từng claim.
+              </p>
+</div>
+</div>
+<!-- Right Column: Story card trong hộp -->
+<div class="lg:col-span-6 space-y-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-heritage-forest text-lg font-serif font-bold">
+<span class="text-heritage-terracotta">❖</span>
+<h3 class="">Story card trong hộp</h3>
+</div>
+<span class="text-[11px] font-bold text-white bg-heritage-forest px-3 py-1 rounded-full uppercase tracking-wider">
+                Mới nhất
+              </span>
+</div>
+<div class="bg-heritage-card rounded-2xl p-5 border border-heritage-border shadow-sm">
+<div class="grid grid-cols-1 sm:grid-cols-12 gap-5 items-center">
+<!-- Card mockup preview -->
+<div class="sm:col-span-6 space-y-2">
+<div class="rounded-xl overflow-hidden border border-heritage-border/80 shadow-md bg-white">
+<img alt="Thẻ cảm ơn Dệt Nguồn" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOibx33azatM486AE4ejRDiMtPRsCKzdi5sYGbgl-6Li9XpyTR-6eyv0_nT1SnqLJuK1HtqF3NK0HR5rZUy7Wi760Iph-_U71FfUw9uRQ_JIbouiNmx2Ik6cbf45CGgojG7QvdXSUxYY3aUo8DgHe-0PXaSkjBoIHgFVP5i-L04z3Q4lZS9QufzbGjMA6EWqopFyjDOrZzGxn5ZZKJzdY2oOEtO8rFy29s7GS9Qiq5LblKXvE_RSzY93CbGXJmoQl4AA">
+</div>
+<div class="text-center pt-1">
+<h4 class="font-serif font-bold text-sm text-heritage-forest">Túi xách dệt Cơ Tu</h4>
+<p class="text-[11px] text-heritage-terracotta font-medium">Đặc sác · Quảng Nam</p>
+<p class="text-[11px] text-heritage-muted italic">Hơn cả một chiếc túi — là một phần di sản sống.</p>
+</div>
+</div>
+<!-- 7 Point Checklist with QR indicator -->
+<div class="sm:col-span-6 space-y-2 text-xs text-heritage-charcoal">
+<div class="flex items-center justify-between mb-1 pb-1 border-b border-heritage-border/70">
+<span class="font-bold text-heritage-forest uppercase tracking-wider text-[11px]">Nội dung in trên thẻ</span>
+<span class="text-[10px] bg-heritage-terracotta/10 text-heritage-terracotta px-2 py-0.5 rounded font-bold">Mới xem</span>
+</div>
+<ol class="space-y-1.5 leading-tight">
+<li class="flex items-start gap-1.5"><span class="font-bold text-heritage-terracotta">1.</span> <span class="">Làm thẻ (TBD)</span></li>
+<li class="flex items-start gap-1.5"><span class="font-bold text-heritage-terracotta">2.</span> <span class="">Kỹ thuật/ chất liệu (TBD)</span></li>
+<li class="flex items-start gap-1.5"><span class="font-bold text-heritage-terracotta">3.</span> <span class="">Thời gian/ hành trình/ hội (TBD)</span></li>
+<li class="flex items-start gap-1.5"><span class="font-bold text-heritage-terracotta">4.</span> <span class="">Hiệu ứng: cộng đồng/văn hóa (TBD)</span></li>
+<li class="flex items-start gap-1.5"><span class="font-bold text-heritage-terracotta">5.</span> <span class="">Đánh giá từ chuyên gia/ báo chí (TBD)</span></li>
+<li class="flex items-start gap-1.5"><span class="font-bold text-heritage-terracotta">6.</span> <span class="">Sản xuất/ chứng nhận nguồn gốc rõ ràng</span></li>
+<li class="flex items-start gap-1.5"><span class="font-bold text-heritage-terracotta">7.</span> <span class="">Hướng dẫn bảo quản và sử dụng</span></li>
+</ol>
+<!-- Ethnic ornament & QR Mini -->
+<div class="pt-3 flex items-center justify-between border-t border-heritage-border/60">
+<div class="text-heritage-terracotta text-lg">❦ ❧</div>
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-white border border-heritage-border p-1 rounded">
+<svg class="w-full h-full fill-current text-heritage-forest" viewBox="0 0 24 24">
+<path d="M3 3h6v6H3V3zm2 2v2h2V5H5zm8-2h6v6h-6V3zm2 2v2h2V5h-2zM3 13h6v6H3v-6zm2 2v2h2v-2H5zm13-2h3v3h-3v-3zm-5 0h3v1h-3v-1zm5 5h3v3h-3v-3zm-3-2h2v2h-2v-2zm-2 2h2v2h-2v-2z"></path>
+</svg>
+</div>
+<span class="text-[10px] text-heritage-muted leading-tight">Mã QR đính kèm túi</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TestimonialAndStoryCardSection -->
+<!-- BEGIN: QRContentSection -->
+<section class="w-full bg-[#0C2B1C] overflow-hidden border-y border-[#183827]" data-purpose="qr-transparency-layer" id="noi-dung-qr">
+  <div class="w-full max-w-[1920px] mx-auto">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgNLgbd-duXlzaEwTpMukEqSpA6FLb359Sm2IhRdctiafe32iDGg7nNFiOXao_M1ThtVnF5EiNwdnsSfq68o3yxnJ9Wtns9brMWkY4dbzhI9C4pm45e_Q3MDRwHJ2UtF_zLpHKghokUhNtfGfrQBjMf3hISn7eSSvS1D4WRQWzwQQU7PPZWAjw3nbMoIRWkAAckAUTDdse1bZWF_7t9fvpj5vQuU3tXIMJS8G6vw09PnFk5PJvxnjBJEcTKlOBCzWqZw" alt="Nội dung trang QR - Dệt Nguồn" class="w-full h-auto block shadow-sm">
+  </div>
+</section>
+<!-- END: QRContentSection -->
+<!-- BEGIN: InterviewQuestionsSection -->
+<section class="py-14" data-purpose="interview-and-guidelines">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Header: Bộ câu hỏi phỏng vấn nghệ nhân/chủ thể -->
+<div class="mb-10">
+<div class="flex items-center gap-2 text-heritage-forest text-xl sm:text-2xl font-serif font-bold mb-1">
+<span class="text-heritage-terracotta">❖</span>
+<h2 class="">Bộ câu hỏi phỏng vấn nghệ nhân/chủ thể</h2>
+<span class="text-heritage-terracotta">❖</span>
+</div>
+<p class="text-xs sm:text-sm text-heritage-muted">
+            Đây là những câu hỏi gợi ý để thu thập thông tin chính xác và minh bạch câu chuyện.
+          </p>
+</div>
+<!-- 8 Interview Prompt Cards (2 rows of 4) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
+<!-- Q1 -->
+<div class="bg-heritage-card p-4 rounded-xl border border-heritage-border flex gap-3 shadow-sm hover:border-heritage-terracotta/40 transition">
+<div class="w-7 h-7 rounded-full bg-heritage-terracotta text-white flex-shrink-0 flex items-center justify-center font-bold text-xs">
+              01
+            </div>
+<p class="text-xs leading-relaxed text-heritage-charcoal font-medium">
+              Anh/chị có thể tự giới thiệu về mình và niềm vui với nghề?
+            </p>
+</div>
+<!-- Q2 -->
+<div class="bg-heritage-card p-4 rounded-xl border border-heritage-border flex gap-3 shadow-sm hover:border-heritage-terracotta/40 transition">
+<div class="w-7 h-7 rounded-full bg-heritage-terracotta text-white flex-shrink-0 flex items-center justify-center font-bold text-xs">
+              02
+            </div>
+<p class="text-xs leading-relaxed text-heritage-charcoal font-medium">
+              Công đoạn nào quan trọng nhất và có ý nghĩa nhất trong tất cả các bước?
+            </p>
+</div>
+<!-- Q3 -->
+<div class="bg-heritage-card p-4 rounded-xl border border-heritage-border flex gap-3 shadow-sm hover:border-heritage-terracotta/40 transition">
+<div class="w-7 h-7 rounded-full bg-heritage-terracotta text-white flex-shrink-0 flex items-center justify-center font-bold text-xs">
+              03
+            </div>
+<p class="text-xs leading-relaxed text-heritage-charcoal font-medium">
+              Triết lý/ giá trị hoặc niềm tin có thể chia sẻ khi bạn làm nghề dệt?
+            </p>
+</div>
+<!-- Q4 -->
+<div class="bg-heritage-card p-4 rounded-xl border border-heritage-border flex gap-3 shadow-sm hover:border-heritage-terracotta/40 transition">
+<div class="w-7 h-7 rounded-full bg-heritage-terracotta text-white flex-shrink-0 flex items-center justify-center font-bold text-xs">
+              04
+            </div>
+<p class="text-xs leading-relaxed text-heritage-charcoal font-medium">
+              Sản phẩm của bà/ anh khác biệt thế nào so với sản phẩm khác?
+            </p>
+</div>
+<!-- Q5 -->
+<div class="bg-heritage-card p-4 rounded-xl border border-heritage-border flex gap-3 shadow-sm hover:border-heritage-terracotta/40 transition">
+<div class="w-7 h-7 rounded-full bg-heritage-terracotta text-white flex-shrink-0 flex items-center justify-center font-bold text-xs">
+              05
+            </div>
+<p class="text-xs leading-relaxed text-heritage-charcoal font-medium">
+              Ai là để truyền dạy lại, anh/ chị đã học như thế nào?
+            </p>
+</div>
+<!-- Q6 -->
+<div class="bg-heritage-card p-4 rounded-xl border border-heritage-border flex gap-3 shadow-sm hover:border-heritage-terracotta/40 transition">
+<div class="w-7 h-7 rounded-full bg-heritage-terracotta text-white flex-shrink-0 flex items-center justify-center font-bold text-xs">
+              06
+            </div>
+<p class="text-xs leading-relaxed text-heritage-charcoal font-medium">
+              Khách mua giúp thay đổi điều gì cho cuộc sống của gia đình/ bản làng?
+            </p>
+</div>
+<!-- Q7 -->
+<div class="bg-heritage-card p-4 rounded-xl border border-heritage-border flex gap-3 shadow-sm hover:border-heritage-terracotta/40 transition">
+<div class="w-7 h-7 rounded-full bg-heritage-terracotta text-white flex-shrink-0 flex items-center justify-center font-bold text-xs">
+              07
+            </div>
+<p class="text-xs leading-relaxed text-heritage-charcoal font-medium">
+              Nếu đến tương lai gần, điều gì bạn/chị muốn giữ lại nhất?
+            </p>
+</div>
+<!-- Q8 -->
+<div class="bg-heritage-card p-4 rounded-xl border border-heritage-border flex gap-3 shadow-sm hover:border-heritage-terracotta/40 transition">
+<div class="w-7 h-7 rounded-full bg-heritage-terracotta text-white flex-shrink-0 flex items-center justify-center font-bold text-xs">
+              08
+            </div>
+<p class="text-xs leading-relaxed text-heritage-charcoal font-medium">
+              Câu chuyện nào bạn/ chị thường kể với du khách?
+            </p>
+</div>
+</div>
+<!-- Section 2: Danh sách không được tự suy diễn -->
+<div class="bg-[#FBF1ED] border border-[#F4D0C5] rounded-2xl p-6 sm:p-7 shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6 pb-4 border-b border-[#EBC2B4]">
+<div class="flex items-center gap-2 text-heritage-terracotta font-serif font-bold text-lg">
+<span class="">❖</span>
+<h3 class="">Danh sách không được tự suy diễn</h3>
+<span class="">❖</span>
+</div>
+<p class="text-xs text-heritage-terracotta-dark font-medium">
+              Những nội dung sau chỉ được sử dụng khi có bằng chứng xác thực (tài liệu/ chứng nhận/ phỏng vấn chính thức).
+            </p>
+</div>
+<!-- 5 Red Ban Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+<div class="bg-white/90 p-4 rounded-xl border border-[#F2C5B8] flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-red-100 text-red-600 flex-shrink-0 flex items-center justify-center font-bold text-sm">
+                ✕
+              </div>
+<p class="text-xs text-heritage-charcoal leading-snug">
+                Ý nghĩa màu/ hoa văn, yếu tố tâm linh và tín ngưỡng
+              </p>
+</div>
+<div class="bg-white/90 p-4 rounded-xl border border-[#F2C5B8] flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-red-100 text-red-600 flex-shrink-0 flex items-center justify-center font-bold text-sm">
+                ✕
+              </div>
+<p class="text-xs text-heritage-charcoal leading-snug">
+                "Truyền đời X năm", "100% tự nhiên", "100% thủ công"...
+              </p>
+</div>
+<div class="bg-white/90 p-4 rounded-xl border border-[#F2C5B8] flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-red-100 text-red-600 flex-shrink-0 flex items-center justify-center font-bold text-sm">
+                ✕
+              </div>
+<p class="text-xs text-heritage-charcoal leading-snug">
+                Danh xưng nghệ nhân, hoặc biểu tượng dân tộc văn hóa rẻ chính xác
+              </p>
+</div>
+<div class="bg-white/90 p-4 rounded-xl border border-[#F2C5B8] flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-red-100 text-red-600 flex-shrink-0 flex items-center justify-center font-bold text-sm">
+                ✕
+              </div>
+<p class="text-xs text-heritage-charcoal leading-snug">
+                Số liệu về thể hiện thu nhập/ số hộ quy mô tác động
+              </p>
+</div>
+<div class="bg-white/90 p-4 rounded-xl border border-[#F2C5B8] flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-red-100 text-red-600 flex-shrink-0 flex items-center justify-center font-bold text-sm">
+                ✕
+              </div>
+<p class="text-xs text-heritage-charcoal leading-snug">
+                Tác động môi trường hoặc "thân thiện tuyệt đối với thiên nhiên".
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: InterviewQuestionsSection -->
+<!-- BEGIN: ReviewWorkflowSection -->
+<section class="py-12 bg-heritage-forest text-white" data-purpose="content-review-workflow">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-xl mx-auto mb-10">
+<h2 class="text-2xl font-serif font-bold text-white tracking-wide">
+            Quy trình duyệt nội dung
+          </h2>
+<p class="text-xs text-stone-300 mt-1">
+            Mọi nội dung trên trang này phải được duyệt qua các bước để đảm bảo tính chính xác, tôn trọng văn hóa và tuân thủ pháp lý.
+          </p>
+</div>
+<!-- 5-Step Process Flow -->
+<div class="grid grid-cols-1 sm:grid-cols-5 gap-4 relative">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center p-3 relative group">
+<div class="w-12 h-12 rounded-full border-2 border-white/40 group-hover:border-heritage-gold flex items-center justify-center text-lg bg-heritage-forest-dark mb-3">
+              ✍️
+            </div>
+<h4 class="text-xs font-bold text-heritage-gold uppercase tracking-wider mb-1">Bước 1</h4>
+<p class="text-xs text-stone-200 font-medium">Người viết hoàn thành bản thảo</p>
+<span class="hidden sm:block absolute top-6 -right-2 text-stone-500 text-lg">→</span>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center p-3 relative group">
+<div class="w-12 h-12 rounded-full border-2 border-white/40 group-hover:border-heritage-gold flex items-center justify-center text-lg bg-heritage-forest-dark mb-3">
+              👥
+            </div>
+<h4 class="text-xs font-bold text-heritage-gold uppercase tracking-wider mb-1">Bước 2</h4>
+<p class="text-xs text-stone-200 font-medium">Đối chiếu với chủ thể (nghệ nhân, cộng đồng)</p>
+<span class="hidden sm:block absolute top-6 -right-2 text-stone-500 text-lg">→</span>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center p-3 relative group">
+<div class="w-12 h-12 rounded-full border-2 border-white/40 group-hover:border-heritage-gold flex items-center justify-center text-lg bg-heritage-forest-dark mb-3">
+              📖
+            </div>
+<h4 class="text-xs font-bold text-heritage-gold uppercase tracking-wider mb-1">Bước 3</h4>
+<p class="text-xs text-stone-200 font-medium">Người có hiểu biết văn hóa duyệt nội dung &amp; chú thích</p>
+<span class="hidden sm:block absolute top-6 -right-2 text-stone-500 text-lg">→</span>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center p-3 relative group">
+<div class="w-12 h-12 rounded-full border-2 border-white/40 group-hover:border-heritage-gold flex items-center justify-center text-lg bg-heritage-forest-dark mb-3">
+              ⚖️
+            </div>
+<h4 class="text-xs font-bold text-heritage-gold uppercase tracking-wider mb-1">Bước 4</h4>
+<p class="text-xs text-stone-200 font-medium">Người pháp lý / vận hành kiểm tra tuân thủ</p>
+<span class="hidden sm:block absolute top-6 -right-2 text-stone-500 text-lg">→</span>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col items-center text-center p-3 group">
+<div class="w-12 h-12 rounded-full border-2 border-heritage-gold bg-heritage-gold text-heritage-forest flex items-center justify-center font-bold text-lg mb-3 shadow">
+              ✓
+            </div>
+<h4 class="text-xs font-bold text-heritage-gold uppercase tracking-wider mb-1">Bước 5</h4>
+<p class="text-xs text-white font-semibold">Xuất bản với thông tin rõ ràng, nguồn trích dẫn đầy đủ</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ReviewWorkflowSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-[#11241A] text-stone-300 border-t border-heritage-forest" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-white/10">
+<!-- Footer Brand -->
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center p-1.5">
+<svg class="w-full h-full fill-current text-heritage-gold" viewBox="0 0 40 40">
+<path d="M20 3L35 34H5L20 3Z" fill="none" stroke="#C59A4E" stroke-width="2"></path>
+<path d="M20 9L30 30H10L20 9Z" fill="#C59A4E"></path>
+</svg>
+</div>
+<div>
+<span class="font-serif font-bold text-lg text-white uppercase tracking-wider block">ĐÔNG GIANG · DỆT NGUỒN</span>
+<span class="text-[10px] text-stone-400 tracking-widest uppercase">SẢN PHẨM OCOP · TINH HOA CƠ TU</span>
+</div>
+</div>
+<!-- Footer Nav Links -->
+<nav class="flex flex-wrap items-center justify-center gap-6 text-xs text-stone-300">
+<a class="hover:text-heritage-gold transition" href="#">Trang chủ</a>
+<a class="hover:text-heritage-gold transition" href="#">Sản phẩm</a>
+<a class="text-heritage-gold font-semibold" href="#">Câu chuyện di sản</a>
+<a class="hover:text-heritage-gold transition" href="#">Về chúng tôi</a>
+<a class="hover:text-heritage-gold transition" href="#">Chính sách</a>
+<a class="hover:text-heritage-gold transition" href="#">Liên hệ</a>
+</nav>
+<!-- Social Media Icons -->
+<div class="flex items-center gap-3 text-white">
+<a class="w-8 h-8 rounded-full bg-white/10 hover:bg-heritage-terracotta flex items-center justify-center transition" href="#">
+<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+<a class="w-8 h-8 rounded-full bg-white/10 hover:bg-heritage-terracotta flex items-center justify-center transition" href="#">
+<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-8 h-8 rounded-full bg-white/10 hover:bg-heritage-terracotta flex items-center justify-center transition" href="#">
+<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+</a>
+</div>
+</div>
+<!-- Legal & Copyright -->
+<div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-stone-500">
+<p class="">© 2024 Đông Giang · Dệt Nguồn. Tất cả quyền được bảo lưu. Sản phẩm OCOP Quảng Nam, Việt Nam.</p>
+<p class="mt-2 sm:mt-0 text-stone-400">Thiết kế chuẩn hóa thông tin OCOP &amp; văn hóa Cơ Tu bản địa.</p>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+
+
+
+
+
+
+
+
+
+
+
+
+<script>(function(){document.addEventListener('click',function(event){var link=event.target.closest('[data-path]');if(!link)return;event.preventDefault();window.parent.postMessage({type:'stitch-route',value:link.getAttribute('data-path')},'*');},true);})();</script><script>(function(){var map=[['trang chủ','trang-chu'],['bộ sưu tập','bo-suu-tap'],['bộ sưu tập tiêu biểu','bo-suu-tap'],['câu chuyện di sản','cau-chuyen-di-san'],['minh bạch nguồn gốc','minh-bach-nguon-goc'],['hỗ trợ','ho-tro'],['tất cả','danh-muc-san-pham'],['túi tote hằng ngày','danh-muc-san-pham'],['túi đeo chéo mini','danh-muc-san-pham'],['túi xách công sở','danh-muc-san-pham'],['bộ quà tặng','danh-muc-san-pham']];var normalize=function(value){return value.replace(/s+/g,' ').trim().toLowerCase()};document.querySelectorAll('a,button').forEach(function(element){var text=normalize(element.textContent||'');var found=map.find(function(item){return text===item[0]||text.startsWith(item[0]+' ')});if(found&&!element.dataset.path)element.dataset.path=found[1]});document.addEventListener('click',function(event){var link=event.target.closest('[data-path]');if(!link)return;event.preventDefault();window.parent.postMessage({type:'stitch-route',value:link.dataset.path},'*')},true)})();</script><script>(function(){var routes={"trang-chu":"trang_ch_d_t_ngu_n","bo-suu-tap":"danh_m_c_s_n_ph_m_d_t_ngu_n_1","danh-muc-san-pham":"danh_m_c_s_n_ph_m_d_t_ngu_n_1","cau-chuyen-di-san":"c_u_chuy_n_di_s_n_d_t_ngu_n_kh_p_h_nh_nh_banner_qr","minh-bach-nguon-goc":"h_s_ngu_n_g_c_c_ng_khai_public_provenance_d_t_ngu_n","ho-tro":"li_n_h_h_tr_ti_p_nh_n_di_s_n_support_request_d_t_ngu_n","gio-hang":"gi_h_ng_qu_t_ng_d_t_ngu_n","thong-tin-giao-hang":"th_ng_tin_giao_h_ng_d_t_ngu_n","xac-nhan-don":"x_c_nh_n_n_order_confirmation_d_t_ngu_n","lich-su-don-hang":"l_ch_s_n_order_history_d_t_ngu_n_1"};document.addEventListener('click',function(event){var link=event.target.closest('[data-path]');if(!link)return;var route=link.getAttribute('data-path');var target=routes[route];if(!target)return;event.preventDefault();if(window.parent!==window){window.parent.postMessage({type:'stitch-route',value:route},'*')}else{window.location.href='/public/screens/'+target+'/code.html'}},true)})();</script></body></html>

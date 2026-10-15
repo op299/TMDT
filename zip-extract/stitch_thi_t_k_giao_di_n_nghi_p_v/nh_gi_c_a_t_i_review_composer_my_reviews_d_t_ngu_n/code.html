@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html lang="vi" style=""><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;1,400;1,500&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed": "#d0e8d6", "background": "#fff8f0", "inverse-on-surface": "#f8f0e3", "on-error": "#ffffff", "primary-container": "#1b5e42", "surface-container-lowest": "#ffffff", "secondary": "#aa361c", "outline-variant": "#bfc9c1", "surface-tint": "#296a4d", "primary-fixed-dim": "#93d5b1", "surface-container-low": "#fbf3e6", "primary": "#00452d", "inverse-primary": "#93d5b1", "on-secondary-container": "#6b1100", "error-container": "#ffdad6", "on-primary-fixed-variant": "#075136", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#891e05", "secondary-fixed": "#ffdad2", "on-primary-container": "#93d5b2", "on-tertiary-fixed-variant": "#374b3e", "surface-bright": "#fff8f0", "error": "#ba1a1a", "on-error-container": "#93000a", "on-tertiary-container": "#b6cdbb", "tertiary": "#2c4134", "on-background": "#1e1b14", "surface-container": "#f5ede0", "on-secondary-fixed": "#3d0600", "tertiary-container": "#43584a", "secondary-container": "#ff7353", "surface-dim": "#e1d9cc", "surface-sand": "#EDE0CC", "outline": "#707972", "surface-container-highest": "#e9e2d5", "surface": "#fff8f0", "inverse-surface": "#343027", "terracotta-accent": "#C84B2F", "text-body": "#3D3028", "on-tertiary": "#ffffff", "on-surface": "#1e1b14", "secondary-fixed-dim": "#ffb4a3", "tertiary-fixed-dim": "#b5ccbb", "surface-variant": "#e9e2d5", "surface-container-high": "#efe7da", "on-surface-variant": "#404943", "primary-fixed": "#aef1cc", "on-primary-fixed": "#002113", "forest-accent": "#1B5E42", "on-tertiary-fixed": "#0b1f14", "text-heading": "#1A2E22" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1.5rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "margin": "2.5rem", "space-2xl": "4rem", "space-md": "1rem", "margin-mobile": "1.25rem" }, "fontFamily": { "headline-xl-mobile": ["Playfair Display"], "button-text": ["Inter"], "headline-md": ["Playfair Display"], "quote-sm": ["Lora"], "label-caps": ["Inter"], "body-lg": ["Inter"], "headline-xl": ["Playfair Display"], "body-md": ["Inter"], "body-sm": ["Inter"], "headline-lg-mobile": ["Playfair Display"], "quote-lg": ["Lora"], "headline-lg": ["Playfair Display"] }, "fontSize": { "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "button-text": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}], "quote-sm": ["16px", {"lineHeight": "26px", "fontWeight": "400"}], "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600"}], "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}], "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "600"}], "quote-lg": ["20px", {"lineHeight": "32px", "fontWeight": "400"}], "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600"}] } } } }</script></head><body class="bg-surface-container font-body-md text-text-body min-h-screen flex flex-col antialiased selection:bg-forest-accent selection:text-on-primary"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="Logo nguyên bản xanh.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UIBSPqIFfaCjmVN5aC2C2H2wMQtygQgmvc1QOX5FeoiYz5udkLVp433klefMsZk7YM62g990_LUPH4VxDP_RAWhO141hhf93-49YhjUFEjiDmuyCIYMoqmF6q9OHSUfAsP8bMKDFdYUB6d_NpZp4zEltPId8BzZMOMOM-Z-fK60G4pXb1iQDET75TZcs2UwdJfkqhzSL3YtlEtw2DPBOn27FYcPzT0kHNwajGOmb3UOn9wqWeLGvO26pXfh3Nlbvh09caa1U3D8Q"/><a class="flex flex-col" data-path="trang-chu" href="#"><span class="font-headline-md text-text-heading leading-tight tracking-tight">DỆT NGUỒN</span><span class="font-label-caps text-forest-accent tracking-widest text-[9px] uppercase">Thổ Cẩm Cơ Tu Đông Giang</span></a></div><nav class="hidden xl:flex items-center gap-space-sm bg-surface-container-low/70 p-1.5 rounded-xl" data-active-classes="bg-surface-sand text-forest-accent font-semibold rounded-lg shadow-inner"><a class="px-3.5 py-2 font-button-text text-button-text text-on-surface-variant hover:text-forest-accent hover:bg-surface-sand transition-all rounded-lg" data-path="trang-chu" href="#">Trang chủ</a><a class="px-3.5 py-2 font-button-text text-button-text text-on-surface-variant hover:text-forest-accent hover:bg-surface-sand transition-all rounded-lg" data-path="bo-suu-tap" href="#">Bộ sưu tập</a><a class="px-3.5 py-2 font-button-text text-button-text text-on-surface-variant hover:text-forest-accent hover:bg-surface-sand transition-all rounded-lg" data-path="cau-chuyen-di-san" href="#">Câu chuyện di sản</a><a class="px-3.5 py-2 font-button-text text-button-text text-on-surface-variant hover:text-forest-accent hover:bg-surface-sand transition-all rounded-lg" data-path="minh-bach-nguon-goc" href="#">Minh bạch nguồn gốc</a><a class="px-3.5 py-2 font-button-text text-button-text text-on-surface-variant hover:text-forest-accent hover:bg-surface-sand transition-all rounded-lg" data-path="ho-tro" href="#">Hỗ trợ</a></nav><div class="flex items-center gap-space-sm md:gap-space-md"><div class="relative hidden sm:flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-48 lg:w-60 pl-9 pr-3 py-1.5 bg-surface-container-low text-text-body font-body-sm text-body-sm rounded-lg focus:outline-none focus:bg-surface-container-lowest placeholder:text-outline/70 transition-all" placeholder="Tìm túi thổ cẩm, nghệ nhân..." type="text"/></div><a aria-label="Giỏ hàng" class="relative p-2 rounded-lg text-forest-accent hover:bg-surface-sand transition-colors" data-path="gio-hang" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1 right-1 flex items-center justify-center w-4 h-4 bg-terracotta-accent text-on-primary text-[10px] font-bold rounded-full">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><a class="hidden lg:inline-flex items-center justify-center px-4 py-2 bg-forest-accent text-surface font-button-text text-button-text rounded-lg hover:bg-primary transition-colors shadow-sm" data-path="bo-suu-tap" href="#">Khám phá bộ sưu tập</a></div></div></header><main class="w-full pt-20 flex-1 bg-surface-container"><div class="flex flex-col w-full">
+<!-- Top Decorative Heritage Bar -->
+<div class="w-full h-1.5 bg-gradient-to-r from-forest-accent via-terracotta-accent to-forest-accent opacity-90"></div>
+<!-- Workspace Breadcrumbs & Title Container -->
+<section class="w-full bg-surface-container-low py-space-lg shadow-sm">
+<div class="max-w-7xl mx-auto px-gutter flex flex-col gap-space-sm">
+<!-- Breadcrumb -->
+<nav aria-label="Breadcrumbs" class="flex items-center gap-2 font-body-sm text-body-sm text-outline">
+<a class="hover:text-forest-accent transition-colors" href="#">Trang chủ</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-forest-accent transition-colors" href="#">Tài khoản thành viên</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-text-heading font-semibold">Đánh giá của tôi &amp; Cảm nhận tác phẩm</span>
+</nav>
+<!-- Main Header Row -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md pt-space-xs">
+<div class="space-y-1">
+<h1 class="font-headline-lg text-headline-lg text-text-heading">
+            Đánh giá của tôi &amp; Cảm nhận Tác phẩm
+          </h1>
+<p class="font-body-md text-body-md text-text-body max-w-3xl">
+            Chia sẻ trải nghiệm thực tế từ các kiện hàng di sản đã hoàn tất. Đánh giá minh bạch giúp bảo tồn và nâng cao tay nghề thợ dệt Cơ Tu huyện Đông Giang.
+          </p>
+</div>
+<div class="inline-flex items-center gap-2 px-3.5 py-2 bg-surface-sand rounded-lg self-start lg:self-auto shadow-sm">
+<span class="material-symbols-outlined text-forest-accent text-[20px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-text-body/70 tracking-widest uppercase">Xác thực thành viên</span>
+<span class="font-body-sm text-body-sm font-semibold text-text-heading">Đặng Ánh Nguyệt (Hạng Cườm Chì Za-Ră)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Dual-Column Content -->
+<section class="w-full py-space-xl bg-surface-container">
+<div class="max-w-7xl mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN: Account Sidebar (320px on desktop -> col-span-4 / 12) -->
+<aside class="lg:col-span-4 space-y-space-lg">
+<!-- User Profile Summary Tile -->
+<div class="bg-surface-sand rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-full bg-forest-accent/15 flex items-center justify-center text-forest-accent shrink-0 font-headline-md text-[20px] font-bold">
+                ÁN
+                <span class="absolute bottom-0 right-0 w-4 h-4 bg-terracotta-accent rounded-full flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[10px]">auto_awesome</span>
+</span>
+</div>
+<div class="min-w-0 flex-1">
+<h2 class="font-headline-md text-[18px] text-text-heading truncate">Đặng Ánh Nguyệt</h2>
+<p class="font-body-sm text-body-sm text-text-body/80 truncate">nguyet.dang@cotu-heritage.vn</p>
+<div class="inline-flex items-center gap-1 mt-1 px-2 py-0.5 bg-surface-container-low rounded font-label-caps text-[10px] text-forest-accent">
+<span class="material-symbols-outlined text-[12px]">loyalty</span>
+                  #DN-MEM-8829
+                </div>
+</div>
+</div>
+<!-- Sidebar Navigation Links -->
+<nav class="space-y-1 pt-space-xs">
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-text-body hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-outline">person_outline</span>
+<span>Hồ sơ cá nhân</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-text-body hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-outline">location_on</span>
+<span>Sổ địa chỉ nhận kiện</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-text-body hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-outline">security</span>
+<span>Bảo mật &amp; Mật khẩu</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-text-body hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-outline">package_2</span>
+<span>Đơn hàng &amp; Kiện di sản</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-text-body hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-outline">qr_code_2</span>
+<span>Sổ Di Sản &amp; QR OCOP</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+</a>
+<!-- ACTIVE ITEM: Đánh giá của tôi -->
+<a class="flex items-center justify-between px-3.5 py-2.5 rounded-lg bg-forest-accent text-on-primary font-body-sm text-body-sm font-semibold shadow-sm" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">rate_review</span>
+<span>Đánh giá của tôi</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-terracotta-accent text-on-primary text-[11px] font-bold">
+                  1 chờ viết
+                </span>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-text-body hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-outline">shield</span>
+<span>Quyền riêng tư &amp; Dữ liệu</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+</a>
+</nav>
+</div>
+<!-- Cultural Policy Card (BR-29/BR-30) -->
+<div class="bg-surface-sand rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center gap-2 text-forest-accent">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+<h3 class="font-headline-md text-[17px] font-semibold text-text-heading">Chính sách Đánh giá Minh bạch</h3>
+</div>
+<p class="font-quote-sm text-quote-sm italic text-text-heading/90 pt-1">
+              “Mỗi lời cảm nhận chân thực là sự tôn vinh mồ hôi và lòng kiên định của người thợ dệt vùng cao.”
+            </p>
+<ul class="space-y-2.5 pt-2 font-body-sm text-body-sm text-text-body leading-relaxed">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-forest-accent text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span>Mỗi kiện hàng đã giao thành công chỉ phát hành <strong>01 đánh giá hợp lệ</strong> gắn liền mã kiện bưu tá đối soát.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-forest-accent text-[18px] shrink-0 mt-0.5">verified</span>
+<span>Nhãn <strong>“Đã mua hàng thực tế” (Verified)</strong> được hệ thống Viettel Post kích hoạt tự động qua số vận đơn, hoàn toàn độc lập và không thể can thiệp.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-forest-accent text-[18px] shrink-0 mt-0.5">history_toggle_off</span>
+<span>Thời hạn chỉnh sửa hoặc ẩn bài viết: <strong>30 ngày</strong> kể từ khi ban quản trị xuất bản chính thức.</span>
+</li>
+</ul>
+</div>
+</aside>
+<!-- RIGHT COLUMN: Main Review Workspace (col-span-8 / 12) -->
+<main class="lg:col-span-8 space-y-space-xl">
+<!-- Workspace Tabs -->
+<div class="flex flex-wrap items-center gap-2 p-1.5 bg-surface-sand rounded-xl shadow-sm">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-forest-accent text-on-primary font-button-text text-button-text shadow-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Viết đánh giá tác phẩm mới (1)</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg text-text-heading hover:bg-surface-container-low transition-colors font-button-text text-button-text">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+<span>Lịch sử đánh giá của tôi (3)</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg text-text-heading hover:bg-surface-container-low transition-colors font-button-text text-button-text">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>Dung sai thủ công &amp; Tiêu chí</span>
+</button>
+</div>
+<!-- SECTION 1: REVIEW COMPOSER CARD -->
+<div class="bg-surface-sand rounded-2xl p-space-md md:p-space-xl shadow-sm space-y-space-lg">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm border-b border-outline-variant/30">
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-forest-accent text-on-primary font-label-caps text-[10px] uppercase tracking-wider">
+                    BR-29 Snapshot Bất Biến
+                  </span>
+<span class="font-body-sm text-body-sm text-text-body/70">Bưu kiện Viettel Post đã ký nhận</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-text-heading">
+                  Soạn cảm nhận cho kiện hàng đã nhận
+                </h2>
+</div>
+<span class="text-forest-accent font-label-caps text-[11px] font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-forest-accent animate-pulse"></span>
+                ĐỦ ĐIỀU KIỆN ĐÁNH GIÁ
+              </span>
+</div>
+<!-- Purchased Item Snapshot Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row items-center gap-space-md">
+<img class="w-24 h-24 md:w-28 md:h-28 rounded-lg object-cover shadow-inner shrink-0" data-alt="Handcrafted authentic Co Tu indigenous brocade crossbody bag Za Ra featuring traditional terracotta red, natural indigo dye, and white lead bead weaving patterns placed on aged timber wood surface in soft ambient studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu3L2_UFTRk0nccoHFBi_GoEuH2DtFz42D3f6QQqU3U-it24R55Ig4RajgzhPkV2ddwLU7ulpgbMLBBJ6s29lZn9yCjmtyvq2CttFZBwaTQ65krS14OJlqB42RwdFnylce-WZWX4X6kItDz8JYPQKzwL_PTj5MdYi9NLhpmPjfDiuggw1PzILSQDJI7E4ZRqGO4r_pJIZdHnJhVqYEZHi7HDQbSBfhdG9FP6Fv8fhuk1XAzsJuLaMU"/>
+<div class="flex-1 min-w-0 space-y-1.5 w-full">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<span class="font-label-caps text-[10px] text-terracotta-accent uppercase font-bold tracking-wider">
+                    Mã Bưu Kiện: #DN-2026-058829
+                  </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded bg-surface-container text-forest-accent font-body-sm text-[12px] font-medium">
+<span class="material-symbols-outlined text-[14px]">nfc</span>
+                    NFC: NFC-DN-2026-ZR-089 (Đã quét)
+                  </span>
+</div>
+<h3 class="font-headline-md text-[18px] text-text-heading leading-snug">
+                  Túi Đeo Chéo Za Ră Đông Giang — Phiên bản Đính cườm chì
+                </h3>
+<p class="font-body-sm text-body-sm text-text-body">
+                  Nghệ nhân thực hiện: <strong class="text-text-heading">Bh'ling Thị Nhua (Xã Ba)</strong> • Màu nhuộm: Chàm &amp; Vỏ cây Tà-râm
+                </p>
+<p class="font-body-sm text-[12px] text-outline">
+                  Thời gian hoàn tất giao hàng: 19/05/2026 • Hạn chót gửi nhận xét: 18/06/2026
+                </p>
+</div>
+</div>
+<!-- Review Form Multi-step -->
+<form class="space-y-space-lg" onsubmit="event.preventDefault();">
+<!-- Step 1: Star Rating -->
+<div class="space-y-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center justify-between">
+<label class="font-body-sm text-body-sm font-semibold text-text-heading flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-forest-accent text-on-primary text-xs flex items-center justify-center font-bold">1</span>
+                    Đánh giá mức độ hài lòng chung
+                  </label>
+<span class="font-label-caps text-[11px] text-forest-accent font-semibold tracking-wide">RẤT HÀI LÒNG (5/5)</span>
+</div>
+<!-- Star Buttons interactive row -->
+<div class="flex items-center gap-2 pt-1">
+<button aria-label="1 sao" class="text-terracotta-accent hover:scale-110 transition-transform" type="button">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button aria-label="2 sao" class="text-terracotta-accent hover:scale-110 transition-transform" type="button">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button aria-label="3 sao" class="text-terracotta-accent hover:scale-110 transition-transform" type="button">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button aria-label="4 sao" class="text-terracotta-accent hover:scale-110 transition-transform" type="button">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button aria-label="5 sao" class="text-terracotta-accent hover:scale-110 transition-transform" type="button">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<span class="font-body-sm text-body-sm font-medium text-text-heading pl-2 hidden sm:inline">
+                    Tác phẩm tinh xảo, đường dệt cườm chắc chắn và đúng tinh thần bản địa.
+                  </span>
+</div>
+<!-- Sub-criteria Quick Tags -->
+<div class="pt-2 space-y-1.5">
+<p class="font-body-sm text-[12px] text-outline">Điểm nổi bật của kiện hàng (Chọn nhanh các đặc tính):</p>
+<div class="flex flex-wrap gap-2">
+<button class="px-3 py-1.5 rounded-full bg-forest-accent text-on-primary font-body-sm text-[12px] font-medium shadow-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[14px]">check</span> Đường dệt tinh xảo
+                    </button>
+<button class="px-3 py-1.5 rounded-full bg-forest-accent text-on-primary font-body-sm text-[12px] font-medium shadow-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[14px]">check</span> Màu sắc tự nhiên
+                    </button>
+<button class="px-3 py-1.5 rounded-full bg-forest-accent text-on-primary font-body-sm text-[12px] font-medium shadow-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[14px]">check</span> Hộp quà trang trọng
+                    </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-text-body hover:bg-surface-sand transition-colors font-body-sm text-[12px]" type="button">
+                      + Đúng dung sai công bố
+                    </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-text-body hover:bg-surface-sand transition-colors font-body-sm text-[12px]" type="button">
+                      + Thân thiện môi trường
+                    </button>
+</div>
+</div>
+</div>
+<!-- Step 2: Detailed Review Content -->
+<div class="space-y-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center justify-between">
+<label class="font-body-sm text-body-sm font-semibold text-text-heading flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-forest-accent text-on-primary text-xs flex items-center justify-center font-bold">2</span>
+                    Cảm nhận chi tiết &amp; Trải nghiệm thực tế
+                  </label>
+<span class="font-body-sm text-[12px] text-outline">248 / 1.000 ký tự</span>
+</div>
+<div class="relative">
+<textarea class="w-full p-4 rounded-lg bg-surface-container-lowest text-text-body font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-forest-accent transition-all shadow-inner leading-relaxed" placeholder="Chia sẻ chi tiết về cảm giác chạm vải, đường viền cườm chì, độ tiện dụng khi phối đồ hàng ngày hoặc câu chuyện khi bạn nhận được kiện hàng..." rows="5">Chiếc túi cầm rất đầm tay, hạt cườm chì dệt chìm vào nền sợi bông tự nhiên vô cùng tỉ mỉ và chắc chắn. Mùi thơm của thảo mộc tự nhiên từ hộp gỗ thông lúc mở ra rất dễ chịu. Đeo đi làm hay dự sự kiện văn hóa đều rất trang nhã. Cảm ơn nghệ nhân Bh'ling Thị Nhua và HTX Đông Giang!</textarea>
+</div>
+<div class="flex items-center gap-2 text-outline font-body-sm text-[12px]">
+<span class="material-symbols-outlined text-[16px] text-forest-accent">lightbulb</span>
+<span>Tối thiểu 30 ký tự để bài viết đạt tiêu chuẩn kiểm duyệt cộng đồng và nhận huy hiệu Đóng Góp Di Sản.</span>
+</div>
+</div>
+<!-- Step 3: Media Upload with Automated Pre-scan Badges -->
+<div class="space-y-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center justify-between">
+<label class="font-body-sm text-body-sm font-semibold text-text-heading flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-forest-accent text-on-primary text-xs flex items-center justify-center font-bold">3</span>
+                    Hình ảnh &amp; Video mở kiện thực tế (Tối đa 5 tệp)
+                  </label>
+<span class="font-label-caps text-[11px] text-forest-accent font-semibold">3/5 TỆP ĐÃ TẢI LÊN</span>
+</div>
+<!-- Upload grid & previews -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-1">
+<!-- Thumbnail 1 -->
+<div class="relative rounded-lg overflow-hidden bg-surface-container shadow-sm group">
+<img class="w-full h-28 object-cover" data-alt="Macro close-up shot of hand-woven lead beads interlaced into traditional Co Tu dark green and terracotta textile fibers, extreme high detail texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlORXB3j6pFtFMlUSPhUdZtufW7JYRGl2RkbcvZx-0Tb2Nc45zpchmNOTQgUdNqmhgWMmPFJDvWMvD0k18hnm4b_Yj-qcuSrjIETGaN9_VFpEnQfhte-aeCKTmmoVSMcVy1V9EcsENG7TFbJviUpd04TVWeKXGoYzUZVWp6X3gOW8fOah7yXWzWkevQ32CjkwEOM3Q8I4ELHky4SGbkDS8WtofgsAMfHeRroBIsm39GGzixa9ReywM"/>
+<div class="absolute bottom-0 inset-x-0 bg-forest-accent/90 backdrop-blur-sm text-on-primary text-[10px] font-label-caps px-1.5 py-0.5 text-center flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+                      Đã quét an toàn
+                    </div>
+<button class="absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-text-heading/80 text-on-primary flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Thumbnail 2 -->
+<div class="relative rounded-lg overflow-hidden bg-surface-container shadow-sm group">
+<img class="w-full h-28 object-cover" data-alt="Modern Vietnamese woman carrying an artisanal traditional indigenous Co Tu brocade crossbody purse styled harmoniously with natural linen contemporary office attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGRH_vs8vTUBggrcattfg-Jz5Ji_RDsK8ok6s1o029wrzDRMvQ19WCf2T9Iteh2fYILnQ_J3AzS6M4mMPnmfGrdfDYlAAJ-RKZGSFu3Zj1uqvEcMpiTzqn0Y_akRWRspMUtmi2pT-wTpXFCOGJho_LbFcqqD1zHKI5uDRTLZ1Vl6aKfUH_z9tFTose5eP6p2iSbpHZOrpCRD7cE1t_MxGqXAiQdfftjKeszHq-9nMwn7Vg-ZJ1fty_"/>
+<div class="absolute bottom-0 inset-x-0 bg-forest-accent/90 backdrop-blur-sm text-on-primary text-[10px] font-label-caps px-1.5 py-0.5 text-center flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+                      Đã quét an toàn
+                    </div>
+<button class="absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-text-heading/80 text-on-primary flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Thumbnail 3 -->
+<div class="relative rounded-lg overflow-hidden bg-surface-container shadow-sm group">
+<img class="w-full h-28 object-cover" data-alt="Handcrafted pine gift box tied with natural jute string and stamped with red wax seal for certified Co Tu cultural indigenous craft package" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT1MLKHHcg7olwrAnwLhOYBwWrNSBtuDOilt1A3Vehe4qCz_RNRomAg6MFcQN4GdrfPUZk8Z5825jb3THmSyMO73inM1r1ft-uwjU9HxxWLAtzmGzSgSQpwCR_jlNumtfXepMYnzERkDxSMVyI5jgFBtw4NKqLOmGMYFmezqGf_slBFNawAhHfZ1jfG9ku7AZ8OVjuyhTV6PRlehydfYVHVUT0cVVwD_IdpfSerLajjjThEUN-w2Ud"/>
+<div class="absolute bottom-0 inset-x-0 bg-forest-accent/90 backdrop-blur-sm text-on-primary text-[10px] font-label-caps px-1.5 py-0.5 text-center flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+                      Đã quét an toàn
+                    </div>
+<button class="absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-text-heading/80 text-on-primary flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Add File Tile -->
+<label class="h-28 rounded-lg bg-surface-container hover:bg-surface-sand transition-colors cursor-pointer flex flex-col items-center justify-center gap-1 text-center p-2 text-text-body">
+<span class="material-symbols-outlined text-forest-accent text-[28px]">add_photo_alternate</span>
+<span class="font-body-sm text-[11px] font-semibold">+ Thêm ảnh/video</span>
+<span class="font-label-caps text-[9px] text-outline">JPG, PNG ≤ 15MB</span>
+<input accept="image/*,video/*" class="hidden" type="file"/>
+</label>
+</div>
+<div class="flex items-start gap-2 pt-1 font-body-sm text-[12px] text-outline">
+<span class="material-symbols-outlined text-[16px] text-forest-accent shrink-0 mt-0.5">security_update_good</span>
+<span>Thuật toán quét tự động sẽ ẩn số điện thoại, biển số nhà hoặc mã thẻ bưu kiện nhằm tuyệt đối bảo vệ thông tin cá nhân khách hàng.</span>
+</div>
+</div>
+<!-- Step 4: Verification Check & Action Triggers -->
+<div class="space-y-space-md pt-space-xs">
+<label class="flex items-start gap-3 cursor-pointer select-none">
+<input checked="" class="mt-1 w-4 h-4 rounded text-forest-accent focus:ring-forest-accent accent-forest-accent cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-text-heading">
+                    Tôi xác nhận đây là cảm nhận chân thực dựa trên trải nghiệm sử dụng thực tế sản phẩm đã mua từ Hợp tác xã Thổ cẩm Cơ Tu Đông Giang.
+                  </span>
+</label>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm pt-space-xs">
+<button class="w-full sm:w-auto px-8 py-3.5 bg-forest-accent text-on-primary font-button-text text-button-text rounded-lg hover:bg-primary shadow-sm transition-all flex items-center justify-center gap-2" type="submit">
+<span>Gửi đánh giá để duyệt xuất bản</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button class="w-full sm:w-auto px-6 py-3.5 bg-surface-container-low text-forest-accent font-button-text text-button-text rounded-lg hover:bg-surface-sand transition-colors" type="button">
+                    Lưu bản nháp
+                  </button>
+</div>
+</div>
+</form>
+</div>
+<!-- SECTION 2: MY REVIEWS LIST (Lịch sử đánh giá & Trạng thái kiểm duyệt) -->
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-text-heading">
+                Các đánh giá đã gửi gần đây
+              </h2>
+<span class="font-label-caps text-outline font-semibold tracking-wider">3 ĐÁNH GIÁ TRONG HỆ THỐNG</span>
+</div>
+<!-- REVIEW CARD 1: PUBLISHED -->
+<div class="bg-surface-sand rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-forest-accent text-on-primary font-label-caps text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+                    ĐÃ XUẤT BẢN (PUBLISHED)
+                  </span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-text-heading font-label-caps text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-forest-accent">verified</span>
+                    Xác thực đã mua hàng
+                  </span>
+</div>
+<span class="font-body-sm text-[12px] text-outline">Đơn hàng #DN-2026-041203</span>
+</div>
+<!-- Product Info Bar -->
+<div class="flex items-center gap-3 pt-1">
+<span class="font-headline-md text-[17px] text-text-heading font-semibold">
+                  Ví Cầm Tay Cườm Trắng Za-Rá
+                </span>
+<span class="text-outline text-[12px]">•</span>
+<div class="flex items-center text-terracotta-accent">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-sm text-[12px] font-bold text-text-heading ml-1.5">5.0</span>
+</div>
+</div>
+<!-- Text Review Content -->
+<p class="font-body-md text-body-md text-text-body leading-relaxed">
+                “Ví cầm tay rất thanh lịch, hạt cườm trắng sáng tự nhiên không bị gắt. Khóa kéo mượt mà, bên trong có lót vải mộc rất sạch sẽ. Mình đã đem theo trong chuyến công tác và nhận được rất nhiều lời khen ngợi về hoa văn Cơ Tu.”
+              </p>
+<!-- Attached Thumbnails -->
+<div class="flex items-center gap-space-sm pt-1">
+<img class="w-16 h-16 rounded-lg object-cover shadow-sm" data-alt="Handmade indigenous white beaded clutch purse crafted on dark indigo organic cotton resting on clean light linen background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCli7b9Tuht_HsGRq6c9dO1qbJJtHlslbVsW-EcCt5OtlypPlNO2ED5hK8pOvENldj-P4GBy2sbRTjZGeBzuipSmEI-7tUMDGRKdeyc6f3Fjz1P811E4U8Wu7S1xk4ntERGP0m-SQai4eR5vOQ9HjHf-cokAUuNimPA6xyTGslh8S8wLbXWJ4ejrxDG16TKbZTaWKlEOwAHW4Vy87tfw5n1h2oa2gza6RwerlqQQIxcI3kDdyE8XvYQ"/>
+<img class="w-16 h-16 rounded-lg object-cover shadow-sm" data-alt="Detailed interior lining view of traditional handcrafted brocade purse showing authentic woven tag and zipper craftmanship" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi96SRoK1JON2MHuq1lq3bf_Km97kx4NvwPehQ5WLXLwspXyOH5zp-tqPRYNLBB7ZR1571gtFXRLFaI5DfC5pTFTBKYZOFH1oP5f6gN_E22_kwiUNn0i4q7Vq_pbm2-vQx-0ucw809CiFBTh34yNh9M0oM_U9p57w3WrKpwMh1qjJ-UEYSupNJsrmRL0Fjr9ul-dYEH-mj2oxmmVFLTasLKNkBYTYlWzmpz1KTQFTkzAdaHVMuxkhi"/>
+</div>
+<!-- Moderation details & Actions -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-space-xs border-t border-outline-variant/30">
+<p class="font-body-sm text-[12px] text-outline flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-forest-accent">verified_user</span>
+                  Xuất bản ngày 08/04/2026 • Đã duyệt bởi Ban Quản trị Di sản • Còn 18 ngày trong thời hạn chỉnh sửa.
+                </p>
+<div class="flex items-center gap-2 shrink-0">
+<button class="px-3 py-1.5 rounded-md bg-surface-container text-text-heading hover:bg-surface-container-high text-button-text font-button-text transition-colors">
+                    Chỉnh sửa đánh giá
+                  </button>
+<button class="px-3 py-1.5 rounded-md text-outline hover:text-text-heading text-button-text font-button-text transition-colors">
+                    Tạm ẩn khỏi trang
+                  </button>
+</div>
+</div>
+</div>
+<!-- REVIEW CARD 2: PENDING MODERATION -->
+<div class="bg-surface-sand rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-surface-container-highest text-text-heading font-label-caps text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-forest-accent animate-spin">sync</span>
+                    ĐANG KIỂM DUYỆT NỘI DUNG (PENDING)
+                  </span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-text-heading font-label-caps text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-forest-accent">verified</span>
+                    Xác thực đã mua hàng
+                  </span>
+</div>
+<span class="font-body-sm text-[12px] text-outline">Đơn hàng #DN-2025-099142</span>
+</div>
+<!-- Product Info Bar -->
+<div class="flex items-center gap-3 pt-1">
+<span class="font-headline-md text-[17px] text-text-heading font-semibold">
+                  Bộ Quà Tặng Khăn Choàng Adút &amp; Túi Tote A-Riêng
+                </span>
+<span class="text-outline text-[12px]">•</span>
+<div class="flex items-center text-terracotta-accent">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] text-outline/40">star</span>
+<span class="font-body-sm text-[12px] font-bold text-text-heading ml-1.5">4.0</span>
+</div>
+</div>
+<!-- Text Review Content -->
+<p class="font-body-md text-body-md text-text-body leading-relaxed">
+                “Bộ quà đóng gói rất đẹp và chỉn chu, đối tác nhận quà rất ấn tượng với câu chuyện dệt của người Cơ Tu. Góp ý nhỏ là khăn nên có thêm túi vải bảo quản chuyên dụng để tiện cất giữ vào mùa hè.”
+              </p>
+<!-- Moderation Notice Box -->
+<div class="p-3 bg-surface-container-low rounded-lg flex items-start gap-2.5 text-text-body font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-forest-accent shrink-0 mt-0.5">hourglass_top</span>
+<span>Hệ thống đang kiểm tra tự động hình ảnh chống trùng lặp và từ ngữ. Dự kiến hoàn tất phê duyệt trong 4 giờ làm việc.</span>
+</div>
+<!-- Actions -->
+<div class="flex items-center justify-end gap-2 pt-space-xs border-t border-outline-variant/30">
+<button class="px-3 py-1.5 rounded-md bg-surface-container text-text-heading hover:bg-surface-container-high text-button-text font-button-text transition-colors">
+                  Sửa bản nháp
+                </button>
+<button class="px-3 py-1.5 rounded-md text-secondary hover:text-error text-button-text font-button-text transition-colors">
+                  Hủy đánh giá
+                </button>
+</div>
+</div>
+<!-- REVIEW CARD 3: REJECTED / NEEDS EDIT -->
+<div class="bg-surface-sand rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-error-container text-on-error-container font-label-caps text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+                    CẦN CHỈNH SỬA NỘI DUNG (ACTION NEEDED)
+                  </span>
+</div>
+<span class="font-body-sm text-[12px] text-outline">Đơn hàng #DN-2025-077421</span>
+</div>
+<div class="flex items-center gap-3 pt-1">
+<span class="font-headline-md text-[17px] text-text-heading font-semibold">
+                  Tấm Trải Bàn Hoa Văn Mặt Trời Tà-Vạc
+                </span>
+<span class="text-outline text-[12px]">•</span>
+<div class="flex items-center text-terracotta-accent">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-sm text-[12px] font-bold text-text-heading ml-1.5">5.0</span>
+</div>
+</div>
+<!-- Rejection Callout Box -->
+<div class="p-3 bg-secondary-fixed/50 rounded-lg flex items-start gap-2.5 text-on-secondary-fixed font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary shrink-0 mt-0.5">privacy_tip</span>
+<div>
+<strong class="block text-secondary font-semibold">Yêu cầu từ Ban Quản Trị Di Sản:</strong>
+<span>Hình ảnh mở kiện có chứa thông tin số điện thoại cá nhân và địa chỉ nhà trên nhãn dán bưu tá Viettel Post. Vui lòng làm mờ hoặc thay thế ảnh để bảo vệ quyền riêng tư cá nhân của bạn.</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center justify-end gap-2 pt-space-xs border-t border-outline-variant/30">
+<button class="px-4 py-2 rounded-lg bg-forest-accent text-on-primary text-button-text font-button-text hover:bg-primary transition-colors flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+<span>Cập nhật lại ảnh</span>
+</button>
+<button class="px-3 py-2 rounded-lg text-outline hover:text-text-heading text-button-text font-button-text transition-colors">
+                  Xem chi tiết phản hồi
+                </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript for Star Rating and Tab toggles -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Star rating micro-interaction
+      const starButtons = document.querySelectorAll('button[aria-label$="sao"]');
+      starButtons.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+          starButtons.forEach((sBtn, sIdx) => {
+            const icon = sBtn.querySelector('.material-symbols-outlined');
+            if (icon) {
+              if (sIdx <= index) {
+                icon.style.fontVariationSettings = "'FILL' 1";
+                sBtn.classList.remove('text-outline/40');
+                sBtn.classList.add('text-terracotta-accent');
+              } else {
+                icon.style.fontVariationSettings = "'FILL' 0";
+                sBtn.classList.remove('text-terracotta-accent');
+                sBtn.classList.add('text-outline/40');
+              }
+            }
+          });
+        });
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-text-heading text-surface-container-high relative overflow-hidden"><div class="h-2 w-full bg-gradient-to-r from-forest-accent via-terracotta-accent to-forest-accent opacity-85"></div><div class="max-w-7xl mx-auto px-gutter pt-space-2xl pb-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-md"><div class="p-2 bg-surface-container-lowest/10 rounded-lg"><img alt="Logo nguyên bản xanh.png" class="h-8 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1UIBSPqIFfaCjmVN5aC2C2H2wMQtygQgmvc1QOX5FeoiYz5udkLVp433klefMsZk7YM62g990_LUPH4VxDP_RAWhO141hhf93-49YhjUFEjiDmuyCIYMoqmF6q9OHSUfAsP8bMKDFdYUB6d_NpZp4zEltPId8BzZMOMOM-Z-fK60G4pXb1iQDET75TZcs2UwdJfkqhzSL3YtlEtw2DPBOn27FYcPzT0kHNwajGOmb3UOn9wqWeLGvO26pXfh3Nlbvh09caa1U3D8Q"/></div><div><p class="font-headline-md text-surface-sand tracking-wide">DỆT NGUỒN</p><p class="font-label-caps text-surface-sand/70 tracking-widest text-[10px] uppercase">Brocade Đông Giang Heritage</p></div></div><p class="font-quote-lg text-quote-lg italic text-surface-sand/90 font-quote-sm">“Dệt bản sắc – Nối nguồn cội”</p><p class="font-body-sm text-body-sm text-surface-container-highest/80 max-w-md leading-relaxed">Dự án bảo tồn và số hóa chuỗi cung ứng thổ cẩm dệt khung cửi lưng của người Cơ Tu tại huyện Đông Giang, tỉnh Quảng Nam. Từng thớ vải mang trọn linh hồn đại ngàn Trường Sơn và chứng nhận OCOP 4 sao quốc gia.</p><div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="Bản đồ định vị" class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center text-surface-sand hover:bg-forest-accent hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">explore</span></a><a aria-label="Chứng nhận OCOP" class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center text-surface-sand hover:bg-forest-accent hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">verified</span></a><a aria-label="Chia sẻ câu chuyện" class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center text-surface-sand hover:bg-forest-accent hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">share</span></a></div></div><div class="space-y-space-md"><h3 class="font-headline-md text-[18px] text-surface-sand font-semibold">Sản phẩm &amp; Khám phá</h3><ul class="space-y-2.5 font-body-sm text-body-sm text-surface-container-highest/80"><li class="hover:text-surface-sand transition-colors"><a class="" data-path="bo-suu-tap" href="#">Túi Đeo Chéo An Điềm</a></li><li class="hover:text-surface-sand transition-colors"><a class="" data-path="bo-suu-tap" href="#">Túi Tote Hoa Văn A-Riêng</a></li><li class="hover:text-surface-sand transition-colors"><a class="" data-path="bo-suu-tap" href="#">Ví Cầm Tay Za-Rá</a></li><li class="hover:text-surface-sand transition-colors"><a class="" data-path="bo-suu-tap" href="#">Phiên Bản Giới Hạn Nghệ Nhân</a></li><li class="hover:text-surface-sand transition-colors"><a class="" data-path="gio-hang" href="#">Giỏ Hàng Của Bạn</a></li></ul></div><div class="space-y-space-md"><h3 class="font-headline-md text-[18px] text-surface-sand font-semibold">Câu chuyện &amp; Nguồn gốc</h3><ul class="space-y-2.5 font-body-sm text-body-sm text-surface-container-highest/80"><li class="hover:text-surface-sand transition-colors"><a class="" data-path="cau-chuyen-di-san" href="#">Di sản Dệt Cườm Cơ Tu</a></li><li class="hover:text-surface-sand transition-colors"><a class="" data-path="cau-chuyen-di-san" href="#">Cung Đường Đông Giang</a></li><li class="hover:text-surface-sand transition-colors"><a class="" data-path="minh-bach-nguon-goc" href="#">Tra Cứu Mã Định Danh QR</a></li><li class="hover:text-surface-sand transition-colors"><a class="" data-path="minh-bach-nguon-goc" href="#">Tiêu chuẩn OCOP 4 Sao</a></li><li class="hover:text-surface-sand transition-colors"><a class="" data-path="minh-bach-nguon-goc" href="#">Chân Dung Nghệ Nhân</a></li></ul></div><div class="space-y-space-md"><h3 class="font-headline-md text-[18px] text-surface-sand font-semibold">Chính sách &amp; Hỗ trợ</h3><ul class="space-y-2.5 font-body-sm text-body-sm text-surface-container-highest/80"><li class="hover:text-surface-sand transition-colors"><a class="" data-path="ho-tro" href="#">Chính Sách Bảo Hành Sợi Tự Nhiên</a></li><li class="hover:text-surface-sand transition-colors"><a class="" data-path="ho-tro" href="#">Vận Chuyển Toàn Quốc &amp; Quốc Tế</a></li><li class="hover:text-surface-sand transition-colors"><a class="" data-path="ho-tro" href="#">Bảo Tồn Bản Quyền Tri Thức Bản Địa</a></li><li class="hover:text-surface-sand transition-colors"><a class="" data-path="ho-tro" href="#">Câu Hỏi Thường Gặp (FAQ)</a></li><li class="hover:text-surface-sand transition-colors"><a class="" data-path="ho-tro" href="#">Liên Hệ Hợp Tác Văn Hóa</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-surface-container-highest/60"><p class="">© 2025 Dệt Nguồn Đông Giang. Bản quyền tri thức hoa văn được bảo tồn bởi Hợp tác xã Dệt thổ cẩm Cơ Tu Đông Giang, Quảng Nam.</p><div class="flex items-center gap-space-md font-label-caps text-surface-sand/70"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-terracotta-accent">verified_user</span> OCOP QUẢNG NAM CERTIFIED</span><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-forest-accent">eco</span> 100% SỢI BÔNG &amp; MÀU TỰ NHIÊN</span></div></div></div></footer>
+</body></html>

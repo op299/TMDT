@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,600;1,400&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary-fixed-variant": "#075136",
+          "surface": "#fff8f0",
+          "terracotta-accent": "#C84B2F",
+          "surface-bright": "#fff8f0",
+          "on-primary-fixed": "#002113",
+          "secondary": "#aa361c",
+          "on-background": "#1e1b14",
+          "tertiary-container": "#43584a",
+          "text-body": "#3D3028",
+          "inverse-primary": "#93d5b1",
+          "on-primary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "primary-fixed-dim": "#93d5b1",
+          "on-error": "#ffffff",
+          "surface-variant": "#e9e2d5",
+          "on-secondary-container": "#6b1100",
+          "on-secondary-fixed-variant": "#891e05",
+          "text-heading": "#1A2E22",
+          "on-tertiary-container": "#b6cdbb",
+          "surface-container-low": "#fbf3e6",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed": "#ffdad2",
+          "inverse-on-surface": "#f8f0e3",
+          "on-secondary": "#ffffff",
+          "inverse-surface": "#343027",
+          "surface-dim": "#e1d9cc",
+          "on-error-container": "#93000a",
+          "on-secondary-fixed": "#3d0600",
+          "surface-container-high": "#efe7da",
+          "on-surface-variant": "#404943",
+          "error": "#ba1a1a",
+          "surface-tint": "#296a4d",
+          "background": "#fff8f0",
+          "surface-container": "#f5ede0",
+          "on-primary-container": "#93d5b2",
+          "secondary-fixed-dim": "#ffb4a3",
+          "secondary-container": "#ff7353",
+          "surface-container-highest": "#e9e2d5",
+          "tertiary-fixed-dim": "#b5ccbb",
+          "primary": "#00452d",
+          "forest-accent": "#1B5E42",
+          "on-tertiary-fixed": "#0b1f14",
+          "on-surface": "#1e1b14",
+          "surface-sand": "#EDE0CC",
+          "primary-container": "#1b5e42",
+          "tertiary": "#2c4134",
+          "tertiary-fixed": "#d0e8d6",
+          "outline": "#707972",
+          "error-container": "#ffdad6",
+          "primary-fixed": "#aef1cc",
+          "on-tertiary-fixed-variant": "#374b3e",
+          "outline-variant": "#bfc9c1"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-lg": "1.5rem",
+          "gutter-mobile": "1rem",
+          "margin": "2.5rem",
+          "space-2xl": "4rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-xl": "2.5rem",
+          "space-xs": "0.25rem",
+          "margin-mobile": "1.25rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "headline-xl-mobile": ["Playfair Display"],
+          "headline-md": ["Playfair Display"],
+          "quote-sm": ["Lora"],
+          "headline-lg": ["Playfair Display"],
+          "quote-lg": ["Lora"],
+          "label-caps": ["Inter"],
+          "body-md": ["Inter"],
+          "headline-xl": ["Playfair Display"],
+          "body-sm": ["Inter"],
+          "button-text": ["Inter"],
+          "body-lg": ["Inter"],
+          "headline-lg-mobile": ["Playfair Display"]
+        },
+        "fontSize": {
+          "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+          "quote-sm": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+          "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "quote-lg": ["20px", {"lineHeight": "32px", "fontWeight": "400"}],
+          "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600"}],
+          "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "button-text": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+          "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "600"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 w-full z-50 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center justify-between px-gutter"><div class="flex items-center gap-space-md"><img alt="Logo nguyên bản xanh.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UIBSPqIFfaCjmVN5aC2C2H2wMQtygQgmvc1QOX5FeoiYz5udkLVp433klefMsZk7YM62g990_LUPH4VxDP_RAWhO141hhf93-49YhjUFEjiDmuyCIYMoqmF6q9OHSUfAsP8bMKDFdYUB6d_NpZp4zEltPId8BzZMOMOM-Z-fK60G4pXb1iQDET75TZcs2UwdJfkqhzSL3YtlEtw2DPBOn27FYcPzT0kHNwajGOmb3UOn9wqWeLGvO26pXfh3Nlbvh09caa1U3D8Q"/><div class="hidden sm:flex flex-col"><span class="font-label-caps text-label-caps text-text-heading uppercase">Dệt Nguồn Cơ Tu Đông Giang</span><span class="font-body-sm text-body-sm text-forest-accent font-semibold flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-forest-accent inline-block animate-pulse"></span>CỔNG QUẢN TRỊ ADMIN</span></div></div><div class="flex-1 max-w-xl mx-gutter hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full bg-surface-container rounded pl-10 pr-12 py-1.5 font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface focus:ring-1 focus:ring-primary" placeholder="Tra cứu nhanh SKU, mã đơn, khách hàng, số liệu... (Ctrl+K)" type="text"/><kbd class="absolute right-3 font-label-caps text-label-caps bg-surface-variant text-on-surface-variant px-1.5 py-0.5 rounded border border-outline-variant">Ctrl K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-sand text-tertiary font-label-caps text-label-caps"><span class="material-symbols-outlined text-[14px]">lock</span>TLS 1.3 SECURE</span><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-sand text-tertiary font-label-caps text-label-caps"><span class="material-symbols-outlined text-[14px]">verified_user</span>PDPD NĐ 13/2023</span></div><button class="relative p-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-secondary rounded-full"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-button-text text-button-text text-text-heading leading-tight">Lê Quang Huy</span><span class="font-label-caps text-label-caps text-forest-accent">SUPER ADMIN / DATA &amp; OPS</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-[260px] bg-primary text-on-primary z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-md flex flex-col"><div class="pb-space-sm mb-space-sm border-b border-primary-container"><p class="font-label-caps text-label-caps text-primary-fixed tracking-wider uppercase">Bảng Điều Khiển HTX V2.4 PROD</p><p class="font-body-sm text-body-sm text-inverse-primary/80">Hệ thống phân quyền RBAC</p></div><nav class="flex flex-col gap-space-xs font-body-sm text-body-sm" data-active-classes="bg-primary-container text-on-primary font-semibold rounded"><a class="flex items-center justify-between px-space-sm py-2 rounded text-inverse-primary hover:bg-primary-container hover:text-on-primary transition-colors" data-path="tong-quan-dieu-hanh" href="#"><span>Tổng quan điều hành</span><span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-primary-container/80 text-primary-fixed">ADM-001</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-inverse-primary hover:bg-primary-container hover:text-on-primary transition-colors" data-path="nhan-su-phan-quyen" href="#"><span>Nhân sự &amp; Phân quyền</span><span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-primary-container/80 text-primary-fixed">ADM-002</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-inverse-primary hover:bg-primary-container hover:text-on-primary transition-colors" data-path="danh-muc-san-pham" href="#"><span>Danh mục &amp; Sản phẩm</span><span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-primary-container/80 text-primary-fixed">003-004</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-inverse-primary hover:bg-primary-container hover:text-on-primary transition-colors" data-path="governance-phap-che" href="#"><span>Governance &amp; Pháp chế</span><span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-primary-container/80 text-primary-fixed">ADM-005</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-inverse-primary hover:bg-primary-container hover:text-on-primary transition-colors" data-path="kenh-ban-bundle" href="#"><span>Kênh bán &amp; Bundle</span><span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-primary-container/80 text-primary-fixed">006-010</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-inverse-primary hover:bg-primary-container hover:text-on-primary transition-colors" data-path="don-hang-da-kenh-oms" href="#"><span>Đơn hàng đa kênh OMS</span><span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-primary-container/80 text-primary-fixed">008-009</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-inverse-primary hover:bg-primary-container hover:text-on-primary transition-colors" data-path="kho-van-ton-kho" href="#"><span>Kho vận &amp; Tồn kho</span><span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-primary-container/80 text-primary-fixed">011-015</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-inverse-primary hover:bg-primary-container hover:text-on-primary transition-colors" data-path="dong-goi-giao-nhan" href="#"><span>Đóng gói &amp; Giao nhận</span><span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-primary-container/80 text-primary-fixed">016-017</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-inverse-primary hover:bg-primary-container hover:text-on-primary transition-colors" data-path="khach-hang-cskh" href="#"><span>Khách hàng &amp; CSKH</span><span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-primary-container/80 text-primary-fixed">018-020</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-inverse-primary hover:bg-primary-container hover:text-on-primary transition-colors" data-path="doi-tra-hoan-tien" href="#"><span>Đổi trả &amp; Hoàn tiền</span><span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-primary-container/80 text-primary-fixed">021-022</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-inverse-primary hover:bg-primary-container hover:text-on-primary transition-colors" data-path="nguon-goc-cap-ma-qr" href="#"><span>Nguồn gốc &amp; Cấp mã QR</span><span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-primary-container/80 text-primary-fixed">ADM-023</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-inverse-primary hover:bg-primary-container hover:text-on-primary transition-colors" data-path="tai-chinh-doi-soat-pl" href="#"><span>Tài chính &amp; Đối soát P&amp;L</span><span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-primary-container/80 text-primary-fixed">024-025</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-inverse-primary hover:bg-primary-container hover:text-on-primary transition-colors" data-path="phan-tich-dss" href="#"><span>Phân tích &amp; DSS</span><span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-primary-container/80 text-primary-fixed">026-027</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-inverse-primary hover:bg-primary-container hover:text-on-primary transition-colors" data-path="quan-tri-du-lieu-review" href="#"><span>Quản trị dữ liệu &amp; Review</span><span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-primary-container/80 text-primary-fixed">028-029</span></a></nav></div><div class="p-space-md bg-[#003422] flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs text-secondary-fixed"><span class="w-2 h-2 rounded-full bg-secondary-fixed"></span><span class="font-label-caps text-label-caps">Last-Admin Guard Active</span></div><button class="w-full flex items-center justify-center gap-space-xs py-2 px-space-sm rounded bg-primary-container text-on-primary font-button-text text-button-text hover:bg-forest-accent transition-colors"><span class="material-symbols-outlined text-[18px]">logout</span><span>Đăng xuất / Khóa phiên</span></button></div></aside><div class="pl-[260px]"><main class="w-full pt-16 bg-surface p-6 lg:p-8 min-h-screen"><div class="flex flex-col w-full">
+<!-- Breadcrumb & Top System Metadata -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-text-body">
+<span class="text-outline">Cổng Quản Trị</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-outline">Quản Trị Dữ Liệu</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="font-button-text text-forest-accent">Giám Sát Chất Lượng, Lineage &amp; Danh Mục Chỉ Số (ADM-028)</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-forest-accent font-label-caps text-label-caps tracking-wider font-semibold">EP-12 DATA GOVERNANCE</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-terracotta-accent font-label-caps text-label-caps tracking-wider font-semibold">METRIC REGISTRY V2.4</span>
+<span class="px-2.5 py-1 rounded bg-primary-fixed-dim text-on-primary-fixed-variant font-label-caps text-label-caps tracking-wider font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-forest-accent"></span>LINEAGE AUDITED
+      </span>
+</div>
+</div>
+<!-- Editorial Section Title Banner -->
+<div class="relative mt-2 p-space-lg rounded-xl bg-surface-container overflow-hidden shadow-sm">
+<div class="absolute right-0 top-0 bottom-0 w-80 pointer-events-none opacity-20">
+<svg class="w-full h-full text-forest-accent" fill="currentColor" viewbox="0 0 200 200">
+<pattern height="20" id="brocade-mesh" patternunits="userSpaceOnUse" width="20" x="0" y="0">
+<polygon fill="currentColor" fill-opacity="0.25" points="10,0 20,10 10,20 0,10"></polygon>
+<circle cx="10" cy="10" fill="currentColor" r="1.5"></circle>
+</pattern>
+<rect fill="url(#brocade-mesh)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<div class="relative z-10 flex flex-col xl:flex-row xl:items-end justify-between gap-space-lg">
+<div class="max-w-3xl">
+<div class="flex items-center gap-2 mb-1 text-forest-accent font-label-caps text-label-caps uppercase">
+<span class="material-symbols-outlined text-[16px]">account_tree</span>
+          Kiến Trúc Dữ Liệu Lõi Thổ Cẩm Cơ Tu
+        </div>
+<h1 class="font-headline-lg text-headline-lg text-text-heading tracking-tight">
+          Quản Trị Chất Lượng Dữ Liệu, Dòng Dữ Liệu (Lineage) &amp; Danh Mục Chỉ Số
+        </h1>
+<p class="mt-2 font-body-md text-body-md text-text-body">
+          Kiểm soát độ tin cậy (<span class="font-semibold text-text-heading">Trust Score</span>), tính tươi mới (<span class="font-semibold text-text-heading">Freshness SLA</span>), tính toàn vẹn và khả năng tái lập của các tập dữ liệu lõi; chuẩn hóa công thức tính toán chỉ số kinh doanh toàn HTX Dệt Nguồn.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="px-space-md py-2.5 rounded bg-surface-container-highest text-forest-accent font-button-text text-button-text hover:bg-surface-sand transition-all flex items-center gap-1.5 shadow-sm" id="btn-trigger-checks">
+<span class="material-symbols-outlined text-[18px]">cached</span>
+          Chạy Lại Kiểm Tra (Trigger All)
+        </button>
+<button class="px-space-md py-2.5 rounded bg-forest-accent text-surface-container-lowest font-button-text text-button-text hover:bg-primary transition-all flex items-center gap-1.5 shadow-md" id="btn-open-metric-modal">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+          + Đăng Ký Chỉ Số Mới
+        </button>
+</div>
+</div>
+</div>
+<!-- Tab Navigation -->
+<div class="mt-space-lg flex items-center gap-space-sm border-b-0">
+<div class="flex flex-wrap items-center gap-2 p-1.5 bg-surface-container-high rounded-lg w-full">
+<button class="tab-btn px- space-md py-2 rounded font-button-text text-button-text text-surface-container-lowest bg-forest-accent shadow-sm flex items-center gap-2 transition-all" data-tab-target="tab-quality">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+        Bảng Kiểm Định Chất Lượng Dữ Liệu (Quality Overview &amp; Checks)
+      </button>
+<button class="tab-btn px-space-md py-2 rounded font-button-text text-button-text text-on-surface-variant hover:text-text-heading hover:bg-surface-container transition-all flex items-center gap-2" data-tab-target="tab-lineage">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+        Cây Dòng Dữ Liệu Nguồn Gốc (Data Lineage &amp; Traceability)
+      </button>
+<button class="tab-btn px-space-md py-2 rounded font-button-text text-button-text text-on-surface-variant hover:text-text-heading hover:bg-surface-container transition-all flex items-center gap-2" data-tab-target="tab-registry">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+        Danh Mục Chỉ Số Kinh Doanh Chuẩn Hóa (Metric Registry &amp; Versioning)
+      </button>
+</div>
+</div>
+<!-- KPI Cards Grid -->
+<div class="mt-space-md grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase font-semibold">Hệ Thống Phê Duyệt Kiểm Toán</span>
+<span class="p-1 rounded bg-surface-container text-forest-accent material-symbols-outlined text-[18px]">analytics</span>
+</div>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-text-heading font-bold">98.6%</span>
+<span class="font-label-caps text-label-caps text-forest-accent font-semibold flex items-center">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>+0.4%
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-text-body mt-1">System Trust Score</p>
+</div>
+<div class="mt-3 pt-2.5 bg-surface-container-low px-2 py-1.5 rounded">
+<p class="font-label-caps text-label-caps text-forest-accent font-semibold leading-tight">Đạt chuẩn ISO/DSS cho kiểm toán Doanh thu &amp; Tồn kho OCOP</p>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase font-semibold">Tươi Mới SLA &amp; Trễ Pipeline</span>
+<span class="p-1 rounded bg-surface-container text-forest-accent material-symbols-outlined text-[18px]">timer</span>
+</div>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-text-heading font-bold">18/19</span>
+<span class="font-body-sm text-body-sm text-outline">Bộ Dữ Liệu</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-body mt-1">Độ trễ trung bình hệ thống: <strong class="text-text-heading">3.2 phút</strong></p>
+</div>
+<div class="mt-3 pt-2.5 bg-surface-container-low px-2 py-1.5 rounded flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-text-body">Khung tối đa cho phép:</span>
+<span class="font-label-caps text-label-caps font-semibold text-text-heading">15.0 phút SLA</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase font-semibold">Giám Sát Quy Tắc Tự Động</span>
+<span class="p-1 rounded bg-surface-container text-forest-accent material-symbols-outlined text-[18px]">rule_settings</span>
+</div>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-forest-accent font-bold">64</span>
+<span class="font-body-sm text-body-sm text-forest-accent font-semibold">Quy tắc đang chạy</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-body mt-1">Toàn vẹn khóa ngoại, mã SKU sàn, khử trùng</p>
+</div>
+<div class="mt-3 pt-2.5 bg-surface-container-low px-2 py-1.5 rounded flex items-center gap-1 text-forest-accent font-label-caps text-label-caps font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>BR-15 &amp; BR-24 Immutability Active</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase font-semibold">Sự Cố Dữ Liệu Chờ Xử Lý</span>
+<span class="p-1 rounded bg-secondary-fixed text-terracotta-accent material-symbols-outlined text-[18px]">warning</span>
+</div>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-terracotta-accent font-bold">01</span>
+<span class="font-body-sm text-body-sm text-terracotta-accent font-semibold">Cảnh Báo Vừa Phải</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-body mt-1">Trễ sync 20 phút: Bảng đối soát TikTok Shop</p>
+</div>
+<div class="mt-3 pt-2.5 bg-secondary-fixed px-2 py-1.5 rounded flex items-center justify-between text-on-secondary-fixed-variant">
+<span class="font-label-caps text-label-caps">Tự động kích hoạt retry</span>
+<span class="font-label-caps text-label-caps font-semibold">#Retry-3</span>
+</div>
+</div>
+</div>
+<!-- Tab Content: TAB 1 QUALITY OVERVIEW -->
+<div class="tab-pane flex flex-col gap-space-md mt-space-md" id="tab-quality">
+<!-- Toolbar & Filters -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full bg-surface-container-low pl-10 pr-4 py-2 rounded text-body-sm font-body-sm text-text-heading placeholder:text-outline focus:outline-none focus:bg-surface focus:ring-0 shadow-inner" id="dataset-search" placeholder="Tìm theo tên dataset, chỉ số (GMV, ATP, CM2, Churn), chủ sở hữu (Owner)..." type="text"/>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1.5 bg-surface-container-low px-2 py-1.5 rounded">
+<span class="font-label-caps text-label-caps text-outline uppercase">Trạng thái:</span>
+<select class="bg-transparent text-body-sm font-body-sm text-text-heading font-semibold focus:outline-none cursor-pointer">
+<option>Tất cả trạng thái</option>
+<option>Đạt Tin Cậy (Trusted)</option>
+<option>Cảnh báo (Warning)</option>
+<option>Lỗi (Failed)</option>
+<option>Trễ SLA (Stale)</option>
+</select>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-low px-2 py-1.5 rounded">
+<span class="font-label-caps text-label-caps text-outline uppercase">Phân vùng:</span>
+<select class="bg-transparent text-body-sm font-body-sm text-text-heading font-semibold focus:outline-none cursor-pointer">
+<option>Tất cả phân vùng dữ liệu</option>
+<option>Đơn hàng OMS</option>
+<option>Tồn kho Khả Dụng (ATP)</option>
+<option>Tài chính &amp; Giá Vốn P&amp;L</option>
+<option>Nguồn Gốc &amp; OCOP QR</option>
+<option>Khách hàng &amp; Consent CRM</option>
+</select>
+</div>
+<button class="px-3 py-2 bg-surface-container-high hover:bg-surface-sand rounded text-text-heading font-button-text text-button-text flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">history</span>
+          Lịch Sử Kiểm Tra
+        </button>
+</div>
+</div>
+<!-- Data Asset & Quality Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-forest-accent">dataset</span>
+<span class="font-button-text text-button-text text-text-heading uppercase tracking-wide">5 Tập Dữ Liệu Trọng Yếu HTX Dệt Nguồn Cơ Tu</span>
+</div>
+<span class="font-label-caps text-label-caps text-outline">Cập nhật tự động mỗi 60 giây</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container font-label-caps text-label-caps text-outline uppercase tracking-wider">
+<th class="py-3 px-4">Tập Dữ Liệu &amp; Phân Vùng</th>
+<th class="py-3 px-4">Chủ Sở Hữu (Owner)</th>
+<th class="py-3 px-4">Tần Suất &amp; SLA</th>
+<th class="py-3 px-4">Tính Toàn Vẹn (Null%)</th>
+<th class="py-3 px-4">Duy Nhất (Uniqueness)</th>
+<th class="py-3 px-4">Lệch Đối Soát (Δ)</th>
+<th class="py-3 px-4">Trạng Thái Tin Cậy</th>
+<th class="py-3 px-4 text-right">Thao Tác</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-text-body">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-semibold text-text-heading font-button-text text-button-text flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-forest-accent">table_rows</span>
+                    orders_canonical_v2
+                  </span>
+<span class="text-[11px] text-outline mt-0.5">Phân vùng: Đơn Hàng OMS &amp; Đa Kênh</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-forest-accent text-surface-container-lowest flex items-center justify-center text-[10px] font-bold">OMS</span>
+<span class="font-semibold text-text-heading">Nguyễn Minh Tuấn (OMS Lead)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="text-text-heading font-semibold flex items-center gap-1 text-[12px]">
+<span class="w-2 h-2 rounded-full bg-forest-accent animate-pulse"></span>Streaming Realtime
+                  </span>
+<span class="text-[11px] text-outline">&lt; 15s (Thực tế: 2.1s)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-16 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-forest-accent h-full w-full"></div>
+</div>
+<span class="text-forest-accent font-semibold text-[12px]">100% Pass</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded bg-surface-container font-semibold text-text-heading text-[12px]">
+                  100% Unique
+                </span>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-semibold text-forest-accent text-[12px]">0 VNĐ (Khớp 100%)</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded bg-primary-fixed-dim text-on-primary-fixed-variant font-label-caps text-label-caps font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                  TRUSTED
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-sand text-text-heading font-button-text text-button-text text-[12px]" title="Xem Dòng Dữ Liệu">Lineage</button>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-sand text-forest-accent font-button-text text-button-text text-[12px]" title="Chạy backfill dữ liệu">Backfill</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-semibold text-text-heading font-button-text text-button-text flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-forest-accent">inventory</span>
+                    atp_inventory_stream
+                  </span>
+<span class="text-[11px] text-outline mt-0.5">Phân vùng: Tồn Kho Khả Dụng Thực Tế (ATP)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-primary-container text-surface-container-lowest flex items-center justify-center text-[10px] font-bold">WMS</span>
+<span class="font-semibold text-text-heading">Trần Văn Hoàng (Kho Vận)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="text-text-heading font-semibold flex items-center gap-1 text-[12px]">
+<span class="w-2 h-2 rounded-full bg-forest-accent"></span>Batch 5 phút
+                  </span>
+<span class="text-[11px] text-outline">SLA: 5m (Thực tế: 1.8m)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-16 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-forest-accent h-full w-[99.9%]"></div>
+</div>
+<span class="text-forest-accent font-semibold text-[12px]">99.9% Pass</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded bg-surface-container font-semibold text-text-heading text-[12px]">
+                  100% Unique
+                </span>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-semibold text-forest-accent text-[12px]">Delta = 0 SKU</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded bg-primary-fixed-dim text-on-primary-fixed-variant font-label-caps text-label-caps font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                  TRUSTED
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-sand text-text-heading font-button-text text-button-text text-[12px]">Lineage</button>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-sand text-forest-accent font-button-text text-button-text text-[12px]">Backfill</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Warning Item -->
+<tr class="hover:bg-surface-container-low transition-colors bg-secondary-fixed/20">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-semibold text-text-heading font-button-text text-button-text flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-terracotta-accent">account_balance_wallet</span>
+                    cogs_artisan_ledger
+                  </span>
+<span class="text-[11px] text-outline mt-0.5">Phân vùng: Giá Vốn Nghệ Nhân &amp; Định Mức Sợi Tự Nhiên</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-secondary text-surface-container-lowest flex items-center justify-center text-[10px] font-bold">FIN</span>
+<span class="font-semibold text-text-heading">Lê Quang Huy (Super Admin)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="text-terracotta-accent font-semibold flex items-center gap-1 text-[12px]">
+<span class="w-2 h-2 rounded-full bg-terracotta-accent animate-pulse"></span>Batch 15 phút
+                  </span>
+<span class="text-[11px] text-terracotta-accent font-medium">Trễ 20m (TikTok sync API)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-16 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-terracotta-accent h-full w-[94.2%]"></div>
+</div>
+<span class="text-terracotta-accent font-semibold text-[12px]">94.2% (Null Cost)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded bg-surface-container font-semibold text-text-heading text-[12px]">
+                  100% Unique
+                </span>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-semibold text-terracotta-accent text-[12px]">+1.420.000đ (Chênh lệch)</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                  WARNING SLA
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2 py-1 rounded bg-secondary-container text-surface-container-lowest font-button-text text-button-text text-[12px] shadow-sm">Xử Lý Lỗi</button>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-sand text-text-heading font-button-text text-button-text text-[12px]">Lineage</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-semibold text-text-heading font-button-text text-button-text flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-forest-accent">shield</span>
+                    customer_consent_vault
+                  </span>
+<span class="text-[11px] text-outline mt-0.5">Phân vùng: Hồ Sơ Khách &amp; Đồng Thuận PDPD NĐ 13</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-tertiary text-surface-container-lowest flex items-center justify-center text-[10px] font-bold">SEC</span>
+<span class="font-semibold text-text-heading">Ban Pháp Chế &amp; DPO</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="text-text-heading font-semibold flex items-center gap-1 text-[12px]">
+<span class="w-2 h-2 rounded-full bg-forest-accent"></span>Realtime Event
+                  </span>
+<span class="text-[11px] text-outline">&lt; 1s (Audit Hash SHA-256)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-16 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-forest-accent h-full w-full"></div>
+</div>
+<span class="text-forest-accent font-semibold text-[12px]">100% Pass</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded bg-surface-container font-semibold text-text-heading text-[12px]">
+                  100% Unique
+                </span>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-semibold text-forest-accent text-[12px]">Delta = 0 Consent</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded bg-primary-fixed-dim text-on-primary-fixed-variant font-label-caps text-label-caps font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                  TRUSTED
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-sand text-text-heading font-button-text text-button-text text-[12px]">Lineage</button>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-sand text-forest-accent font-button-text text-button-text text-[12px]">Audit Log</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-semibold text-text-heading font-button-text text-button-text flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-forest-accent">qr_code_2</span>
+                    provenance_qr_registry
+                  </span>
+<span class="text-[11px] text-outline mt-0.5">Phân vùng: Tem Truy Xuất OCOP, Nghệ Nhân &amp; Bản Đồ Sợi</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-forest-accent text-surface-container-lowest flex items-center justify-center text-[10px] font-bold">PRV</span>
+<span class="font-semibold text-text-heading">Alăng Thị Nhàn (HTX Đông Giang)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="text-text-heading font-semibold flex items-center gap-1 text-[12px]">
+<span class="w-2 h-2 rounded-full bg-forest-accent"></span>Batch Cuối Ngày
+                  </span>
+<span class="text-[11px] text-outline">18:00 Hàng ngày (Hoàn tất)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-16 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-forest-accent h-full w-full"></div>
+</div>
+<span class="text-forest-accent font-semibold text-[12px]">100% Pass</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded bg-surface-container font-semibold text-text-heading text-[12px]">
+                  100% Unique
+                </span>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-semibold text-forest-accent text-[12px]">Delta = 0 Mã Tem</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded bg-primary-fixed-dim text-on-primary-fixed-variant font-label-caps text-label-caps font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                  TRUSTED
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-sand text-text-heading font-button-text text-button-text text-[12px]">Lineage</button>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-sand text-forest-accent font-button-text text-button-text text-[12px]">In Tem QR</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Tab Content: TAB 2 DATA LINEAGE & TRACEABILITY -->
+<div class="tab-pane hidden flex flex-col gap-space-md mt-space-md" id="tab-lineage">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm border-b-0">
+<div>
+<h2 class="font-headline-md text-headline-md text-text-heading">Cây Phả Hệ Dữ Liệu Nguồn Gốc (End-to-End Lineage Flow)</h2>
+<p class="font-body-sm text-body-sm text-text-body mt-0.5">Sơ đồ dòng chảy dữ liệu từ Khung dệt thổ cẩm Cơ Tu Đông Giang tới Dashboard Báo Cáo P&amp;L &amp; Quyết Định Quản Trị (DSS).</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-surface-container text-text-heading font-label-caps text-label-caps">Độ Phóng Đại: 100%</span>
+<button class="px-3 py-1.5 rounded bg-surface-container hover:bg-surface-sand text-forest-accent font-button-text text-button-text flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">filter_center_focus</span>
+            Căn Trung Tâm
+          </button>
+</div>
+</div>
+<!-- Lineage Visual Graph Canvas (Tailwind & Micro-SVG) -->
+<div class="p-6 rounded-xl bg-surface-container-low overflow-x-auto">
+<div class="min-w-[960px] flex items-center justify-between gap-6 relative">
+<!-- Stage 1: Data Sources -->
+<div class="flex flex-col gap-4 w-60">
+<div class="font-label-caps text-label-caps text-outline uppercase font-bold tracking-wider">1. Nguồn Dữ Liệu Gốc (Raw Sources)</div>
+<div class="p-3.5 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-text-heading text-[13px] flex items-center gap-1">
+<span class="material-symbols-outlined text-forest-accent text-[16px]">storefront</span>
+                  TikTok / Shopee / Web
+                </span>
+<span class="w-2 h-2 rounded-full bg-forest-accent"></span>
+</div>
+<span class="text-[11px] text-outline">Webhook &amp; Polling API (Json)</span>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-text-heading text-[13px] flex items-center gap-1">
+<span class="material-symbols-outlined text-forest-accent text-[16px]">nature_people</span>
+                  HTX Vải Sợi &amp; Nghệ Nhân
+                </span>
+<span class="w-2 h-2 rounded-full bg-forest-accent"></span>
+</div>
+<span class="text-[11px] text-outline">Cơ Tu App Nhật Ký Dệt</span>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-text-heading text-[13px] flex items-center gap-1">
+<span class="material-symbols-outlined text-forest-accent text-[16px]">local_shipping</span>
+                  Đối Tác Giao Vận (GHN, Viettel)
+                </span>
+<span class="w-2 h-2 rounded-full bg-forest-accent"></span>
+</div>
+<span class="text-[11px] text-outline">Tracking Status Streams</span>
+</div>
+</div>
+<!-- Connector 1 -->
+<div class="flex items-center text-forest-accent">
+<span class="material-symbols-outlined text-[28px] opacity-40 animate-pulse">trending_flat</span>
+</div>
+<!-- Stage 2: Processing & Ingestion -->
+<div class="flex flex-col gap-4 w-60">
+<div class="font-label-caps text-label-caps text-outline uppercase font-bold tracking-wider">2. Tầng Chuẩn Hóa &amp; Làm Sạch</div>
+<div class="p-3.5 rounded-lg bg-surface-container shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-text-heading text-[13px]">orders_canonical_v2</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed-dim text-on-primary-fixed-variant text-[10px] font-bold">PASSED</span>
+</div>
+<span class="text-[11px] text-outline">Khử trùng đơn, chuẩn hóa SKU thổ cẩm</span>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-text-heading text-[13px]">atp_inventory_stream</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed-dim text-on-primary-fixed-variant text-[10px] font-bold">PASSED</span>
+</div>
+<span class="text-[11px] text-outline">Khóa tồn kho thời gian thực đa sàn</span>
+</div>
+</div>
+<!-- Connector 2 -->
+<div class="flex items-center text-forest-accent">
+<span class="material-symbols-outlined text-[28px] opacity-40 animate-pulse">trending_flat</span>
+</div>
+<!-- Stage 3: Semantic Metric Models -->
+<div class="flex flex-col gap-4 w-60">
+<div class="font-label-caps text-label-caps text-outline uppercase font-bold tracking-wider">3. Danh Mục Chỉ Số (Metrics)</div>
+<div class="p-3.5 rounded-lg bg-surface-sand shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-text-heading text-[13px]">METRIC_GMV_NET_V2</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-forest-accent text-[10px] font-bold">ACTIVE</span>
+</div>
+<span class="text-[11px] text-outline">BR-15: Doanh thu thực nhận sau hoàn trả</span>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-sand shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-text-heading text-[13px]">METRIC_CM2_PROD_V1</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-forest-accent text-[10px] font-bold">ACTIVE</span>
+</div>
+<span class="text-[11px] text-outline">Biên đóng góp sau phí dệt thủ công</span>
+</div>
+</div>
+<!-- Connector 3 -->
+<div class="flex items-center text-forest-accent">
+<span class="material-symbols-outlined text-[28px] opacity-40 animate-pulse">trending_flat</span>
+</div>
+<!-- Stage 4: Downstream Dashboards -->
+<div class="flex flex-col gap-4 w-60">
+<div class="font-label-caps text-label-caps text-outline uppercase font-bold tracking-wider">4. Đầu Ra Điều Hành (Downstream)</div>
+<div class="p-3.5 rounded-lg bg-forest-accent text-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-[13px]">Báo Cáo P&amp;L Tài Chính</span>
+<span class="material-symbols-outlined text-[16px]">pie_chart</span>
+</div>
+<span class="text-[11px] text-inverse-primary/80">Màn hình ADM-024 / Quyết toán HTX</span>
+</div>
+<div class="p-3.5 rounded-lg bg-forest-accent text-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-[13px]">Cổng QR OCOP Khách Hàng</span>
+<span class="material-symbols-outlined text-[16px]">qr_code</span>
+</div>
+<span class="text-[11px] text-inverse-primary/80">Truy nguyên nguồn gốc từng sợi vải</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 rounded-lg bg-surface-sand/60 flex items-start gap-3">
+<span class="material-symbols-outlined text-forest-accent text-[20px] mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="font-button-text text-button-text text-text-heading">Chính Sách Bất Biến Lịch Sử (Data Lineage Audit Trail - BR-24)</span>
+<p class="font-body-sm text-body-sm text-text-body mt-0.5">
+            Mọi node dữ liệu đầu vào đều được gán mã băm băm giao dịch (Cryptographic SHA-256) và log vết chuyển đổi (Transformation Run ID). Đảm bảo trường hợp kiểm toán thuế hoặc tranh chấp cổ đông HTX đều có thể tua lại trạng thái hệ thống tại bất kỳ giây nào trong quá khứ.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Tab Content: TAB 3 METRIC REGISTRY & VERSIONING -->
+<div class="tab-pane hidden flex flex-col gap-space-md mt-space-md" id="tab-registry">
+<!-- Registry Header & Stats -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-text-heading">Danh Mục Chỉ Số Kinh Doanh Chuẩn Hóa (Semantic Metric Registry)</h2>
+<p class="font-body-sm text-body-sm text-text-body mt-0.5">Thư viện công thức thống nhất toàn hệ thống, phòng tránh lệch số liệu giữa phòng Marketing, Tài chính và Vận hành.</p>
+</div>
+<button class="px-space-md py-2 rounded bg-forest-accent text-surface-container-lowest font-button-text text-button-text hover:bg-primary transition-all flex items-center gap-1.5 shadow-sm self-start sm:self-auto" id="btn-open-metric-modal-2">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+          Đăng Ký Chỉ Số Mới
+        </button>
+</div>
+<!-- Metric Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Metric Item 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-primary-fixed-dim text-on-primary-fixed-variant font-label-caps text-label-caps font-semibold">METRIC_GMV_NET</span>
+<span class="font-label-caps text-label-caps text-forest-accent font-bold">PHIÊN BẢN v2.1 (ACTIVE)</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-heading mt-2">Doanh Thu Thuần Thực Nhận (Net Revenue)</h3>
+<p class="font-body-sm text-body-sm text-text-body mt-1">Tổng tiền khách thanh toán sau khi trừ toàn bộ giảm giá sàn, mã HTX trợ giá và trừ các đơn hoàn hủy đã xác nhận.</p>
+<div class="mt-3 p-2.5 rounded bg-surface-container-highest font-mono text-[12px] text-text-heading">
+<code>GMV_NET = Sum(LineItems.Price * Qty) - Discounts_HTX - Discounts_Platform - Returns_Confirmed</code>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-[12px] text-outline">
+<span>Chủ sở hữu: Ban Tài Chính &amp; Kế Toán</span>
+<button class="font-button-text text-button-text text-forest-accent hover:underline">Xem lịch sử v1.0 →</button>
+</div>
+</div>
+<!-- Metric Item 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-primary-fixed-dim text-on-primary-fixed-variant font-label-caps text-label-caps font-semibold">METRIC_ATP_REALTIME</span>
+<span class="font-label-caps text-label-caps text-forest-accent font-bold">PHIÊN BẢN v3.0 (ACTIVE)</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-heading mt-2">Tồn Kho Khả Dụng Khách Đặt Được (ATP)</h3>
+<p class="font-body-sm text-body-sm text-text-body mt-1">Số lượng túi thổ cẩm thực tế trong kho sẵn sàng bán ngay, loại trừ hàng đang giữ giỏ hàng 15 phút và hàng lỗi QC.</p>
+<div class="mt-3 p-2.5 rounded bg-surface-container-highest font-mono text-[12px] text-text-heading">
+<code>ATP = OnHand_Stock - Reserved_Pending_Payment - Damaged_QC - Safety_Buffer_DongGiang</code>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-[12px] text-outline">
+<span>Chủ sở hữu: Quản Lý Kho &amp; Vận Hành</span>
+<button class="font-button-text text-button-text text-forest-accent hover:underline">Xem lịch sử v2.4 →</button>
+</div>
+</div>
+<!-- Metric Item 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-primary-fixed-dim text-on-primary-fixed-variant font-label-caps text-label-caps font-semibold">METRIC_CM2_CONTRIBUTION</span>
+<span class="font-label-caps text-label-caps text-forest-accent font-bold">PHIÊN BẢN v1.4 (ACTIVE)</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-heading mt-2">Biên Đóng Góp Cấp 2 (Contribution Margin 2)</h3>
+<p class="font-body-sm text-body-sm text-text-body mt-1">Lợi nhuận ròng trực tiếp của từng sản phẩm thổ cẩm sau khi trừ chi phí sợi, tiền công nghệ nhân Cơ Tu và phí sàn TMĐT.</p>
+<div class="mt-3 p-2.5 rounded bg-surface-container-highest font-mono text-[12px] text-text-heading">
+<code>CM2 = GMV_NET - COGS_Artisan - Packaging_Eco - Platform_Commission - Shipping_Subsidy</code>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-[12px] text-outline">
+<span>Chủ sở hữu: Giám Đốc Điều Hành (COO)</span>
+<button class="font-button-text text-button-text text-forest-accent hover:underline">Xem lịch sử v1.3 →</button>
+</div>
+</div>
+<!-- Metric Item 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-primary-fixed-dim text-on-primary-fixed-variant font-label-caps text-label-caps font-semibold">METRIC_PROVENANCE_INDEX</span>
+<span class="font-label-caps text-label-caps text-forest-accent font-bold">PHIÊN BẢN v1.0 (ACTIVE)</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-heading mt-2">Chỉ Số Minh Bạch Nguồn Gốc (OCOP Trust Score)</h3>
+<p class="font-body-sm text-body-sm text-text-body mt-1">Đánh giá tỷ lệ túi thổ cẩm xuất xưởng có hồ sơ định danh nghệ nhân, nhật ký dệt làng nghề và mã QR OCOP hợp lệ.</p>
+<div class="mt-3 p-2.5 rounded bg-surface-container-highest font-mono text-[12px] text-text-heading">
+<code>TRUST_IDX = (Verified_Artisan_QR_Items / Total_Shipped_Items) * 100</code>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-[12px] text-outline">
+<span>Chủ sở hữu: Ban Quản Trị OCOP Đông Giang</span>
+<button class="font-button-text text-button-text text-forest-accent hover:underline">Xem lịch sử v1.0 →</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Governance & Immutability Rules Section (BR-15 & BR-18) -->
+<div class="mt-space-lg p-space-lg rounded-xl bg-surface-sand shadow-sm flex flex-col md:flex-row items-start gap-space-md">
+<div class="p-3 rounded-lg bg-forest-accent text-surface-container-lowest shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[28px]">lock_clock</span>
+</div>
+<div class="flex-1">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-md text-headline-md text-text-heading font-bold">Quy Tắc Quản Trị Chỉ Số &amp; Tính Bất Biến (BR-15 &amp; BR-18 Metric Immutability)</span>
+<span class="px-2 py-0.5 rounded bg-forest-accent text-surface-container-lowest font-label-caps text-label-caps">STRICT COMPLIANCE</span>
+</div>
+<p class="font-body-md text-body-md text-text-body mt-2 leading-relaxed">
+        Mọi thay đổi trong công thức tính toán chỉ số (ví dụ: công thức tính <span class="font-semibold text-text-heading">Net Revenue</span>, <span class="font-semibold text-text-heading">CM2</span>, <span class="font-semibold text-text-heading">Tồn kho Khả Dụng ATP</span>) đều <strong class="text-text-heading">bắt buộc phải tạo phiên bản mới (Versioning)</strong>. Tuyệt đối không ghi đè (overwrite) lên lịch sử dữ liệu quá khứ. Mọi báo cáo tài chính, báo cáo xã viên HTX và dữ liệu gửi cơ quan thuế kỳ trước đều phải có khả năng tái lập 100% với dữ liệu nguyên bản theo đúng thời điểm phát hành.
+      </p>
+<div class="mt-3 flex flex-wrap items-center gap-space-md text-[13px] text-text-body">
+<span class="flex items-center gap-1 font-semibold text-text-heading">
+<span class="material-symbols-outlined text-forest-accent text-[16px]">check_circle</span>
+          Lưu trữ Snapshot định kỳ 00:00 mỗi ngày
+        </span>
+<span class="flex items-center gap-1 font-semibold text-text-heading">
+<span class="material-symbols-outlined text-forest-accent text-[16px]">check_circle</span>
+          Cơ chế RBAC 2-Key Approval khi sửa công thức
+        </span>
+<span class="flex items-center gap-1 font-semibold text-text-heading">
+<span class="material-symbols-outlined text-forest-accent text-[16px]">check_circle</span>
+          Tự động đồng bộ sang hồ sơ DSS &amp; Audit Trail
+        </span>
+</div>
+</div>
+</div>
+<!-- Modal: Đăng Ký Chỉ Số Mới (Semantic Metric Definition Modal) -->
+<div class="fixed inset-0 z-50 hidden bg-inverse-surface/60 backdrop-blur-xs flex items-center justify-center p-4" id="metric-modal">
+<div class="w-full max-w-2xl bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden flex flex-col animate-in fade-in zoom-in duration-150">
+<div class="p-space-md bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-forest-accent text-[22px]">add_box</span>
+<h3 class="font-headline-md text-headline-md text-text-heading">Đăng Ký Định Nghĩa Chỉ Số Mới</h3>
+</div>
+<button class="p-1 rounded text-outline hover:text-text-heading hover:bg-surface-container-high transition-colors" id="btn-close-modal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md overflow-y-auto max-h-[768px]">
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-text-heading uppercase font-semibold">Mã Định Danh Chỉ Số (Metric Key)</label>
+<input class="w-full bg-surface-container-low px-3 py-2 rounded text-body-sm font-mono text-text-heading focus:outline-none focus:bg-surface" placeholder="Ví dụ: METRIC_CAC_ORGANIC_V1" type="text"/>
+<span class="text-[11px] text-outline">Quy ước đặt tên: METRIC_[TÊN]_[PHIÊN_BẢN], chữ in hoa, không dấu.</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-text-heading uppercase font-semibold">Tên Chỉ Số Hiển Thị</label>
+<input class="w-full bg-surface-container-low px-3 py-2 rounded text-body-sm text-text-heading focus:outline-none focus:bg-surface" placeholder="Ví dụ: Chi Phí Thu Khách Tự Nhiên" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-text-heading uppercase font-semibold">Bộ Phận Quản Lý (Owner Team)</label>
+<select class="w-full bg-surface-container-low px-3 py-2 rounded text-body-sm text-text-heading focus:outline-none">
+<option>Ban Tài Chính &amp; P&amp;L</option>
+<option>Ban Quản Trị Kho Vận &amp; OMS</option>
+<option>Tổ Hợp Tác Xã Thổ Cẩm Đông Giang</option>
+<option>Ban Marketing &amp; Trải Nghiệm Khách</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-text-heading uppercase font-semibold">Công Thức Tính Toán Chuẩn Hóa (Formula Expression)</label>
+<textarea class="w-full bg-surface-container-low p-3 rounded font-mono text-body-sm text-text-heading focus:outline-none focus:bg-surface" placeholder="Ví dụ: Sum(Marketing_Costs) / Unique_New_Customers_From_QR" rows="3"></textarea>
+<span class="text-[11px] text-outline">Áp dụng cú pháp biểu thức SQL/Pandas chuẩn. Các trường dữ liệu phải thuộc các Table đã Verified.</span>
+</div>
+<div class="p-3 rounded bg-surface-container flex items-center gap-2">
+<input checked="" class="w-4 h-4 text-forest-accent rounded" id="immutability-check" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-text-heading font-medium" for="immutability-check">
+            Kích hoạt khóa bất biến (Immutability Lock) theo tiêu chuẩn EP-12 &amp; BR-15.
+          </label>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-4 py-2 rounded bg-surface-container-highest hover:bg-surface-sand text-text-heading font-button-text text-button-text transition-colors" id="btn-cancel-modal">
+          Hủy Bỏ
+        </button>
+<button class="px-4 py-2 rounded bg-forest-accent hover:bg-primary text-surface-container-lowest font-button-text text-button-text transition-colors shadow-sm" id="btn-save-metric">
+          Đăng Ký &amp; Tạo Phiên Bản v1.0
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Tab switching logic
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const tabPanes = document.querySelectorAll('.tab-pane');
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-tab-target');
+      
+      // Update Tab button styling
+      tabBtns.forEach(b => {
+        b.classList.remove('bg-forest-accent', 'text-surface-container-lowest', 'shadow-sm');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.remove('text-on-surface-variant');
+      btn.classList.add('bg-forest-accent', 'text-surface-container-lowest', 'shadow-sm');
+
+      // Update Panes visibility
+      tabPanes.forEach(pane => {
+        if (pane.id === target) {
+          pane.classList.remove('hidden');
+        } else {
+          pane.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  // Modal handlers
+  const modal = document.getElementById('metric-modal');
+  const openModalBtn = document.getElementById('btn-open-metric-modal');
+  const openModalBtn2 = document.getElementById('btn-open-metric-modal-2');
+  const closeModalBtn = document.getElementById('btn-close-modal');
+  const cancelModalBtn = document.getElementById('btn-cancel-modal');
+  const saveMetricBtn = document.getElementById('btn-save-metric');
+  const triggerChecksBtn = document.getElementById('btn-trigger-checks');
+
+  const showModal = () => modal.classList.remove('hidden');
+  const hideModal = () => modal.classList.add('hidden');
+
+  if (openModalBtn) openModalBtn.addEventListener('click', showModal);
+  if (openModalBtn2) openModalBtn2.addEventListener('click', showModal);
+  if (closeModalBtn) closeModalBtn.addEventListener('click', hideModal);
+  if (cancelModalBtn) cancelModalBtn.addEventListener('click', hideModal);
+
+  if (saveMetricBtn) {
+    saveMetricBtn.addEventListener('click', () => {
+      alert('Đã lưu chỉ số mới và tạo phiên bản v1.0 trong Metric Registry thành công!');
+      hideModal();
+    });
+  }
+
+  if (triggerChecksBtn) {
+    triggerChecksBtn.addEventListener('click', () => {
+      const originalText = triggerChecksBtn.innerHTML;
+      triggerChecksBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">autorenew</span> Đang Chạy 64 Checks...';
+      triggerChecksBtn.disabled = true;
+      setTimeout(() => {
+        triggerChecksBtn.innerHTML = originalText;
+        triggerChecksBtn.disabled = false;
+        alert('Tất cả 64 quy tắc kiểm định dữ liệu đã được thực thi lại. 18/19 Datasets đạt SLA.');
+      }, 1200);
+    });
+  }
+
+  // Quick search filter for Datasets
+  const searchInput = document.getElementById('dataset-search');
+  if (searchInput) {
+    searchInput.addEventListener('keyup', (e) => {
+      const query = e.target.value.toLowerCase();
+      const rows = document.querySelectorAll('tbody tr');
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(query) ? '' : 'none';
+      });
+    });
+  }
+</script></main></div></body></html>
